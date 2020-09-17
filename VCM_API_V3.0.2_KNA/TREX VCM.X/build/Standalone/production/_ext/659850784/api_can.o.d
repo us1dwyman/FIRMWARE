@@ -1,0 +1,23 @@
+build/Standalone/production/_ext/659850784/api_can.o:  \
+ ../src/api/api_can.c  \
+../src/api/api_can.h  \
+../src/app.h  \
+../src/api/can.h  \
+ ../src/api/hardware.h  \
+mcc_generated_files/pin_manager.h  \
+ mcc_generated_files/can_types.h  \
+../src/api/api.h  \
+ ../src/api/api_actuator.h  \
+../src/api/adc.h  \
+../src/api/api_dinput.h  \
+ ../src/api/api_spi.h  \
+../src/api/drv_spi.h  \
+../src/api/api_imu.h  \
+ ../src/api/api_canmotor.h  \
+../src/api/eeprom.h  \
+../src/api/timer.h  \
+ mcc_generated_files/can1.h  \
+mcc_generated_files/can_types.h  \
+ ../src/api/mcp2515_can.h  \
+../src/api/mcp2515_mb.h  \
+ ../src/api/../KNA/HMI_interface.h 

@@ -1,0 +1,242 @@
+# API Version History
+
+//------------------------------//---------------------------------------------
+
+Version: 	3.0.2 7 July 2020
+Compiler: 	XC16 1.35
+MPLABX:		5.1.0
+
+Summary:
+	* Cleanup of receive CAN message processing.
+	* Change CAN reset message handling to improve consistency of loading
+		upgrade images.
+
+Known Issues:
+
+
+
+//------------------------------//---------------------------------------------
+
+Version: 	3.0.1 3 July 2020
+Compiler: 	XC16 1.35
+MPLABX:		5.1.0
+
+Summary:
+	* Initial version to support Rev B hardware.
+	* Change from OSC to External Clock (from the CAN device) on dsPic
+	* Add API support for new I/O
+	* Remove console messaging and replace with CAN commands
+	* Bootloader is now at 4.3 with changes to support Rev B hardware including
+		* Changes to support external clock from the CAN device.
+		* Removal of uart tx and rx functionality
+		* Reworking of I/O configuration to support Rev B hardware.
+
+
+Known Issues:
+
+//------------------------------//---------------------------------------------
+
+Version: 	2.1.0 9 May 2020
+Compiler: 	XC16 1.35
+MPLABX:		5.1.0
+
+Summary:
+	* Update Phoenix control message to match Dual Controller version 1.6.3 release
+	* Fix error where unexpected CAN PGNs could make canmotor module do the wrong thing
+	* Add periodic status messages via CAN
+	* Fix error in adc enable for channels > 15
+
+
+
+Known Issues:
+
+//------------------------------//---------------------------------------------
+
+Version: 	2.0.0 9 October 2019
+Compiler: 	XC16 1.35
+MPLABX:		5.0.5
+
+Summary:
+	Functional version on VCM Hardware Proto 1
+
+	Version 1.1.2 with added functionality
+
+	Implementation changes:
+
+		Console
+			Added some commands to support new application code.
+
+		CAN2
+			The CAN2 interface is now in place, including Fault line
+            functionality.
+
+		Upgrade Configuration
+			The hex file checksum is now calculated over a different
+			memory range.
+
+
+Known Issues:
+
+
+//------------------------------//---------------------------------------------
+
+Version: 	1.1.2 30 September 2019
+Compiler: 	XC16 1.35
+MPLABX:		5.0.5
+
+Summary:
+	Functional version on VCM Hardware Proto 1
+
+	Version 1.1.1 with added functionality
+
+	Implementation changes:
+
+		Console
+			Added some commands to make API verification easier.
+
+		IMU interface
+			Implemented fix in lsm6ds3 driver so code would work even when
+			compiled in an optimized configuration (factory and upgrade).
+
+		Bootloader
+			Changed to bootload over CAN.
+			Reworked Conditional code for PPS re-assignment after application starts.
+			We now use pragma IOL1WAY = OFF to allow reassignment.
+
+Known Issues:
+
+
+//------------------------------//----------------------------------------------
+
+Version: 	1.1.1 28 June 2019
+Compiler: 	XC16 1.34
+MPLABX:		5.1.0
+
+Summary:
+	Functional version on VCM Hardware Proto 1
+
+	Version 1.1.0 with added functionality
+
+	Implementation changes:
+
+		Startup and Task Loop
+			Horn defaults to 100% PWM.
+			Actuator current limit threshold raised to support the present
+			operational profile.
+
+		CAN bus HMI interface
+			Added directed message (destination HMI) for LED control.
+
+Known Issues:
+
+
+//------------------------------//----------------------------------------------
+
+Version: 	1.1.0 18 June 2019
+Compiler: 	XC16 1.34
+MPLABX:		5.1.0
+
+Summary:
+	Functional version on VCM Hardware Proto 1
+
+	Version 1.0.0 with added functionality
+
+	Implementation changes:
+
+		Startup and Task Loop
+			Implemented and tested with the addition of a simple fault handler.
+
+		Brake Control
+			Coordination with motor (timing of brake with respect to traction 
+			motor operation) is now in place with the VCM
+			monitoring traction motor controller PWM percentage via CAN1. See
+			apitest/test_can1 for an example.
+
+		Discrete Inputs
+			The Bag/Flow interrupt on signal change is implemented and tested.
+			See apitest/test_dinputs for an example which displays edge count
+			per unit time.
+
+		CAN bus Motor interface
+			Added support for traction motor status message reception.
+
+Known Issues:
+
+
+//------------------------------//----------------------------------------------
+
+Version: 	1.0.0 31 May 2019
+Compiler: 	XC16 1.34
+MPLABX:		5.1.0
+
+Summary:
+	Functional version on VCM Hardware Proto 1
+
+	Implementation status:
+
+		Startup and Task Loop
+			Implemented and tested, except sleep and wakeup
+ 
+		Deck Actuator
+			Implemented and tested.  See apitest/test_actuator for example.
+
+		Brake Control
+			Implemented with on/off control.  PWM of brake not allowed due
+			to hardware issue.  Coordination with motor (timing of brake with
+			respect to traction motor operation) is not final.
+
+		Discrete Outputs
+			Implemented and tested.  See console.c for commands to control
+			output states.
+
+		Discrete Inputs
+			Implemented and tested.  See apitest/test_dinputs and 
+			apitest/test_can1 for example.
+
+			NOTE: APICB_IntInOccurred() is not implemented
+
+		Analog Inputs
+			Implemented and tested.  See apitest/test_ainputs and
+			apitest/test_can1 for examples.
+
+		CAN bus Communication
+			CAN1 Implemented and tested. See apitest/test_can1.
+
+			CAN2 is not yet implemented.
+
+		CAN bus Motor interface
+			Functionally implemented.  Monitoring and Fault handling
+			not yet completed.  See apitest/test_can1 for example.
+
+		Inertial Measurement Unit
+			Not yet implemented
+
+		Non-Volatile RAM
+			Implemented and tested.  See apitest/test_nvram.c for example.
+
+		Serial Peripheral Interface
+			Implemented and tested.  See apitest/test_spi.c for example.
+
+		Diagnostic Port (USB)
+			Implemented and tested.  See console.c for example.
+
+
+Known Issues:
+
+
+//------------------------------//----------------------------------------------
+
+
+0.0.2 Jan 21, 2019
+Compiler: XC16 1.34
+Update per DOC0004063 Rev F:
+- Remove RTC
+- Add detail to SPI, IMU
+
+
+//------------------------------//----------------------------------------------
+
+0.0.1 July 23, 2018
+Compiler: XC16 1.34
+Dev Kit version with debug port for hw checkout
+

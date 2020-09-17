@@ -1,0 +1,7 @@
+VERSION   DATE    DESCRIPTION
+=======   =====   ==============================================================
+  10      8/28/20 added state machine to send messages to the HMI to update the 
+                  traction motor direction
+  16      9/15/20 changes need to be tracked better.  Anyway this version has
+                  code that is merged from jeff. 
+ 
