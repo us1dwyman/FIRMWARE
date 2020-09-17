@@ -31,7 +31,7 @@
 #include "HMI_interface.h"
 #include "micro_actuator.h"
 
-
+//simple change
 void API_System_Initialize( void );
 
 //------------------------------//----------------------------------------------
