@@ -1,0 +1,180 @@
+Acción: Restablecimiento de la máquina			
+Acción: rechazada
+Acción: Completado     					
+Error: Sobrecorriente en cepillo		   
+Error: Atascamiento de cepillo				
+Error: Sobretemperatura en cepillo 		    
+Error: Sobrecorriente en cepillo lateral			
+Error: Atascamiento de cepillo lateral
+Error: Sobretemperatura en cepillo lateral			
+Error: El motor de propulsión no impulse
+Error: Sobrecorriente en el motor de propulsión		
+Error: Atascamiento en el motor de propulsion
+Error: Sobretemperatura en el motor de propulsión		
+Error: Sobrecorriente en la aspiradora
+Error: Atascamiento en la aspiradora			
+Error: Aspiración afectada
+Error: Sobretemperatura en el circuito impreso		
+Error: Desconocido
+Error: Bolsa faltante					
+Error: Batería baja
+Error: Batería sin carga					
+Modo: Transporte
+Modo : T Transporte e
+Modo: A Aspiración n						
+Modo: E Eco aspiración n
+Modo: Herramienta a					
+Alerta: Diariamente
+Alerta: 50 horas						
+Alerta: 100 horas		                 
+Alerta: 200 horas						
+1234567890				    
+GUÍA PRÁCTICA A
+Guía práctica
+Guía práctica						
+¡HOLA!
+Seleccione un modo
+
+
+AJUSTES
+Ajustes
+Ajustes				
+CONFIGURACIÓN
+Configuración
+Configuración			 
+HISTORIAL L
+Historial
+Historial					
+IDIOMA A
+Idioma
+FF Idioma a			        
+INFORMACIÓN DE LA MÁQUINA ***************
+Información de la máquina
+Información 
+de la máquina
+Información 
+de la máquina
+Información de la máquina
+PÁGINA DEL PRODUCTO  ****
+Página del producto  ****
+Página del producto  ****				     
+PREFERENCIAS
+Preferencias
+FF Preferencias FF
+English				            
+Deutsch							
+Français			              
+Español							
+Korean				         
+Mandarin						
+HORÓMETRO O
+Horómetro
+FF Horómetro FF			    
+NÚMERO DE SERIE E
+Número de serie
+Número de serie					
+SOFTWARE
+Software			             
+Versión							
+ALARMA DE MARCHA ATRÁS   ****
+Alarma de marcha atrás
+FF Horómetro F 
+Alarma de
+marcha atrás
+Alarma de
+marcha atrás
+CUIDADO DIARIO O
+Cuidado diario
+FF Cuidado diario FF		
+					**************			
+Restablecer 
+Valores de fábrica
+Restablecer 
+Valores de fábrica
+RESTABLECER VALORES DE FÁBRICA	     
+Encendido						
+Encendida	
+Apagar
+Apagada
+A AJUSTES DE FÁBRICA A			
+¿Desea utilizar los
+valores predeterminados?
+Sí, restablecer
+Sí, restablecer						
+No, volver	
+No, volver					             
+C CÓDIGOS S
+Códigos
+Códigos						
+REGISTRO DE ATENCIÓN
+BATERÍA MUY B
+Registro de atención
+Registro de atención
+BATERÍA MUY B
+Error							
+¿Corrected?				       
+Sí, continuar
+Sí, continuar						
+ERROR DE CEPILLO O				    
+Más información						
+Buscar				            
+Eliminar							
+Limpiar						 
+Detener							
+Quitar puerta					 
+Empujar							
+ERROR DE ESCOBA LATERAL *******				
+Desenroscar						
+ERROR DE MOTOR DE PROPULSIÓN	*****	
+Tirar hacia arriba						
+Clic						 
+Comunicarse con el servicio				
+Energía reducida			 
+Cambiar trayectoria
+ERROR DE ASPIRACIÓN N				   
+ERROR DE ACCIONADOR R					
+Despejar						  
+Revisar
+ERROR DE CIRCUITO IMPRESO		*****	  
+Espere 60 segundos					
+ERROR DESCONOCIDO O				 
+Instalar bolsa						
+BATERÍA MUY BAJA A				 
+Aspiración cancelada					
+Cargar ahora					 
+BATERÍA SIN CARGA A					
+A Apagando o					   
+P. de emergencia ACTIVADA			
+Comuníquese con el SERVICIO TÉCNICO		
+SERVICIO URGENTE				need
+REVISAR						 
+Cepillo				
+Escoba lateral					 
+CARGA EXCESIVA				
+Cambiar trayectoria			 
+Servicio pronto				
+BATERÍA BAJA					 
+¡Cargar pronto!				
+MANTENIMIENTO				 
+Realizar cuidado diario				
+Continuar					 
+Realizar cuidado de 50h				
+Realizar cuidado de 100h				 
+Realizar cuidado de 200h				
+Completar ahora
+Completar ahora					 
+Recordar luego
+Recordar luego				
+¿Usar guía rápida?				 
+Sí
+Sí				
+No
+No						 
+Gracias
+ ¡ADIÓS!
+NO DESCONECTAR r				 
+Menos de 5 % %				
+CARGANDO O
+CARGANDO O					 
+CARGADO O			
+Profesional
