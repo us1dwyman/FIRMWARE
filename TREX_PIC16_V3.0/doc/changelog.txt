@@ -1,0 +1,130 @@
+# Version History
+
+10:38 AM 5/11/2020 
+Version:    2.2.0  
+Compiler:   XC8 1.45
+MPLABX:     5.1.0
+
+Known Issues:
+Obsolete state machine fragments should be removed.
+
+
+Objective:
+Add signal to indicate transport protocol is active.
+Enabled abort on wrong transport sequence number.
+
+Changes:
+j1939tp_rx2.c
+- added transport_isActive() 
+j1939tp_post_dt()
+- enabled abort on wrong sequence number
+
+
+hmi.h
+- renamed HMI_TYPE_STREAM to  HMI_TYPE_TRANSPORT
+
+main.c
+Now testing transport_isActive() to prevent CAN
+and HMI messages reflecting the switchstate during
+transport.
+
+
+tpControl.h
+- added function transport_isActive()
+
+
+
+
+
+
+
+
+
+Version:    2.0.1  
+Compiler:   XC8 1.45
+MPLABX:     5.1.0
+
+Known Issues:
+- untested with switch data transmitted over HMI and CAN.
+- 32MB file write failure.
+
+Objective:
+Added function to indicate if HMI for transport is in progress.
+Added HMI type for transport protocol.
+Added visible state machine for transport.
+Added wrapper around CAN_Tx, HMI_Send of switch information with ! HMI_TxInProgress.
+
+Changes:
+
+app.h
+- version change to 2.0.1
+
+hmi.c
+- changed HMI_txQ_SIZE from 128 to 256
+- changed HMI_txQ_t indexes from 8 bit to 16 bit
+HMI_Tasks()
+- added message counter 
+
+HMI_TxBytesInQueue()
+- new function 
+
+HMI_TxInProgress()
+- new function 
+
+HMI_End()
+- added transmitted message counter
+
+hmi.h
+HmiMessageType_e
+- added type HMI_TYPE_STREAM
+
+- changed HMI_MAX_MESSAGE_SIZE from 32 to 16
+
+HMI_Status_t
+- added tx and rx message counter bytes
+
+HMI_TxBytesInQueue()
+- new function
+
+j1939cfg.h
+- now defining #define J1939_TP
+- added DEBUG_DISABLE_RX_TIMER, for debug
+
+- J1939CFG_TICK_PERIOD reduced from 10 to 5
+
+- J1939CFG_TP_RX_BUF_SIZE increased from 16 to 1785
+
+main.c
+_HandleHmiPdu()
+- J1939_Tx replaced with J1939_AppTx()
+
+HMICB_RxMessage()
+- added HMI_TYPE_STREAM type for switch completeness.
+
+main()
+- added     transport_init();
+- added call in loop to transport_Machine();
+- added debug CAN transmit of diagnostics
+- wrapped CAN_Tx, HMI_Send of switch information in HMI_TxInProgress
+
+
+//------------------------------//---------------------------------------------
+
+Version:    2.0  
+Compiler:   XC8 1.45
+MPLABX:     5.1.0
+
+Summary:
+    * Feature complete version
+    * Responds to CANID 0x81
+    * Passes FE00 PGNs to PIC24, and PIC24 packets back to FE00
+    * Does NOT support J1939/TP protocol needed for bootloader
+    * Improved interrupt-based handling of CAN processor
+    * NOTE: ENABLE LINE MUST BE GROUNDED IN ORDER FOR THE BOARD TO WORK
+
+
+Known Issues:
+    * Toggling the ENABLE line (sleep/wake transitions) do not always work properly.  For best results, power up the board with the ENABLE line grounded.
+
+
+//------------------------------//---------------------------------------------

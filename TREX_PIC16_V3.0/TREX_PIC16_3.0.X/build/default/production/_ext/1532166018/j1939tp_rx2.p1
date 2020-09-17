@@ -1,0 +1,844 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"69 ../src/j1939/j1939tp_rx2.c
+[c E150 0 1 2 3 4 5 6 .. ]
+[n E150 . TP_INIT TP_WAIT_RTS TP_DATA_COLLECT_START TP_DATA_COLLECT TP_ABORT TP_SEND_ABORT TP_SEND_COMPLETE  ]
+"76
+[s S7 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S7 . na rtsArrived abortArrived sendAbort ]
+"75
+[u S6 `S7 1 `uc 1 ]
+[n S6 . b byte ]
+"86
+[s S8 `S6 1 `uc 1 `ul 1 `ui 1 `ui 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S8 . cBits state pgn msg_size timer packetCount num_packets next_seq cts_max cts_cnt rsn dst src ]
+"26 ../src/j1939/j1939.h
+[s S2 `ul 1 `*uc 1 `ui 1 `uc 1 `uc 1 `uc 1 ]
+[n S2 . pgn buf buf_len dst src pri ]
+"59
+[v _J1939_AppTx `(uc ~T0 @X0 0 ef2`*S2`*uc ]
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;src\can.h: 51: typedef uint32_t canid_t;
+[; ;src\can.h: 92: typedef struct
+[; ;src\can.h: 93: {
+[; ;src\can.h: 95: canid_t id;
+[; ;src\can.h: 99: uint8_t pad1;
+[; ;src\can.h: 102: uint8_t buf_len;
+[; ;src\can.h: 104: uint8_t buf[ 8 ];
+[; ;src\can.h: 105: } can_t;
+[; ;src\can.h: 129: bool CAN_Initialize( const void *pConfig );
+[; ;src\can.h: 140: uint8_t CAN_SetRxMask( int m, canid_t id, unsigned int mide );
+[; ;src\can.h: 155: uint8_t CAN_SetRxFilter( int n, canid_t id, unsigned int bufPnt, unsigned int maskSel );
+[; ;src\can.h: 162: void CAN_Tasks( void );
+[; ;src\can.h: 167: void CAN_Sleep( void );
+[; ;src\can.h: 172: void CAN_Wakeup( void );
+[; ;src\can.h: 185: uint8_t CAN_Rx( can_t *pFrame );
+[; ;src\can.h: 189: bool Receive_CAN_Message(void);
+[; ;src\can.h: 190: uint8_t CAN_RxMailbox( can_t *pFrame, unsigned which );
+[; ;src\can.h: 204: uint8_t CAN_Tx( can_t *pFrame );
+[; ;src\can.h: 205: uint8_t CAN_TxMailbox( can_t *pFrame, unsigned which );
+[; ;j1939.h: 25: typedef struct
+[; ;j1939.h: 26: {
+[; ;j1939.h: 28: uint32_t pgn;
+[; ;j1939.h: 29: uint8_t *buf;
+[; ;j1939.h: 30: uint16_t buf_len;
+[; ;j1939.h: 31: uint8_t dst;
+[; ;j1939.h: 32: uint8_t src;
+[; ;j1939.h: 33: uint8_t pri;
+[; ;j1939.h: 35: } j1939_t;
+[; ;j1939.h: 37: extern uint8_t j1939_sa;
+[; ;j1939.h: 39: extern uint8_t j1939_name[];
+[; ;j1939.h: 41: extern void J1939_Initialize( void );
+[; ;j1939.h: 43: extern uint8_t J1939_bip_tx_rate_max_get( void );
+[; ;j1939.h: 45: extern void J1939_bip_tx_rate_allowed_set( uint8_t rate );
+[; ;j1939.h: 57: uint8_t J1939_Tx( j1939_t *msg );
+[; ;j1939.h: 59: uint8_t J1939_AppTx( j1939_t *msg, uint8_t *status );
+[; ;j1939.h: 61: extern void J1939_Update( void );
+[; ;j1939.h: 66: extern void J1939_CheckRx( void );
+[; ;j1939.h: 78: void J1939_AppProcess( j1939_t *pMsg );
+[; ;j1939.h: 85: void J1939_AppProcessStd( can_t *pMsg );
+[; ;j1939.h: 99: uint8_t J1939_AppSaGet( void );
+[; ;j1939.h: 105: void J1939_App_Delay( void );
+[; ;j1939.h: 111: void J1939_App_Address_Claimed( uint8_t address );
+[; ;j1939tp.h: 15: extern void j1939tp_init( void );
+[; ;j1939tp.h: 17: extern uint8_t j1939tp_tx( j1939_t *msg, uint8_t *status );
+[; ;j1939tp.h: 19: extern void j1939tp_post_cm( j1939_t *msg );
+[; ;j1939tp.h: 21: extern void j1939tp_post_dt( j1939_t *msg );
+[; ;j1939tp.h: 23: extern void j1939tp_update( void );
+[; ;src\mcp2515_can.h: 42: typedef enum
+[; ;src\mcp2515_can.h: 43: {
+[; ;src\mcp2515_can.h: 44: CANCTRL_REQOP_NORMAL = 0x00,
+[; ;src\mcp2515_can.h: 45: CANCTRL_REQOP_SLEEP = 0x20,
+[; ;src\mcp2515_can.h: 46: CANCTRL_REQOP_LOOPBACK = 0x40,
+[; ;src\mcp2515_can.h: 47: CANCTRL_REQOP_LISTENONLY = 0x60,
+[; ;src\mcp2515_can.h: 48: CANCTRL_REQOP_CONFIG = 0x80,
+[; ;src\mcp2515_can.h: 49: CANCTRL_REQOP_POWERUP = 0xE0
+[; ;src\mcp2515_can.h: 50: } CANCTRL_REQOP_MODE;
+[; ;src\mcp2515_can.h: 52: typedef enum
+[; ;src\mcp2515_can.h: 53: {
+[; ;src\mcp2515_can.h: 55: OPMODE_NORMAL,
+[; ;src\mcp2515_can.h: 56: OPMODE_SLEEP,
+[; ;src\mcp2515_can.h: 57: OPMODE_LOOP,
+[; ;src\mcp2515_can.h: 58: OPMODE_LISTEN,
+[; ;src\mcp2515_can.h: 59: OPMODE_CONFIG
+[; ;src\mcp2515_can.h: 61: } MCP2515_Opmode_t;
+[; ;src\mcp2515_can.h: 194: typedef struct
+[; ;src\mcp2515_can.h: 195: {
+[; ;src\mcp2515_can.h: 196: uint8_t sidh;
+[; ;src\mcp2515_can.h: 197: uint8_t sidl;
+[; ;src\mcp2515_can.h: 198: uint8_t eid8;
+[; ;src\mcp2515_can.h: 199: uint8_t eid0;
+[; ;src\mcp2515_can.h: 200: uint8_t dlc;
+[; ;src\mcp2515_can.h: 201: uint8_t data[ 8 ];
+[; ;src\mcp2515_can.h: 202: } MessageBuffer_t;
+[; ;src\mcp2515_can.h: 219: typedef struct
+[; ;src\mcp2515_can.h: 220: {
+[; ;src\mcp2515_can.h: 221: uint32_t masks[ 2 ];
+[; ;src\mcp2515_can.h: 223: uint32_t filters[ 6 ];
+[; ;src\mcp2515_can.h: 225: } MCP2515_Config_t;
+[; ;src\mcp2515_can.h: 227: typedef struct
+[; ;src\mcp2515_can.h: 228: {
+[; ;src\mcp2515_can.h: 232: unsigned rxQueueOverflows;
+[; ;src\mcp2515_can.h: 238: unsigned txQueueOverflows;
+[; ;src\mcp2515_can.h: 243: unsigned rxBufferOverflow;
+[; ;src\mcp2515_can.h: 245: unsigned rxb0count;
+[; ;src\mcp2515_can.h: 246: unsigned rxb1count;
+[; ;src\mcp2515_can.h: 247: unsigned txb0count;
+[; ;src\mcp2515_can.h: 249: } MCP2515_Diagnostics_t;
+[; ;src\mcp2515_can.h: 252: extern MCP2515_Diagnostics_t MCP2515_diag;
+[; ;src\mcp2515_can.h: 257: void MCP2515_ISR( void );
+[; ;src\tpControl.h: 4: typedef enum {
+[; ;src\tpControl.h: 5: TP_INIT,
+[; ;src\tpControl.h: 6: TP_WAIT_RTS,
+[; ;src\tpControl.h: 7: TP_DATA_COLLECT_START,
+[; ;src\tpControl.h: 8: TP_DATA_COLLECT,
+[; ;src\tpControl.h: 9: TP_ABORT,
+[; ;src\tpControl.h: 10: TP_SEND_ABORT,
+[; ;src\tpControl.h: 11: TP_SEND_COMPLETE
+[; ;src\tpControl.h: 12: } TransportState_e;
+[; ;src\tpControl.h: 14: extern TransportState_e transportState;
+[; ;src\tpControl.h: 16: void transport_init(void);
+[; ;src\tpControl.h: 17: void transport_Machine(void);
+[; ;src\tpControl.h: 18: uint8_t transport_isActive(void);
+"69 ../src/j1939/j1939tp_rx2.c
+[v _transportState `E150 ~T0 @X0 1 e ]
+[; ;j1939tp_rx2.c: 69: TransportState_e transportState;
+[; ;j1939tp_rx2.c: 75: typedef union{
+[; ;j1939tp_rx2.c: 76: struct {
+[; ;j1939tp_rx2.c: 77: uint8_t na : 5;
+[; ;j1939tp_rx2.c: 78: uint8_t rtsArrived : 1;
+[; ;j1939tp_rx2.c: 79: uint8_t abortArrived : 1;
+[; ;j1939tp_rx2.c: 80: uint8_t sendAbort:1;
+[; ;j1939tp_rx2.c: 81: } b;
+[; ;j1939tp_rx2.c: 82: uint8_t byte;
+[; ;j1939tp_rx2.c: 83: }CBits_t;
+[; ;j1939tp_rx2.c: 85: typedef struct
+[; ;j1939tp_rx2.c: 86: {
+[; ;j1939tp_rx2.c: 87: CBits_t cBits;
+[; ;j1939tp_rx2.c: 88: uint8_t state;
+[; ;j1939tp_rx2.c: 89: uint32_t pgn;
+[; ;j1939tp_rx2.c: 90: uint16_t msg_size;
+[; ;j1939tp_rx2.c: 91: uint16_t timer;
+[; ;j1939tp_rx2.c: 92: uint8_t packetCount;
+[; ;j1939tp_rx2.c: 93: uint8_t num_packets;
+[; ;j1939tp_rx2.c: 94: uint8_t next_seq;
+[; ;j1939tp_rx2.c: 95: uint8_t cts_max;
+[; ;j1939tp_rx2.c: 96: uint8_t cts_cnt;
+[; ;j1939tp_rx2.c: 97: uint8_t rsn;
+[; ;j1939tp_rx2.c: 98: uint8_t dst;
+[; ;j1939tp_rx2.c: 99: uint8_t src;
+[; ;j1939tp_rx2.c: 102: } j1939tp_rx_t;
+"105
+[v _j1939tp_rxbuf `VS8 ~T0 @X0 1 e ]
+[; ;j1939tp_rx2.c: 105: j1939tp_rx_t volatile j1939tp_rxbuf;
+"110
+[v _j1939tp_init `(v ~T0 @X0 1 ef ]
+"111
+{
+[; ;j1939tp_rx2.c: 110: void j1939tp_init( void )
+[; ;j1939tp_rx2.c: 111: {
+[e :U _j1939tp_init ]
+[f ]
+[; ;j1939tp_rx2.c: 112: j1939tp_rxbuf.state = 0;
+"112
+[e = . _j1939tp_rxbuf 1 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 113: }
+"113
+[e :UE 9 ]
+}
+"123
+[v _j1939tp_tx `(uc ~T0 @X0 1 ef2`*S2`*uc ]
+"124
+{
+[; ;j1939tp_rx2.c: 123: uint8_t j1939tp_tx( j1939_t *msg, uint8_t *status )
+[; ;j1939tp_rx2.c: 124: {
+[e :U _j1939tp_tx ]
+"123
+[v _msg `*S2 ~T0 @X0 1 r1 ]
+[v _status `*uc ~T0 @X0 1 r2 ]
+"124
+[f ]
+[; ;j1939tp_rx2.c: 125: return 1;
+"125
+[e ) -> -> 1 `i `uc ]
+[e $UE 10  ]
+[; ;j1939tp_rx2.c: 126: }
+"126
+[e :UE 10 ]
+}
+"136
+[v _j1939tp_tx_abort `(uc ~T0 @X0 1 ef3`uc`uc`ul ]
+"137
+{
+[; ;j1939tp_rx2.c: 136: uint8_t j1939tp_tx_abort( uint8_t dst, uint8_t rsn, uint32_t pgn )
+[; ;j1939tp_rx2.c: 137: {
+[e :U _j1939tp_tx_abort ]
+"136
+[v _dst `uc ~T0 @X0 1 r1 ]
+[v _rsn `uc ~T0 @X0 1 r2 ]
+[v _pgn `ul ~T0 @X0 1 r3 ]
+"137
+[f ]
+"139
+[v _msg_tx `S2 ~T0 @X0 1 a ]
+"140
+[v _buf `uc ~T0 @X0 -> 8 `i a ]
+[; ;j1939tp_rx2.c: 139: j1939_t msg_tx;
+[; ;j1939tp_rx2.c: 140: uint8_t buf[ 8 ];
+[; ;j1939tp_rx2.c: 142: msg_tx.buf = buf;
+"142
+[e = . _msg_tx 1 &U _buf ]
+[; ;j1939tp_rx2.c: 143: msg_tx.pgn = 60416;
+"143
+[e = . _msg_tx 0 -> -> 60416 `l `ul ]
+[; ;j1939tp_rx2.c: 144: msg_tx.pri = 7;
+"144
+[e = . _msg_tx 5 -> -> 7 `i `uc ]
+[; ;j1939tp_rx2.c: 145: msg_tx.buf[ 0 ] = 255;
+"145
+[e = *U + . _msg_tx 1 * -> -> 0 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 146: msg_tx.buf[ 1 ] = rsn;
+"146
+[e = *U + . _msg_tx 1 * -> -> 1 `i `x -> -> # *U . _msg_tx 1 `i `x _rsn ]
+[; ;j1939tp_rx2.c: 147: msg_tx.buf[ 2 ] = 0xff;
+"147
+[e = *U + . _msg_tx 1 * -> -> 2 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 148: msg_tx.buf[ 3 ] = 0xff;
+"148
+[e = *U + . _msg_tx 1 * -> -> 3 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 149: msg_tx.buf[ 4 ] = 0xff;
+"149
+[e = *U + . _msg_tx 1 * -> -> 4 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 150: msg_tx.buf[ 5 ] = (uint8_t)pgn;
+"150
+[e = *U + . _msg_tx 1 * -> -> 5 `i `x -> -> # *U . _msg_tx 1 `i `x -> _pgn `uc ]
+[; ;j1939tp_rx2.c: 151: msg_tx.buf[ 6 ] = ( uint8_t )( pgn >> 8 );
+"151
+[e = *U + . _msg_tx 1 * -> -> 6 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> _pgn -> 8 `i `uc ]
+[; ;j1939tp_rx2.c: 152: msg_tx.buf[ 7 ] = ( uint8_t )( pgn >> 16 );
+"152
+[e = *U + . _msg_tx 1 * -> -> 7 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> _pgn -> 16 `i `uc ]
+[; ;j1939tp_rx2.c: 153: msg_tx.buf_len = 8;
+"153
+[e = . _msg_tx 2 -> -> 8 `i `ui ]
+[; ;j1939tp_rx2.c: 154: msg_tx.dst = dst;
+"154
+[e = . _msg_tx 3 _dst ]
+[; ;j1939tp_rx2.c: 156: return J1939_AppTx( &msg_tx, 0 );
+"156
+[e ) ( _J1939_AppTx (2 , &U _msg_tx -> -> 0 `i `*uc ]
+[e $UE 11  ]
+[; ;j1939tp_rx2.c: 157: }
+"157
+[e :UE 11 ]
+}
+"164
+[v _j1939tp_tx_cts `(uc ~T0 @X0 1 ef ]
+"165
+{
+[; ;j1939tp_rx2.c: 164: uint8_t j1939tp_tx_cts( void )
+[; ;j1939tp_rx2.c: 165: {
+[e :U _j1939tp_tx_cts ]
+[f ]
+"167
+[v _msg_tx `S2 ~T0 @X0 1 a ]
+"168
+[v _buf `uc ~T0 @X0 -> 8 `i a ]
+[; ;j1939tp_rx2.c: 167: j1939_t msg_tx;
+[; ;j1939tp_rx2.c: 168: uint8_t buf[ 8 ];
+[; ;j1939tp_rx2.c: 170: msg_tx.buf = buf;
+"170
+[e = . _msg_tx 1 &U _buf ]
+[; ;j1939tp_rx2.c: 171: msg_tx.pgn = 60416;
+"171
+[e = . _msg_tx 0 -> -> 60416 `l `ul ]
+[; ;j1939tp_rx2.c: 172: msg_tx.pri = 7;
+"172
+[e = . _msg_tx 5 -> -> 7 `i `uc ]
+[; ;j1939tp_rx2.c: 173: msg_tx.buf[ 0 ] = 17;
+"173
+[e = *U + . _msg_tx 1 * -> -> 0 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 17 `i `uc ]
+[; ;j1939tp_rx2.c: 174: msg_tx.buf[ 1 ] = j1939tp_rxbuf.cts_max;
+"174
+[e = *U + . _msg_tx 1 * -> -> 1 `i `x -> -> # *U . _msg_tx 1 `i `x . _j1939tp_rxbuf 8 ]
+[; ;j1939tp_rx2.c: 175: msg_tx.buf[ 2 ] = j1939tp_rxbuf.next_seq;
+"175
+[e = *U + . _msg_tx 1 * -> -> 2 `i `x -> -> # *U . _msg_tx 1 `i `x . _j1939tp_rxbuf 7 ]
+[; ;j1939tp_rx2.c: 176: msg_tx.buf[ 3 ] = 0xff;
+"176
+[e = *U + . _msg_tx 1 * -> -> 3 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 177: msg_tx.buf[ 4 ] = 0xff;
+"177
+[e = *U + . _msg_tx 1 * -> -> 4 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 178: msg_tx.buf[ 5 ] = ( uint8_t )( j1939tp_rxbuf.pgn );
+"178
+[e = *U + . _msg_tx 1 * -> -> 5 `i `x -> -> # *U . _msg_tx 1 `i `x -> . _j1939tp_rxbuf 2 `uc ]
+[; ;j1939tp_rx2.c: 179: msg_tx.buf[ 6 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 8 );
+"179
+[e = *U + . _msg_tx 1 * -> -> 6 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> . _j1939tp_rxbuf 2 -> 8 `i `uc ]
+[; ;j1939tp_rx2.c: 180: msg_tx.buf[ 7 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 16 );
+"180
+[e = *U + . _msg_tx 1 * -> -> 7 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> . _j1939tp_rxbuf 2 -> 16 `i `uc ]
+[; ;j1939tp_rx2.c: 181: msg_tx.buf_len = 8;
+"181
+[e = . _msg_tx 2 -> -> 8 `i `ui ]
+[; ;j1939tp_rx2.c: 182: msg_tx.dst = j1939tp_rxbuf.src;
+"182
+[e = . _msg_tx 3 . _j1939tp_rxbuf 12 ]
+[; ;j1939tp_rx2.c: 184: return J1939_AppTx( &msg_tx, 0 );
+"184
+[e ) ( _J1939_AppTx (2 , &U _msg_tx -> -> 0 `i `*uc ]
+[e $UE 12  ]
+[; ;j1939tp_rx2.c: 185: }
+"185
+[e :UE 12 ]
+}
+"193
+[v _j1939tp_tx_ack `(uc ~T0 @X0 1 ef ]
+"194
+{
+[; ;j1939tp_rx2.c: 193: uint8_t j1939tp_tx_ack( void )
+[; ;j1939tp_rx2.c: 194: {
+[e :U _j1939tp_tx_ack ]
+[f ]
+"196
+[v _msg_tx `S2 ~T0 @X0 1 a ]
+"197
+[v _buf `uc ~T0 @X0 -> 8 `i a ]
+[; ;j1939tp_rx2.c: 196: j1939_t msg_tx;
+[; ;j1939tp_rx2.c: 197: uint8_t buf[ 8 ];
+[; ;j1939tp_rx2.c: 199: msg_tx.buf = buf;
+"199
+[e = . _msg_tx 1 &U _buf ]
+[; ;j1939tp_rx2.c: 200: msg_tx.pgn = 60416;
+"200
+[e = . _msg_tx 0 -> -> 60416 `l `ul ]
+[; ;j1939tp_rx2.c: 201: msg_tx.pri = 7;
+"201
+[e = . _msg_tx 5 -> -> 7 `i `uc ]
+[; ;j1939tp_rx2.c: 203: msg_tx.buf[ 0 ] = 19;
+"203
+[e = *U + . _msg_tx 1 * -> -> 0 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 19 `i `uc ]
+[; ;j1939tp_rx2.c: 204: msg_tx.buf[ 1 ] = (uint8_t)j1939tp_rxbuf.msg_size;
+"204
+[e = *U + . _msg_tx 1 * -> -> 1 `i `x -> -> # *U . _msg_tx 1 `i `x -> . _j1939tp_rxbuf 3 `uc ]
+[; ;j1939tp_rx2.c: 205: msg_tx.buf[ 2 ] = j1939tp_rxbuf.msg_size >> 8;
+"205
+[e = *U + . _msg_tx 1 * -> -> 2 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> . _j1939tp_rxbuf 3 -> 8 `i `uc ]
+[; ;j1939tp_rx2.c: 206: msg_tx.buf[ 3 ] = j1939tp_rxbuf.num_packets;
+"206
+[e = *U + . _msg_tx 1 * -> -> 3 `i `x -> -> # *U . _msg_tx 1 `i `x . _j1939tp_rxbuf 6 ]
+[; ;j1939tp_rx2.c: 207: msg_tx.buf[ 4 ] = 0xff;
+"207
+[e = *U + . _msg_tx 1 * -> -> 4 `i `x -> -> # *U . _msg_tx 1 `i `x -> -> 255 `i `uc ]
+[; ;j1939tp_rx2.c: 208: msg_tx.buf[ 5 ] = (uint8_t)j1939tp_rxbuf.pgn;
+"208
+[e = *U + . _msg_tx 1 * -> -> 5 `i `x -> -> # *U . _msg_tx 1 `i `x -> . _j1939tp_rxbuf 2 `uc ]
+[; ;j1939tp_rx2.c: 209: msg_tx.buf[ 6 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 8 );
+"209
+[e = *U + . _msg_tx 1 * -> -> 6 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> . _j1939tp_rxbuf 2 -> 8 `i `uc ]
+[; ;j1939tp_rx2.c: 210: msg_tx.buf[ 7 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 16 );
+"210
+[e = *U + . _msg_tx 1 * -> -> 7 `i `x -> -> # *U . _msg_tx 1 `i `x -> >> . _j1939tp_rxbuf 2 -> 16 `i `uc ]
+[; ;j1939tp_rx2.c: 211: msg_tx.buf_len = 8;
+"211
+[e = . _msg_tx 2 -> -> 8 `i `ui ]
+[; ;j1939tp_rx2.c: 212: msg_tx.dst = j1939tp_rxbuf.src;
+"212
+[e = . _msg_tx 3 . _j1939tp_rxbuf 12 ]
+[; ;j1939tp_rx2.c: 214: return J1939_AppTx( &msg_tx, 0 );
+"214
+[e ) ( _J1939_AppTx (2 , &U _msg_tx -> -> 0 `i `*uc ]
+[e $UE 13  ]
+[; ;j1939tp_rx2.c: 215: }
+"215
+[e :UE 13 ]
+}
+"218
+[v _transport_init `(v ~T0 @X0 1 ef ]
+{
+[; ;j1939tp_rx2.c: 218: void transport_init(void){
+[e :U _transport_init ]
+[f ]
+[; ;j1939tp_rx2.c: 219: transportState = TP_INIT;
+"219
+[e = _transportState . `E150 0 ]
+[; ;j1939tp_rx2.c: 220: }
+"220
+[e :UE 14 ]
+}
+"222
+[v _transport_isActive `(uc ~T0 @X0 1 ef ]
+{
+[; ;j1939tp_rx2.c: 222: uint8_t transport_isActive(void){
+[e :U _transport_isActive ]
+[f ]
+"223
+[v _active `uc ~T0 @X0 1 a ]
+[; ;j1939tp_rx2.c: 223: uint8_t active=1;
+[e = _active -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 224: if(TP_WAIT_RTS == transportState){
+"224
+[e $ ! == -> . `E150 1 `i -> _transportState `i 16  ]
+{
+[; ;j1939tp_rx2.c: 225: active =0;
+"225
+[e = _active -> -> 0 `i `uc ]
+"226
+}
+[e :U 16 ]
+[; ;j1939tp_rx2.c: 226: }
+[; ;j1939tp_rx2.c: 227: return active;
+"227
+[e ) _active ]
+[e $UE 15  ]
+[; ;j1939tp_rx2.c: 228: }
+"228
+[e :UE 15 ]
+}
+"230
+[v _transport_Machine `(v ~T0 @X0 1 ef ]
+{
+[; ;j1939tp_rx2.c: 230: void transport_Machine(void) {
+[e :U _transport_Machine ]
+[f ]
+[; ;j1939tp_rx2.c: 232: if (j1939tp_rxbuf.cBits.b.sendAbort) {
+"232
+[e $ ! != -> . . . _j1939tp_rxbuf 0 0 3 `i -> -> -> 0 `i `Vuc `i 18  ]
+{
+[; ;j1939tp_rx2.c: 233: j1939tp_rxbuf.cBits.b.sendAbort =0;
+"233
+[e = . . . _j1939tp_rxbuf 0 0 3 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 234: transportState = TP_SEND_ABORT;
+"234
+[e = _transportState . `E150 5 ]
+"235
+}
+[e :U 18 ]
+[; ;j1939tp_rx2.c: 235: }
+[; ;j1939tp_rx2.c: 238: switch (transportState) {
+"238
+[e $U 20  ]
+{
+[; ;j1939tp_rx2.c: 239: case TP_INIT:{
+"239
+[e :U 21 ]
+{
+[; ;j1939tp_rx2.c: 240: j1939tp_rxbuf.cBits.b.rtsArrived = 0;
+"240
+[e = . . . _j1939tp_rxbuf 0 0 1 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 241: j1939tp_rxbuf.packetCount = 0;
+"241
+[e = . _j1939tp_rxbuf 5 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 243: j1939tp_rxbuf.next_seq =1;
+"243
+[e = . _j1939tp_rxbuf 7 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 245: j1939tp_rxbuf.num_packets =0;
+"245
+[e = . _j1939tp_rxbuf 6 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 246: j1939tp_rxbuf.cBits.b.abortArrived = 0;
+"246
+[e = . . . _j1939tp_rxbuf 0 0 2 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 247: j1939tp_rxbuf.cBits.b.sendAbort =0;
+"247
+[e = . . . _j1939tp_rxbuf 0 0 3 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 248: transportState = TP_WAIT_RTS;
+"248
+[e = _transportState . `E150 1 ]
+[; ;j1939tp_rx2.c: 249: break;
+"249
+[e $U 19  ]
+"250
+}
+[; ;j1939tp_rx2.c: 250: }
+[; ;j1939tp_rx2.c: 251: case TP_WAIT_RTS:{
+"251
+[e :U 22 ]
+{
+[; ;j1939tp_rx2.c: 252: if (j1939tp_rxbuf.cBits.b.rtsArrived) {
+"252
+[e $ ! != -> . . . _j1939tp_rxbuf 0 0 1 `i -> -> -> 0 `i `Vuc `i 23  ]
+{
+[; ;j1939tp_rx2.c: 253: transportState = TP_DATA_COLLECT_START;
+"253
+[e = _transportState . `E150 2 ]
+[; ;j1939tp_rx2.c: 254: j1939tp_tx_cts();
+"254
+[e ( _j1939tp_tx_cts ..  ]
+[; ;j1939tp_rx2.c: 255: j1939tp_rxbuf.cBits.b.rtsArrived = 0;
+"255
+[e = . . . _j1939tp_rxbuf 0 0 1 -> -> 0 `i `uc ]
+"256
+}
+[e :U 23 ]
+[; ;j1939tp_rx2.c: 256: }
+[; ;j1939tp_rx2.c: 258: break;
+"258
+[e $U 19  ]
+"259
+}
+[; ;j1939tp_rx2.c: 259: }
+[; ;j1939tp_rx2.c: 260: case TP_DATA_COLLECT_START:{
+"260
+[e :U 24 ]
+{
+[; ;j1939tp_rx2.c: 262: transportState = TP_DATA_COLLECT;
+"262
+[e = _transportState . `E150 3 ]
+[; ;j1939tp_rx2.c: 263: break;
+"263
+[e $U 19  ]
+"264
+}
+[; ;j1939tp_rx2.c: 264: }
+[; ;j1939tp_rx2.c: 265: case TP_DATA_COLLECT:{
+"265
+[e :U 25 ]
+{
+[; ;j1939tp_rx2.c: 266: if (j1939tp_rxbuf.packetCount >= j1939tp_rxbuf.num_packets){
+"266
+[e $ ! >= -> . _j1939tp_rxbuf 5 `i -> . _j1939tp_rxbuf 6 `i 26  ]
+{
+[; ;j1939tp_rx2.c: 267: transportState = TP_SEND_COMPLETE;
+"267
+[e = _transportState . `E150 6 ]
+"269
+}
+[e :U 26 ]
+[; ;j1939tp_rx2.c: 269: }
+[; ;j1939tp_rx2.c: 270: if(j1939tp_rxbuf.cBits.b.abortArrived){
+"270
+[e $ ! != -> . . . _j1939tp_rxbuf 0 0 2 `i -> -> -> 0 `i `Vuc `i 27  ]
+{
+[; ;j1939tp_rx2.c: 271: j1939tp_rxbuf.cBits.b.abortArrived = 0;
+"271
+[e = . . . _j1939tp_rxbuf 0 0 2 -> -> 0 `i `uc ]
+[; ;j1939tp_rx2.c: 272: transportState = TP_ABORT;
+"272
+[e = _transportState . `E150 4 ]
+"273
+}
+[e :U 27 ]
+[; ;j1939tp_rx2.c: 273: }
+[; ;j1939tp_rx2.c: 274: break;
+"274
+[e $U 19  ]
+"275
+}
+[; ;j1939tp_rx2.c: 275: }
+[; ;j1939tp_rx2.c: 276: case TP_ABORT:{
+"276
+[e :U 28 ]
+{
+[; ;j1939tp_rx2.c: 277: transportState = TP_INIT;
+"277
+[e = _transportState . `E150 0 ]
+[; ;j1939tp_rx2.c: 278: break;
+"278
+[e $U 19  ]
+"279
+}
+[; ;j1939tp_rx2.c: 279: }
+[; ;j1939tp_rx2.c: 280: case TP_SEND_ABORT:{
+"280
+[e :U 29 ]
+{
+[; ;j1939tp_rx2.c: 281: j1939tp_tx_abort( j1939tp_rxbuf.src, j1939tp_rxbuf.rsn, j1939tp_rxbuf.pgn );
+"281
+[e ( _j1939tp_tx_abort (3 , , . _j1939tp_rxbuf 12 . _j1939tp_rxbuf 10 . _j1939tp_rxbuf 2 ]
+[; ;j1939tp_rx2.c: 282: transportState = TP_INIT;
+"282
+[e = _transportState . `E150 0 ]
+[; ;j1939tp_rx2.c: 283: break;
+"283
+[e $U 19  ]
+"284
+}
+[; ;j1939tp_rx2.c: 284: }
+[; ;j1939tp_rx2.c: 285: case TP_SEND_COMPLETE:{
+"285
+[e :U 30 ]
+{
+[; ;j1939tp_rx2.c: 286: j1939tp_tx_ack();
+"286
+[e ( _j1939tp_tx_ack ..  ]
+[; ;j1939tp_rx2.c: 287: transportState = TP_INIT;
+"287
+[e = _transportState . `E150 0 ]
+[; ;j1939tp_rx2.c: 288: break;
+"288
+[e $U 19  ]
+"289
+}
+"292
+}
+[; ;j1939tp_rx2.c: 289: }
+[; ;j1939tp_rx2.c: 292: }
+[e $U 19  ]
+"238
+[e :U 20 ]
+[e [\ _transportState , $ . `E150 0 21
+ , $ . `E150 1 22
+ , $ . `E150 2 24
+ , $ . `E150 3 25
+ , $ . `E150 4 28
+ , $ . `E150 5 29
+ , $ . `E150 6 30
+ 19 ]
+"292
+[e :U 19 ]
+[; ;j1939tp_rx2.c: 293: }
+"293
+[e :UE 17 ]
+}
+"316
+[v _j1939tp_post_cm `(v ~T0 @X0 1 ef1`*S2 ]
+"317
+{
+[; ;j1939tp_rx2.c: 316: void j1939tp_post_cm( j1939_t *msg )
+[; ;j1939tp_rx2.c: 317: {
+[e :U _j1939tp_post_cm ]
+"316
+[v _msg `*S2 ~T0 @X0 1 r1 ]
+"317
+[f ]
+"318
+[v _pgn `ul ~T0 @X0 1 a ]
+"319
+[v _msg_size `ui ~T0 @X0 1 a ]
+[; ;j1939tp_rx2.c: 318: uint32_t pgn;
+[; ;j1939tp_rx2.c: 319: uint16_t msg_size;
+[; ;j1939tp_rx2.c: 323: pgn = msg->buf[ 5 ] | ( (uint32_t)msg->buf[ 6 ] << 8 ) | ( (uint32_t)msg->buf[ 7 ] << 16 );
+"323
+[e = _pgn | | -> *U + . *U _msg 1 * -> -> 5 `i `x -> -> # *U . *U _msg 1 `i `x `ul << -> *U + . *U _msg 1 * -> -> 6 `i `x -> -> # *U . *U _msg 1 `i `x `ul -> 8 `i << -> *U + . *U _msg 1 * -> -> 7 `i `x -> -> # *U . *U _msg 1 `i `x `ul -> 16 `i ]
+[; ;j1939tp_rx2.c: 326: msg_size = msg->buf[ 1 ] | ( (uint16_t)msg->buf[ 2 ] << 8 );
+"326
+[e = _msg_size | -> *U + . *U _msg 1 * -> -> 1 `i `x -> -> # *U . *U _msg 1 `i `x `ui << -> *U + . *U _msg 1 * -> -> 2 `i `x -> -> # *U . *U _msg 1 `i `x `ui -> 8 `i ]
+[; ;j1939tp_rx2.c: 328: switch( msg->buf[ 0 ] )
+"328
+[e $U 33  ]
+[; ;j1939tp_rx2.c: 329: {
+"329
+{
+[; ;j1939tp_rx2.c: 331: case 16:
+"331
+[e :U 34 ]
+[; ;j1939tp_rx2.c: 332: {
+"332
+{
+[; ;j1939tp_rx2.c: 335: if( msg->dst != 255 )
+"335
+[e $ ! != -> . *U _msg 3 `i -> 255 `i 35  ]
+[; ;j1939tp_rx2.c: 336: {
+"336
+{
+[; ;j1939tp_rx2.c: 338: if( ( msg_size <= (uint16_t)msg->buf[ 3 ] * 7 ) )
+"338
+[e $ ! <= _msg_size * -> *U + . *U _msg 1 * -> -> 3 `i `x -> -> # *U . *U _msg 1 `i `x `ui -> -> 7 `i `ui 36  ]
+[; ;j1939tp_rx2.c: 339: {
+"339
+{
+[; ;j1939tp_rx2.c: 340: j1939tp_rxbuf.cBits.b.rtsArrived = 1;
+"340
+[e = . . . _j1939tp_rxbuf 0 0 1 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 343: j1939tp_rxbuf.state = 3;
+"343
+[e = . _j1939tp_rxbuf 1 -> -> 3 `i `uc ]
+[; ;j1939tp_rx2.c: 344: j1939tp_rxbuf.pgn = pgn;
+"344
+[e = . _j1939tp_rxbuf 2 _pgn ]
+[; ;j1939tp_rx2.c: 345: j1939tp_rxbuf.msg_size = msg_size;
+"345
+[e = . _j1939tp_rxbuf 3 _msg_size ]
+[; ;j1939tp_rx2.c: 346: j1939tp_rxbuf.num_packets = msg->buf[ 3 ];
+"346
+[e = . _j1939tp_rxbuf 6 *U + . *U _msg 1 * -> -> 3 `i `x -> -> # *U . *U _msg 1 `i `x ]
+[; ;j1939tp_rx2.c: 347: j1939tp_rxbuf.next_seq = 1;
+"347
+[e = . _j1939tp_rxbuf 7 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 348: j1939tp_rxbuf.timer = ( 200u / 5 );
+"348
+[e = . _j1939tp_rxbuf 4 / -> 200 `ui -> -> 5 `i `ui ]
+[; ;j1939tp_rx2.c: 349: j1939tp_rxbuf.cts_max = msg->buf[ 4 ];
+"349
+[e = . _j1939tp_rxbuf 8 *U + . *U _msg 1 * -> -> 4 `i `x -> -> # *U . *U _msg 1 `i `x ]
+[; ;j1939tp_rx2.c: 350: j1939tp_rxbuf.dst = msg->dst;
+"350
+[e = . _j1939tp_rxbuf 11 . *U _msg 3 ]
+[; ;j1939tp_rx2.c: 351: j1939tp_rxbuf.src = msg->src;
+"351
+[e = . _j1939tp_rxbuf 12 . *U _msg 4 ]
+"352
+}
+[; ;j1939tp_rx2.c: 352: }
+[e $U 37  ]
+"353
+[e :U 36 ]
+[; ;j1939tp_rx2.c: 353: else
+[; ;j1939tp_rx2.c: 354: {
+"354
+{
+[; ;j1939tp_rx2.c: 356: j1939tp_rxbuf.cBits.b.sendAbort = 1;
+"356
+[e = . . . _j1939tp_rxbuf 0 0 3 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 357: j1939tp_rxbuf.rsn = 5;
+"357
+[e = . _j1939tp_rxbuf 10 -> -> 5 `i `uc ]
+"359
+}
+[e :U 37 ]
+"361
+}
+[e :U 35 ]
+[; ;j1939tp_rx2.c: 359: }
+[; ;j1939tp_rx2.c: 361: }
+[; ;j1939tp_rx2.c: 362: break;
+"362
+[e $U 32  ]
+"363
+}
+[; ;j1939tp_rx2.c: 363: }
+[; ;j1939tp_rx2.c: 365: case 255:
+"365
+[e :U 38 ]
+[; ;j1939tp_rx2.c: 366: {
+"366
+{
+[; ;j1939tp_rx2.c: 367: j1939tp_rxbuf.cBits.b.abortArrived = 1;
+"367
+[e = . . . _j1939tp_rxbuf 0 0 2 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 369: break;
+"369
+[e $U 32  ]
+"370
+}
+"371
+}
+[; ;j1939tp_rx2.c: 370: }
+[; ;j1939tp_rx2.c: 371: }
+[e $U 32  ]
+"328
+[e :U 33 ]
+[e [\ *U + . *U _msg 1 * -> -> 0 `i `x -> -> # *U . *U _msg 1 `i `x , $ -> -> 16 `i `uc 34
+ , $ -> -> 255 `i `uc 38
+ 32 ]
+"371
+[e :U 32 ]
+[; ;j1939tp_rx2.c: 373: return;
+"373
+[e $UE 31  ]
+[; ;j1939tp_rx2.c: 374: }
+"374
+[e :UE 31 ]
+}
+"382
+[v _j1939tp_post_dt `(v ~T0 @X0 1 ef1`*S2 ]
+"383
+{
+[; ;j1939tp_rx2.c: 382: void j1939tp_post_dt( j1939_t *msg )
+[; ;j1939tp_rx2.c: 383: {
+[e :U _j1939tp_post_dt ]
+"382
+[v _msg `*S2 ~T0 @X0 1 r1 ]
+"383
+[f ]
+[; ;j1939tp_rx2.c: 385: if ((j1939tp_rxbuf.dst == msg->dst) && (j1939tp_rxbuf.src == msg->src)) {
+"385
+[e $ ! && == -> . _j1939tp_rxbuf 11 `i -> . *U _msg 3 `i == -> . _j1939tp_rxbuf 12 `i -> . *U _msg 4 `i 40  ]
+{
+[; ;j1939tp_rx2.c: 386: if (msg->buf[0] != j1939tp_rxbuf.next_seq){
+"386
+[e $ ! != -> *U + . *U _msg 1 * -> -> 0 `i `x -> -> # *U . *U _msg 1 `i `x `i -> . _j1939tp_rxbuf 7 `i 41  ]
+{
+[; ;j1939tp_rx2.c: 387: j1939tp_rxbuf.cBits.b.sendAbort = 1;
+"387
+[e = . . . _j1939tp_rxbuf 0 0 3 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 388: j1939tp_rxbuf.rsn = 4;
+"388
+[e = . _j1939tp_rxbuf 10 -> -> 4 `i `uc ]
+"391
+}
+[; ;j1939tp_rx2.c: 391: } else {
+[e $U 42  ]
+[e :U 41 ]
+{
+[; ;j1939tp_rx2.c: 393: ++j1939tp_rxbuf.packetCount ;
+"393
+[e =+ . _j1939tp_rxbuf 5 -> -> 1 `i `uc ]
+[; ;j1939tp_rx2.c: 395: ++j1939tp_rxbuf.next_seq;
+"395
+[e =+ . _j1939tp_rxbuf 7 -> -> 1 `i `uc ]
+"397
+}
+[e :U 42 ]
+"398
+}
+[e :U 40 ]
+[; ;j1939tp_rx2.c: 397: }
+[; ;j1939tp_rx2.c: 398: }
+[; ;j1939tp_rx2.c: 399: }
+"399
+[e :UE 39 ]
+}
+"405
+[v _j1939tp_update `(v ~T0 @X0 1 ef ]
+"406
+{
+[; ;j1939tp_rx2.c: 405: void j1939tp_update( void )
+[; ;j1939tp_rx2.c: 406: {
+[e :U _j1939tp_update ]
+[f ]
+[; ;j1939tp_rx2.c: 413: return;
+"413
+[e $UE 43  ]
+[; ;j1939tp_rx2.c: 414: }
+"414
+[e :UE 43 ]
+}

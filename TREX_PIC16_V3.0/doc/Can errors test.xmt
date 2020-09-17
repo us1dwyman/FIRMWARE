@@ -1,0 +1,35 @@
+; C:\Users\us1nbardwell\Desktop\Can errors test.xmt
+;   CAN messages saved by PCAN-View v4.3.0.596
+;
+; Columns descriptions:
+; ~~~~~~~~~~~~~~~~~~~~~
+; +Message ID
+; |            +Cycle time in ms (0=manual)
+; |            |  +Data length
+; |            |  |  +Frame type
+; |            |  |  |  +Message data
+; |            |  |  |  |
+10FF8000h   1000  8  D 80h 00h 00h 00h 00h 00h 00h 00h  Paused ; Drive over current
+10FF8000h   1000  8  D 00h 00h 00h 00h 00h 00h 00h 00h ; Clear errors
+10FF8000h   1000  8  D 40h 00h 00h 00h 00h 00h 00h 00h  Paused ; Drive brake
+10FF8000h   1000  8  D 20h 00h 00h 00h 00h 00h 00h 00h  Paused ; Side brush temp
+10FF8000h   1000  8  D 10h 00h 00h 00h 00h 00h 00h 00h  Paused ; Side brush stall
+10FF8000h   1000  8  D 08h 00h 00h 00h 00h 00h 00h 00h  Paused ; Side brush OC
+10FF8000h   1000  8  D 04h 00h 00h 00h 00h 00h 00h 00h  Paused ; Brush temp
+10FF8000h   1000  8  D 02h 00h 00h 00h 00h 00h 00h 00h  Paused ; Brush stall
+10FF8000h   1000  8  D 01h 00h 00h 00h 00h 00h 00h 00h  Paused ; Brush OC
+10FF8000h   1000  8  D 00h 80h 00h 00h 00h 00h 00h 00h  Paused ; Errors 2 unknown
+10FF8000h   1000  8  D 00h 20h 00h 00h 00h 00h 00h 00h  Paused ; Vac unknown
+10FF8000h   1000  8  D 00h 10h 00h 00h 00h 00h 00h 00h  Paused ; Vac stall
+10FF8000h   1000  8  D 00h 08h 00h 00h 00h 00h 00h 00h  Paused ; Act stall
+10FF8000h   1000  8  D 00h 04h 00h 00h 00h 00h 00h 00h  Paused ; Vac OC
+10FF8000h   1000  8  D 00h 02h 00h 00h 00h 00h 00h 00h  Paused ; Drive temp
+10FF8000h   1000  8  D 00h 01h 00h 00h 00h 00h 00h 00h  Paused ; Drive stall
+10FF8000h   1000  8  D 00h 00h 80h 00h 00h 00h 00h 00h  Paused ; Error corrected 1=display
+10FF8000h   1000  8  D 00h 00h 40h 00h 00h 00h 00h 00h  Paused ; E-stop engaged
+10FF8000h   1000  8  D 00h 00h 20h 00h 00h 00h 00h 00h  Paused ; Serial num
+10FF8000h   1000  8  D 00h 00h 10h 00h 00h 00h 00h 00h  Paused ; Close doors
+10FF8000h   1000  8  D 00h 00h 08h 00h 00h 00h 00h 00h  Paused ; Mode error
+10FF8000h   1000  8  D 00h 00h 04h 00h 00h 00h 00h 00h  Paused ; Batt dead
+10FF8000h   1000  8  D 00h 00h 02h 00h 00h 00h 00h 00h  Paused ; Batt low
+10FF8000h   1000  8  D 00h 00h 01h 00h 00h 00h 00h 00h  Paused ; Miss bag

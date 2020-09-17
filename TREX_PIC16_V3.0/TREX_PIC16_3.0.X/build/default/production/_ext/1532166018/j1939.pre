@@ -1,0 +1,454 @@
+
+# 1 "../src/j1939/j1939.c"
+
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
+typedef unsigned char bool;
+
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
+typedef signed char int8_t;
+
+# 20
+typedef signed int int16_t;
+
+# 28
+typedef signed short long int int24_t;
+
+# 36
+typedef signed long int int32_t;
+
+# 43
+typedef unsigned char uint8_t;
+
+# 49
+typedef unsigned int uint16_t;
+
+# 56
+typedef unsigned short long int uint24_t;
+
+# 63
+typedef unsigned long int uint32_t;
+
+# 71
+typedef signed char int_least8_t;
+
+# 78
+typedef signed int int_least16_t;
+
+# 90
+typedef signed short long int int_least24_t;
+
+# 98
+typedef signed long int int_least32_t;
+
+# 105
+typedef unsigned char uint_least8_t;
+
+# 111
+typedef unsigned int uint_least16_t;
+
+# 121
+typedef unsigned short long int uint_least24_t;
+
+# 128
+typedef unsigned long int uint_least32_t;
+
+# 137
+typedef signed char int_fast8_t;
+
+# 144
+typedef signed int int_fast16_t;
+
+# 156
+typedef signed short long int int_fast24_t;
+
+# 164
+typedef signed long int int_fast32_t;
+
+# 171
+typedef unsigned char uint_fast8_t;
+
+# 177
+typedef unsigned int uint_fast16_t;
+
+# 187
+typedef unsigned short long int uint_fast24_t;
+
+# 194
+typedef unsigned long int uint_fast32_t;
+
+# 200
+typedef int32_t intmax_t;
+
+
+
+
+typedef uint32_t uintmax_t;
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+
+# 51 "../src\can.h"
+typedef uint32_t canid_t;
+
+# 92
+typedef struct
+{
+
+canid_t id;
+
+
+
+uint8_t pad1;
+
+
+uint8_t buf_len;
+
+uint8_t buf[ 8 ];
+} can_t;
+
+# 129
+bool CAN_Initialize( const void *pConfig );
+
+# 140
+uint8_t CAN_SetRxMask( int m, canid_t id, unsigned int mide );
+
+# 155
+uint8_t CAN_SetRxFilter( int n, canid_t id, unsigned int bufPnt, unsigned int maskSel );
+
+# 162
+void CAN_Tasks( void );
+
+# 167
+void CAN_Sleep( void );
+
+# 172
+void CAN_Wakeup( void );
+
+# 185
+uint8_t CAN_Rx( can_t *pFrame );
+
+# 189
+bool Receive_CAN_Message(void);
+uint8_t CAN_RxMailbox( can_t *pFrame, unsigned which );
+
+# 204
+uint8_t CAN_Tx( can_t *pFrame );
+uint8_t CAN_TxMailbox( can_t *pFrame, unsigned which );
+
+# 25 "../src/j1939/j1939.h"
+typedef struct
+{
+
+uint32_t pgn;
+uint8_t *buf;
+uint16_t buf_len;
+uint8_t dst;
+uint8_t src;
+uint8_t pri;
+
+} j1939_t;
+
+extern uint8_t j1939_sa;
+
+extern uint8_t j1939_name[];
+
+extern void J1939_Initialize( void );
+
+extern uint8_t J1939_bip_tx_rate_max_get( void );
+
+extern void J1939_bip_tx_rate_allowed_set( uint8_t rate );
+
+# 57
+uint8_t J1939_Tx( j1939_t *msg );
+
+uint8_t J1939_AppTx( j1939_t *msg, uint8_t *status );
+
+extern void J1939_Update( void );
+
+# 66
+extern void J1939_CheckRx( void );
+
+# 78
+void J1939_AppProcess( j1939_t *pMsg );
+
+# 85
+void J1939_AppProcessStd( can_t *pMsg );
+
+# 99
+uint8_t J1939_AppSaGet( void );
+
+# 105
+void J1939_App_Delay( void );
+
+# 111
+void J1939_App_Address_Claimed( uint8_t address );
+
+# 15 "../src/j1939/j1939tp.h"
+extern void j1939tp_init( void );
+
+extern uint8_t j1939tp_tx( j1939_t *msg, uint8_t *status );
+
+extern void j1939tp_post_cm( j1939_t *msg );
+
+extern void j1939tp_post_dt( j1939_t *msg );
+
+extern void j1939tp_update( void );
+
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\__size_t.h"
+typedef unsigned size_t;
+
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
+struct __prbuf
+{
+char * ptr;
+void (* func)(char);
+};
+
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\errno.h"
+extern int errno;
+
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\conio.h"
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+# 23
+extern char * cgets(char *);
+extern void cputs(const char *);
+
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+
+
+# 180
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+
+# 96 "../src/j1939/j1939.c"
+uint8_t j1939_address_claim_was_successful = 1;
+
+# 104
+uint8_t j1939_sa;
+
+# 160
+void J1939_Initialize( void )
+{
+
+j1939tp_init();
+
+}
+
+# 172
+void j1939_process( j1939_t *msg )
+{
+
+switch( msg->pgn )
+{
+
+# 241
+case 59904:
+{
+
+# 256
+{
+
+J1939_AppProcess( msg );
+}
+
+break;
+}
+
+
+case 60416:
+
+j1939tp_post_cm( msg );
+
+break;
+
+
+case 60160:
+
+j1939tp_post_dt( msg );
+
+break;
+
+
+default:
+J1939_AppProcess( msg );
+break;
+}
+
+return;
+}
+
+# 294
+uint8_t J1939_Tx( j1939_t *msg )
+{
+
+uint8_t cnt, ret;
+can_t can;
+
+# 306
+for( cnt = 0; cnt < msg->buf_len; cnt++ )
+can.buf[ cnt ] = msg->buf[ cnt ];
+
+
+can.buf_len = (uint8_t)msg->buf_len;
+
+
+can.id = msg->pgn;
+
+
+if( ( (uint16_t)msg->pgn ) < ( (uint16_t)0xf000 ) )
+can.id |= msg->dst;
+
+
+can.id |= ( ( ( uint32_t )( msg->pri & 0x7 ) ) << 18UL );
+
+
+can.id <<= 8;
+can.id |= msg->src;
+
+
+can.id |= ( ( 0x080000000 ) );
+
+
+ret = CAN_Tx( &can );
+
+# 338
+return ret;
+}
+
+# 350
+uint8_t J1939_AppTx( j1939_t *msg, uint8_t *status )
+{
+
+
+if( j1939_address_claim_was_successful == 0 )
+return 1;
+
+
+msg->src = j1939_sa;
+
+# 385
+if( msg->buf_len <= 8 )
+return J1939_Tx( msg );
+
+else
+return j1939tp_tx( msg, status );
+
+# 394
+}
+
+# 427
+void j1939_post( can_t *can )
+{
+
+j1939_t msg;
+
+msg.pri = ( can->id >> 26UL ) & 0x07;
+
+# 436
+msg.src = can->id & 0xFF;
+can->id >>= 8;
+
+
+if( ( ( can->id >> 8 ) & 0xFF ) < 240 )
+{
+
+
+msg.dst = can->id & 0xFF;
+msg.pgn = can->id & 0x1ff00;
+}
+else
+{
+
+
+msg.dst = 255;
+msg.pgn = can->id & 0x1ffff;
+}
+
+
+if( ( msg.dst != j1939_sa ) && ( msg.dst != 255 ) )
+return;
+
+# 461
+msg.buf = can->buf;
+msg.buf_len = can->buf_len;
+
+
+j1939_process( &msg );
+}
+
+# 528
+void J1939_CheckRx( void )
+{
+can_t can;
+
+
+while( CAN_Rx( &can ) == 0 )
+{
+if(( can.id & 0x80000000U ) == 0 )
+{
+J1939_AppProcessStd( &can );
+}
+else if( ( can.id & ( 0x002000000 ) ) == 0 )
+{
+
+j1939_post( &can );
+}
+
+}
+}
+
+# 551
+void J1939_Update( void )
+{
+J1939_CheckRx();
+
+# 568
+j1939tp_update();
+
+
+return;
+}

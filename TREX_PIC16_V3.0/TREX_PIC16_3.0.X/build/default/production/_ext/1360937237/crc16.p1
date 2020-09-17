@@ -1,0 +1,367 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;crc16.h: 68: uint16_t CRC16_Update( uint16_t crc, uint8_t data );
+[; ;crc16.h: 75: void CRC16_Initialize( void );
+"36 ../src/crc16.c
+[v __CRCTable `Cui ~T0 @X0 -> 256 `i s ]
+[i __CRCTable
+:U ..
+"37
+-> -> 0 `i `ui
+-> 49345 `ui
+-> 49537 `ui
+-> -> 320 `i `ui
+-> 49921 `ui
+-> -> 960 `i `ui
+-> -> 640 `i `ui
+-> 49729 `ui
+-> 50689 `ui
+-> -> 1728 `i `ui
+-> -> 1920 `i `ui
+-> 51009 `ui
+-> -> 1280 `i `ui
+-> 50625 `ui
+"38
+-> 50305 `ui
+-> -> 1088 `i `ui
+-> 52225 `ui
+-> -> 3264 `i `ui
+-> -> 3456 `i `ui
+-> 52545 `ui
+-> -> 3840 `i `ui
+-> 53185 `ui
+-> 52865 `ui
+-> -> 3648 `i `ui
+-> -> 2560 `i `ui
+-> 51905 `ui
+-> 52097 `ui
+-> -> 2880 `i `ui
+"39
+-> 51457 `ui
+-> -> 2496 `i `ui
+-> -> 2176 `i `ui
+-> 51265 `ui
+-> 55297 `ui
+-> -> 6336 `i `ui
+-> -> 6528 `i `ui
+-> 55617 `ui
+-> -> 6912 `i `ui
+-> 56257 `ui
+-> 55937 `ui
+-> -> 6720 `i `ui
+-> -> 7680 `i `ui
+-> 57025 `ui
+"40
+-> 57217 `ui
+-> -> 8000 `i `ui
+-> 56577 `ui
+-> -> 7616 `i `ui
+-> -> 7296 `i `ui
+-> 56385 `ui
+-> -> 5120 `i `ui
+-> 54465 `ui
+-> 54657 `ui
+-> -> 5440 `i `ui
+-> 55041 `ui
+-> -> 6080 `i `ui
+-> -> 5760 `i `ui
+-> 54849 `ui
+"41
+-> 53761 `ui
+-> -> 4800 `i `ui
+-> -> 4992 `i `ui
+-> 54081 `ui
+-> -> 4352 `i `ui
+-> 53697 `ui
+-> 53377 `ui
+-> -> 4160 `i `ui
+-> 61441 `ui
+-> -> 12480 `i `ui
+-> -> 12672 `i `ui
+-> 61761 `ui
+-> -> 13056 `i `ui
+-> 62401 `ui
+"42
+-> 62081 `ui
+-> -> 12864 `i `ui
+-> -> 13824 `i `ui
+-> 63169 `ui
+-> 63361 `ui
+-> -> 14144 `i `ui
+-> 62721 `ui
+-> -> 13760 `i `ui
+-> -> 13440 `i `ui
+-> 62529 `ui
+-> -> 15360 `i `ui
+-> 64705 `ui
+-> 64897 `ui
+-> -> 15680 `i `ui
+"43
+-> 65281 `ui
+-> -> 16320 `i `ui
+-> -> 16000 `i `ui
+-> 65089 `ui
+-> 64001 `ui
+-> -> 15040 `i `ui
+-> -> 15232 `i `ui
+-> 64321 `ui
+-> -> 14592 `i `ui
+-> 63937 `ui
+-> 63617 `ui
+-> -> 14400 `i `ui
+-> -> 10240 `i `ui
+-> 59585 `ui
+"44
+-> 59777 `ui
+-> -> 10560 `i `ui
+-> 60161 `ui
+-> -> 11200 `i `ui
+-> -> 10880 `i `ui
+-> 59969 `ui
+-> 60929 `ui
+-> -> 11968 `i `ui
+-> -> 12160 `i `ui
+-> 61249 `ui
+-> -> 11520 `i `ui
+-> 60865 `ui
+-> 60545 `ui
+-> -> 11328 `i `ui
+"45
+-> 58369 `ui
+-> -> 9408 `i `ui
+-> -> 9600 `i `ui
+-> 58689 `ui
+-> -> 9984 `i `ui
+-> 59329 `ui
+-> 59009 `ui
+-> -> 9792 `i `ui
+-> -> 8704 `i `ui
+-> 58049 `ui
+-> 58241 `ui
+-> -> 9024 `i `ui
+-> 57601 `ui
+-> -> 8640 `i `ui
+"46
+-> -> 8320 `i `ui
+-> 57409 `ui
+-> 40961 `ui
+-> -> 24768 `i `ui
+-> -> 24960 `i `ui
+-> 41281 `ui
+-> -> 25344 `i `ui
+-> 41921 `ui
+-> 41601 `ui
+-> -> 25152 `i `ui
+-> -> 26112 `i `ui
+-> 42689 `ui
+-> 42881 `ui
+-> -> 26432 `i `ui
+"47
+-> 42241 `ui
+-> -> 26048 `i `ui
+-> -> 25728 `i `ui
+-> 42049 `ui
+-> -> 27648 `i `ui
+-> 44225 `ui
+-> 44417 `ui
+-> -> 27968 `i `ui
+-> 44801 `ui
+-> -> 28608 `i `ui
+-> -> 28288 `i `ui
+-> 44609 `ui
+-> 43521 `ui
+-> -> 27328 `i `ui
+"48
+-> -> 27520 `i `ui
+-> 43841 `ui
+-> -> 26880 `i `ui
+-> 43457 `ui
+-> 43137 `ui
+-> -> 26688 `i `ui
+-> -> 30720 `i `ui
+-> 47297 `ui
+-> 47489 `ui
+-> -> 31040 `i `ui
+-> 47873 `ui
+-> -> 31680 `i `ui
+-> -> 31360 `i `ui
+-> 47681 `ui
+"49
+-> 48641 `ui
+-> -> 32448 `i `ui
+-> -> 32640 `i `ui
+-> 48961 `ui
+-> -> 32000 `i `ui
+-> 48577 `ui
+-> 48257 `ui
+-> -> 31808 `i `ui
+-> 46081 `ui
+-> -> 29888 `i `ui
+-> -> 30080 `i `ui
+-> 46401 `ui
+-> -> 30464 `i `ui
+-> 47041 `ui
+"50
+-> 46721 `ui
+-> -> 30272 `i `ui
+-> -> 29184 `i `ui
+-> 45761 `ui
+-> 45953 `ui
+-> -> 29504 `i `ui
+-> 45313 `ui
+-> -> 29120 `i `ui
+-> -> 28800 `i `ui
+-> 45121 `ui
+-> -> 20480 `i `ui
+-> 37057 `ui
+-> 37249 `ui
+-> -> 20800 `i `ui
+"51
+-> 37633 `ui
+-> -> 21440 `i `ui
+-> -> 21120 `i `ui
+-> 37441 `ui
+-> 38401 `ui
+-> -> 22208 `i `ui
+-> -> 22400 `i `ui
+-> 38721 `ui
+-> -> 21760 `i `ui
+-> 38337 `ui
+-> 38017 `ui
+-> -> 21568 `i `ui
+-> 39937 `ui
+-> -> 23744 `i `ui
+"52
+-> -> 23936 `i `ui
+-> 40257 `ui
+-> -> 24320 `i `ui
+-> 40897 `ui
+-> 40577 `ui
+-> -> 24128 `i `ui
+-> -> 23040 `i `ui
+-> 39617 `ui
+-> 39809 `ui
+-> -> 23360 `i `ui
+-> 39169 `ui
+-> -> 22976 `i `ui
+-> -> 22656 `i `ui
+-> 38977 `ui
+"53
+-> 34817 `ui
+-> -> 18624 `i `ui
+-> -> 18816 `i `ui
+-> 35137 `ui
+-> -> 19200 `i `ui
+-> 35777 `ui
+-> 35457 `ui
+-> -> 19008 `i `ui
+-> -> 19968 `i `ui
+-> 36545 `ui
+-> 36737 `ui
+-> -> 20288 `i `ui
+-> 36097 `ui
+-> -> 19904 `i `ui
+"54
+-> -> 19584 `i `ui
+-> 35905 `ui
+-> -> 17408 `i `ui
+-> 33985 `ui
+-> 34177 `ui
+-> -> 17728 `i `ui
+-> 34561 `ui
+-> -> 18368 `i `ui
+-> -> 18048 `i `ui
+-> 34369 `ui
+-> 33281 `ui
+-> -> 17088 `i `ui
+-> -> 17280 `i `ui
+-> 33601 `ui
+"55
+-> -> 16640 `i `ui
+-> 33217 `ui
+-> 32897 `ui
+"57
+-> -> 16448 `i `ui
+..
+]
+[; ;crc16.c: 36: static const uint16_t _CRCTable[ 256 ] = {
+[; ;crc16.c: 37: 0x0000, 0xC0C1, 0xC181, 0x0140, 0xC301, 0x03C0, 0x0280, 0xC241, 0xC601, 0x06C0, 0x0780, 0xC741, 0x0500, 0xC5C1,
+[; ;crc16.c: 38: 0xC481, 0x0440, 0xCC01, 0x0CC0, 0x0D80, 0xCD41, 0x0F00, 0xCFC1, 0xCE81, 0x0E40, 0x0A00, 0xCAC1, 0xCB81, 0x0B40,
+[; ;crc16.c: 39: 0xC901, 0x09C0, 0x0880, 0xC841, 0xD801, 0x18C0, 0x1980, 0xD941, 0x1B00, 0xDBC1, 0xDA81, 0x1A40, 0x1E00, 0xDEC1,
+[; ;crc16.c: 40: 0xDF81, 0x1F40, 0xDD01, 0x1DC0, 0x1C80, 0xDC41, 0x1400, 0xD4C1, 0xD581, 0x1540, 0xD701, 0x17C0, 0x1680, 0xD641,
+[; ;crc16.c: 41: 0xD201, 0x12C0, 0x1380, 0xD341, 0x1100, 0xD1C1, 0xD081, 0x1040, 0xF001, 0x30C0, 0x3180, 0xF141, 0x3300, 0xF3C1,
+[; ;crc16.c: 42: 0xF281, 0x3240, 0x3600, 0xF6C1, 0xF781, 0x3740, 0xF501, 0x35C0, 0x3480, 0xF441, 0x3C00, 0xFCC1, 0xFD81, 0x3D40,
+[; ;crc16.c: 43: 0xFF01, 0x3FC0, 0x3E80, 0xFE41, 0xFA01, 0x3AC0, 0x3B80, 0xFB41, 0x3900, 0xF9C1, 0xF881, 0x3840, 0x2800, 0xE8C1,
+[; ;crc16.c: 44: 0xE981, 0x2940, 0xEB01, 0x2BC0, 0x2A80, 0xEA41, 0xEE01, 0x2EC0, 0x2F80, 0xEF41, 0x2D00, 0xEDC1, 0xEC81, 0x2C40,
+[; ;crc16.c: 45: 0xE401, 0x24C0, 0x2580, 0xE541, 0x2700, 0xE7C1, 0xE681, 0x2640, 0x2200, 0xE2C1, 0xE381, 0x2340, 0xE101, 0x21C0,
+[; ;crc16.c: 46: 0x2080, 0xE041, 0xA001, 0x60C0, 0x6180, 0xA141, 0x6300, 0xA3C1, 0xA281, 0x6240, 0x6600, 0xA6C1, 0xA781, 0x6740,
+[; ;crc16.c: 47: 0xA501, 0x65C0, 0x6480, 0xA441, 0x6C00, 0xACC1, 0xAD81, 0x6D40, 0xAF01, 0x6FC0, 0x6E80, 0xAE41, 0xAA01, 0x6AC0,
+[; ;crc16.c: 48: 0x6B80, 0xAB41, 0x6900, 0xA9C1, 0xA881, 0x6840, 0x7800, 0xB8C1, 0xB981, 0x7940, 0xBB01, 0x7BC0, 0x7A80, 0xBA41,
+[; ;crc16.c: 49: 0xBE01, 0x7EC0, 0x7F80, 0xBF41, 0x7D00, 0xBDC1, 0xBC81, 0x7C40, 0xB401, 0x74C0, 0x7580, 0xB541, 0x7700, 0xB7C1,
+[; ;crc16.c: 50: 0xB681, 0x7640, 0x7200, 0xB2C1, 0xB381, 0x7340, 0xB101, 0x71C0, 0x7080, 0xB041, 0x5000, 0x90C1, 0x9181, 0x5140,
+[; ;crc16.c: 51: 0x9301, 0x53C0, 0x5280, 0x9241, 0x9601, 0x56C0, 0x5780, 0x9741, 0x5500, 0x95C1, 0x9481, 0x5440, 0x9C01, 0x5CC0,
+[; ;crc16.c: 52: 0x5D80, 0x9D41, 0x5F00, 0x9FC1, 0x9E81, 0x5E40, 0x5A00, 0x9AC1, 0x9B81, 0x5B40, 0x9901, 0x59C0, 0x5880, 0x9841,
+[; ;crc16.c: 53: 0x8801, 0x48C0, 0x4980, 0x8941, 0x4B00, 0x8BC1, 0x8A81, 0x4A40, 0x4E00, 0x8EC1, 0x8F81, 0x4F40, 0x8D01, 0x4DC0,
+[; ;crc16.c: 54: 0x4C80, 0x8C41, 0x4400, 0x84C1, 0x8581, 0x4540, 0x8701, 0x47C0, 0x4680, 0x8641, 0x8201, 0x42C0, 0x4380, 0x8341,
+[; ;crc16.c: 55: 0x4100, 0x81C1, 0x8081, 0x4040
+[; ;crc16.c: 57: };
+"75
+[v _CRC16_Update `(ui ~T0 @X0 1 ef2`ui`uc ]
+"76
+{
+[; ;crc16.c: 75: uint16_t CRC16_Update( uint16_t crc, uint8_t data )
+[; ;crc16.c: 76: {
+[e :U _CRC16_Update ]
+"75
+[v _crc `ui ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+"76
+[f ]
+[; ;crc16.c: 77: return ( crc >> 8 ) ^ _CRCTable[ ( crc ^ (uint16_t)data ) & 0x00FF ];
+"77
+[e ) ^ >> _crc -> 8 `i *U + &U __CRCTable * -> & ^ _crc -> _data `ui -> -> 255 `i `ui `ux -> -> # *U &U __CRCTable `ui `ux ]
+[e $UE 1  ]
+[; ;crc16.c: 78: }
+"78
+[e :UE 1 ]
+}
+"85
+[v _CRC16_Initialize `(v ~T0 @X0 1 ef ]
+"86
+{
+[; ;crc16.c: 85: void CRC16_Initialize( void )
+[; ;crc16.c: 86: {
+[e :U _CRC16_Initialize ]
+[f ]
+[; ;crc16.c: 113: }
+"113
+[e :UE 2 ]
+}

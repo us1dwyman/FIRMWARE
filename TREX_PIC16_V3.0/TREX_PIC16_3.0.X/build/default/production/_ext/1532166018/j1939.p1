@@ -1,0 +1,505 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"15 ../src/j1939/j1939tp.h
+[v _j1939tp_init `(v ~T0 @X0 0 ef ]
+"26 ../src/j1939/j1939.h
+[s S2 `ul 1 `*uc 1 `ui 1 `uc 1 `uc 1 `uc 1 ]
+[n S2 . pgn buf buf_len dst src pri ]
+"78
+[v _J1939_AppProcess `(v ~T0 @X0 0 ef1`*S2 ]
+"19 ../src/j1939/j1939tp.h
+[v _j1939tp_post_cm `(v ~T0 @X0 0 ef1`*S2 ]
+"21
+[v _j1939tp_post_dt `(v ~T0 @X0 0 ef1`*S2 ]
+"93 ../src\can.h
+[s S1 `ul 1 `uc 1 `uc 1 `uc -> 8 `i ]
+[n S1 . id pad1 buf_len buf ]
+"204
+[v _CAN_Tx `(uc ~T0 @X0 0 ef1`*S1 ]
+"17 ../src/j1939/j1939tp.h
+[v _j1939tp_tx `(uc ~T0 @X0 0 ef2`*S2`*uc ]
+"85 ../src/j1939/j1939.h
+[v _J1939_AppProcessStd `(v ~T0 @X0 0 ef1`*S1 ]
+"185 ../src\can.h
+[v _CAN_Rx `(uc ~T0 @X0 0 ef1`*S1 ]
+"23 ../src/j1939/j1939tp.h
+[v _j1939tp_update `(v ~T0 @X0 0 ef ]
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;src\can.h: 51: typedef uint32_t canid_t;
+[; ;src\can.h: 92: typedef struct
+[; ;src\can.h: 93: {
+[; ;src\can.h: 95: canid_t id;
+[; ;src\can.h: 99: uint8_t pad1;
+[; ;src\can.h: 102: uint8_t buf_len;
+[; ;src\can.h: 104: uint8_t buf[ 8 ];
+[; ;src\can.h: 105: } can_t;
+[; ;src\can.h: 129: bool CAN_Initialize( const void *pConfig );
+[; ;src\can.h: 140: uint8_t CAN_SetRxMask( int m, canid_t id, unsigned int mide );
+[; ;src\can.h: 155: uint8_t CAN_SetRxFilter( int n, canid_t id, unsigned int bufPnt, unsigned int maskSel );
+[; ;src\can.h: 162: void CAN_Tasks( void );
+[; ;src\can.h: 167: void CAN_Sleep( void );
+[; ;src\can.h: 172: void CAN_Wakeup( void );
+[; ;src\can.h: 185: uint8_t CAN_Rx( can_t *pFrame );
+[; ;src\can.h: 189: bool Receive_CAN_Message(void);
+[; ;src\can.h: 190: uint8_t CAN_RxMailbox( can_t *pFrame, unsigned which );
+[; ;src\can.h: 204: uint8_t CAN_Tx( can_t *pFrame );
+[; ;src\can.h: 205: uint8_t CAN_TxMailbox( can_t *pFrame, unsigned which );
+[; ;j1939.h: 25: typedef struct
+[; ;j1939.h: 26: {
+[; ;j1939.h: 28: uint32_t pgn;
+[; ;j1939.h: 29: uint8_t *buf;
+[; ;j1939.h: 30: uint16_t buf_len;
+[; ;j1939.h: 31: uint8_t dst;
+[; ;j1939.h: 32: uint8_t src;
+[; ;j1939.h: 33: uint8_t pri;
+[; ;j1939.h: 35: } j1939_t;
+[; ;j1939.h: 37: extern uint8_t j1939_sa;
+[; ;j1939.h: 39: extern uint8_t j1939_name[];
+[; ;j1939.h: 41: extern void J1939_Initialize( void );
+[; ;j1939.h: 43: extern uint8_t J1939_bip_tx_rate_max_get( void );
+[; ;j1939.h: 45: extern void J1939_bip_tx_rate_allowed_set( uint8_t rate );
+[; ;j1939.h: 57: uint8_t J1939_Tx( j1939_t *msg );
+[; ;j1939.h: 59: uint8_t J1939_AppTx( j1939_t *msg, uint8_t *status );
+[; ;j1939.h: 61: extern void J1939_Update( void );
+[; ;j1939.h: 66: extern void J1939_CheckRx( void );
+[; ;j1939.h: 78: void J1939_AppProcess( j1939_t *pMsg );
+[; ;j1939.h: 85: void J1939_AppProcessStd( can_t *pMsg );
+[; ;j1939.h: 99: uint8_t J1939_AppSaGet( void );
+[; ;j1939.h: 105: void J1939_App_Delay( void );
+[; ;j1939.h: 111: void J1939_App_Address_Claimed( uint8_t address );
+[; ;j1939tp.h: 15: extern void j1939tp_init( void );
+[; ;j1939tp.h: 17: extern uint8_t j1939tp_tx( j1939_t *msg, uint8_t *status );
+[; ;j1939tp.h: 19: extern void j1939tp_post_cm( j1939_t *msg );
+[; ;j1939tp.h: 21: extern void j1939tp_post_dt( j1939_t *msg );
+[; ;j1939tp.h: 23: extern void j1939tp_update( void );
+[; ;__size_t.h: 4: typedef unsigned size_t;
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 43: struct __prbuf
+[; ;stdio.h: 44: {
+[; ;stdio.h: 45: char * ptr;
+[; ;stdio.h: 46: void (* func)(char);
+[; ;stdio.h: 47: };
+[; ;errno.h: 29: extern int errno;
+[; ;conio.h: 12: extern void init_uart(void);
+[; ;conio.h: 14: extern char getch(void);
+[; ;conio.h: 15: extern char getche(void);
+[; ;conio.h: 16: extern void putch(char);
+[; ;conio.h: 17: extern void ungetch(char);
+[; ;conio.h: 19: extern __bit kbhit(void);
+[; ;conio.h: 23: extern char * cgets(char *);
+[; ;conio.h: 24: extern void cputs(const char *);
+[; ;stdio.h: 88: extern int cprintf(char *, ...);
+[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 183: extern char * gets(char *);
+[; ;stdio.h: 184: extern int puts(const char *);
+[; ;stdio.h: 185: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+[; ;stdio.h: 187: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 195: extern int printf(const char *, ...);
+"96 ../src/j1939/j1939.c
+[v _j1939_address_claim_was_successful `uc ~T0 @X0 1 e ]
+[i _j1939_address_claim_was_successful
+-> -> 1 `i `uc
+]
+[; ;j1939.c: 96: uint8_t j1939_address_claim_was_successful = 1;
+"104
+[v _j1939_sa `uc ~T0 @X0 1 e ]
+[; ;j1939.c: 104: uint8_t j1939_sa;
+"160
+[v _J1939_Initialize `(v ~T0 @X0 1 ef ]
+"161
+{
+[; ;j1939.c: 160: void J1939_Initialize( void )
+[; ;j1939.c: 161: {
+[e :U _J1939_Initialize ]
+[f ]
+[; ;j1939.c: 163: j1939tp_init();
+"163
+[e ( _j1939tp_init ..  ]
+[; ;j1939.c: 165: }
+"165
+[e :UE 4 ]
+}
+"172
+[v _j1939_process `(v ~T0 @X0 1 ef1`*S2 ]
+"173
+{
+[; ;j1939.c: 172: void j1939_process( j1939_t *msg )
+[; ;j1939.c: 173: {
+[e :U _j1939_process ]
+"172
+[v _msg `*S2 ~T0 @X0 1 r1 ]
+"173
+[f ]
+[; ;j1939.c: 175: switch( msg->pgn )
+"175
+[e $U 7  ]
+[; ;j1939.c: 176: {
+"176
+{
+[; ;j1939.c: 241: case 59904:
+"241
+[e :U 8 ]
+[; ;j1939.c: 242: {
+"242
+{
+[; ;j1939.c: 256: {
+"256
+{
+[; ;j1939.c: 258: J1939_AppProcess( msg );
+"258
+[e ( _J1939_AppProcess (1 _msg ]
+"259
+}
+[; ;j1939.c: 259: }
+[; ;j1939.c: 261: break;
+"261
+[e $U 6  ]
+"262
+}
+[; ;j1939.c: 262: }
+[; ;j1939.c: 265: case 60416:
+"265
+[e :U 9 ]
+[; ;j1939.c: 267: j1939tp_post_cm( msg );
+"267
+[e ( _j1939tp_post_cm (1 _msg ]
+[; ;j1939.c: 269: break;
+"269
+[e $U 6  ]
+[; ;j1939.c: 272: case 60160:
+"272
+[e :U 10 ]
+[; ;j1939.c: 274: j1939tp_post_dt( msg );
+"274
+[e ( _j1939tp_post_dt (1 _msg ]
+[; ;j1939.c: 276: break;
+"276
+[e $U 6  ]
+[; ;j1939.c: 279: default:
+"279
+[e :U 11 ]
+[; ;j1939.c: 280: J1939_AppProcess( msg );
+"280
+[e ( _J1939_AppProcess (1 _msg ]
+[; ;j1939.c: 281: break;
+"281
+[e $U 6  ]
+"282
+}
+[; ;j1939.c: 282: }
+[e $U 6  ]
+"175
+[e :U 7 ]
+[e [\ . *U _msg 0 , $ -> -> 59904 `l `ul 8
+ , $ -> -> 60416 `l `ul 9
+ , $ -> -> 60160 `l `ul 10
+ 11 ]
+"282
+[e :U 6 ]
+[; ;j1939.c: 284: return;
+"284
+[e $UE 5  ]
+[; ;j1939.c: 285: }
+"285
+[e :UE 5 ]
+}
+"294
+[v _J1939_Tx `(uc ~T0 @X0 1 ef1`*S2 ]
+"295
+{
+[; ;j1939.c: 294: uint8_t J1939_Tx( j1939_t *msg )
+[; ;j1939.c: 295: {
+[e :U _J1939_Tx ]
+"294
+[v _msg `*S2 ~T0 @X0 1 r1 ]
+"295
+[f ]
+"297
+[v _cnt `uc ~T0 @X0 1 a ]
+[v _ret `uc ~T0 @X0 1 a ]
+"298
+[v _can `S1 ~T0 @X0 1 a ]
+[; ;j1939.c: 297: uint8_t cnt, ret;
+[; ;j1939.c: 298: can_t can;
+[; ;j1939.c: 306: for( cnt = 0; cnt < msg->buf_len; cnt++ )
+"306
+{
+[e = _cnt -> -> 0 `i `uc ]
+[e $U 16  ]
+"307
+[e :U 13 ]
+[; ;j1939.c: 307: can.buf[ cnt ] = msg->buf[ cnt ];
+[e = *U + &U . _can 3 * -> _cnt `ux -> -> # *U &U . _can 3 `ui `ux *U + . *U _msg 1 * -> _cnt `ux -> -> # *U . *U _msg 1 `ui `ux ]
+"306
+[e ++ _cnt -> -> 1 `i `uc ]
+[e :U 16 ]
+[e $ < -> _cnt `ui . *U _msg 2 13  ]
+[e :U 14 ]
+"307
+}
+[; ;j1939.c: 310: can.buf_len = (uint8_t)msg->buf_len;
+"310
+[e = . _can 2 -> . *U _msg 2 `uc ]
+[; ;j1939.c: 313: can.id = msg->pgn;
+"313
+[e = . _can 0 . *U _msg 0 ]
+[; ;j1939.c: 316: if( ( (uint16_t)msg->pgn ) < ( (uint16_t)0xf000 ) )
+"316
+[e $ ! < -> . *U _msg 0 `ui -> 61440 `ui 17  ]
+[; ;j1939.c: 317: can.id |= msg->dst;
+"317
+[e =| . _can 0 -> . *U _msg 3 `ul ]
+[e :U 17 ]
+[; ;j1939.c: 320: can.id |= ( ( ( uint32_t )( msg->pri & 0x7 ) ) << 18UL );
+"320
+[e =| . _can 0 << -> & -> . *U _msg 5 `i -> 7 `i `ul -> 18 `ul ]
+[; ;j1939.c: 323: can.id <<= 8;
+"323
+[e =<< . _can 0 -> 8 `i ]
+[; ;j1939.c: 324: can.id |= msg->src;
+"324
+[e =| . _can 0 -> . *U _msg 4 `ul ]
+[; ;j1939.c: 327: can.id |= ( ( 0x080000000 ) );
+"327
+[e =| . _can 0 -> -2147483648 `ul ]
+[; ;j1939.c: 330: ret = CAN_Tx( &can );
+"330
+[e = _ret ( _CAN_Tx (1 &U _can ]
+[; ;j1939.c: 338: return ret;
+"338
+[e ) _ret ]
+[e $UE 12  ]
+[; ;j1939.c: 339: }
+"339
+[e :UE 12 ]
+}
+"350
+[v _J1939_AppTx `(uc ~T0 @X0 1 ef2`*S2`*uc ]
+"351
+{
+[; ;j1939.c: 350: uint8_t J1939_AppTx( j1939_t *msg, uint8_t *status )
+[; ;j1939.c: 351: {
+[e :U _J1939_AppTx ]
+"350
+[v _msg `*S2 ~T0 @X0 1 r1 ]
+[v _status `*uc ~T0 @X0 1 r2 ]
+"351
+[f ]
+[; ;j1939.c: 354: if( j1939_address_claim_was_successful == 0 )
+"354
+[e $ ! == -> _j1939_address_claim_was_successful `i -> 0 `i 19  ]
+[; ;j1939.c: 355: return 1;
+"355
+[e ) -> -> 1 `i `uc ]
+[e $UE 18  ]
+[e :U 19 ]
+[; ;j1939.c: 358: msg->src = j1939_sa;
+"358
+[e = . *U _msg 4 _j1939_sa ]
+[; ;j1939.c: 385: if( msg->buf_len <= 8 )
+"385
+[e $ ! <= . *U _msg 2 -> -> 8 `i `ui 20  ]
+[; ;j1939.c: 386: return J1939_Tx( msg );
+"386
+[e ) ( _J1939_Tx (1 _msg ]
+[e $UE 18  ]
+[e $U 21  ]
+"388
+[e :U 20 ]
+[; ;j1939.c: 388: else
+[; ;j1939.c: 389: return j1939tp_tx( msg, status );
+"389
+[e ) ( _j1939tp_tx (2 , _msg _status ]
+[e $UE 18  ]
+[e :U 21 ]
+[; ;j1939.c: 394: }
+"394
+[e :UE 18 ]
+}
+"427
+[v _j1939_post `(v ~T0 @X0 1 ef1`*S1 ]
+"428
+{
+[; ;j1939.c: 427: void j1939_post( can_t *can )
+[; ;j1939.c: 428: {
+[e :U _j1939_post ]
+"427
+[v _can `*S1 ~T0 @X0 1 r1 ]
+"428
+[f ]
+"430
+[v _msg `S2 ~T0 @X0 1 a ]
+[; ;j1939.c: 430: j1939_t msg;
+[; ;j1939.c: 432: msg.pri = ( can->id >> 26UL ) & 0x07;
+"432
+[e = . _msg 5 -> & >> . *U _can 0 -> 26 `ul -> -> -> 7 `i `l `ul `uc ]
+[; ;j1939.c: 436: msg.src = can->id & 0xFF;
+"436
+[e = . _msg 4 -> & . *U _can 0 -> -> -> 255 `i `l `ul `uc ]
+[; ;j1939.c: 437: can->id >>= 8;
+"437
+[e =>> . *U _can 0 -> 8 `i ]
+[; ;j1939.c: 440: if( ( ( can->id >> 8 ) & 0xFF ) < 240 )
+"440
+[e $ ! < & >> . *U _can 0 -> 8 `i -> -> -> 255 `i `l `ul -> -> -> 240 `i `l `ul 23  ]
+[; ;j1939.c: 441: {
+"441
+{
+[; ;j1939.c: 444: msg.dst = can->id & 0xFF;
+"444
+[e = . _msg 3 -> & . *U _can 0 -> -> -> 255 `i `l `ul `uc ]
+[; ;j1939.c: 445: msg.pgn = can->id & 0x1ff00;
+"445
+[e = . _msg 0 & . *U _can 0 -> -> 130816 `l `ul ]
+"446
+}
+[; ;j1939.c: 446: }
+[e $U 24  ]
+"447
+[e :U 23 ]
+[; ;j1939.c: 447: else
+[; ;j1939.c: 448: {
+"448
+{
+[; ;j1939.c: 451: msg.dst = 255;
+"451
+[e = . _msg 3 -> -> 255 `i `uc ]
+[; ;j1939.c: 452: msg.pgn = can->id & 0x1ffff;
+"452
+[e = . _msg 0 & . *U _can 0 -> -> 131071 `l `ul ]
+"453
+}
+[e :U 24 ]
+[; ;j1939.c: 453: }
+[; ;j1939.c: 456: if( ( msg.dst != j1939_sa ) && ( msg.dst != 255 ) )
+"456
+[e $ ! && != -> . _msg 3 `i -> _j1939_sa `i != -> . _msg 3 `i -> 255 `i 25  ]
+[; ;j1939.c: 457: return;
+"457
+[e $UE 22  ]
+[e :U 25 ]
+[; ;j1939.c: 461: msg.buf = can->buf;
+"461
+[e = . _msg 1 &U . *U _can 3 ]
+[; ;j1939.c: 462: msg.buf_len = can->buf_len;
+"462
+[e = . _msg 2 -> . *U _can 2 `ui ]
+[; ;j1939.c: 465: j1939_process( &msg );
+"465
+[e ( _j1939_process (1 &U _msg ]
+[; ;j1939.c: 466: }
+"466
+[e :UE 22 ]
+}
+"528
+[v _J1939_CheckRx `(v ~T0 @X0 1 ef ]
+"529
+{
+[; ;j1939.c: 528: void J1939_CheckRx( void )
+[; ;j1939.c: 529: {
+[e :U _J1939_CheckRx ]
+[f ]
+"530
+[v _can `S1 ~T0 @X0 1 a ]
+[; ;j1939.c: 530: can_t can;
+[; ;j1939.c: 533: while( CAN_Rx( &can ) == 0 )
+"533
+[e $U 27  ]
+[e :U 28 ]
+[; ;j1939.c: 534: {
+"534
+{
+[; ;j1939.c: 535: if(( can.id & 0x80000000U ) == 0 )
+"535
+[e $ ! == & . _can 0 -> -2147483648 `ul -> -> -> 0 `i `l `ul 30  ]
+[; ;j1939.c: 536: {
+"536
+{
+[; ;j1939.c: 537: J1939_AppProcessStd( &can );
+"537
+[e ( _J1939_AppProcessStd (1 &U _can ]
+"538
+}
+[; ;j1939.c: 538: }
+[e $U 31  ]
+"539
+[e :U 30 ]
+[; ;j1939.c: 539: else if( ( can.id & ( 0x002000000 ) ) == 0 )
+[e $ ! == & . _can 0 -> -> 33554432 `l `ul -> -> -> 0 `i `l `ul 32  ]
+[; ;j1939.c: 540: {
+"540
+{
+[; ;j1939.c: 542: j1939_post( &can );
+"542
+[e ( _j1939_post (1 &U _can ]
+"543
+}
+[e :U 32 ]
+"545
+[e :U 31 ]
+}
+[e :U 27 ]
+"533
+[e $ == -> ( _CAN_Rx (1 &U _can `i -> 0 `i 28  ]
+[e :U 29 ]
+[; ;j1939.c: 543: }
+[; ;j1939.c: 545: }
+[; ;j1939.c: 546: }
+"546
+[e :UE 26 ]
+}
+"551
+[v _J1939_Update `(v ~T0 @X0 1 ef ]
+"552
+{
+[; ;j1939.c: 551: void J1939_Update( void )
+[; ;j1939.c: 552: {
+[e :U _J1939_Update ]
+[f ]
+[; ;j1939.c: 553: J1939_CheckRx();
+"553
+[e ( _J1939_CheckRx ..  ]
+[; ;j1939.c: 568: j1939tp_update();
+"568
+[e ( _j1939tp_update ..  ]
+[; ;j1939.c: 571: return;
+"571
+[e $UE 33  ]
+[; ;j1939.c: 572: }
+"572
+[e :UE 33 ]
+}

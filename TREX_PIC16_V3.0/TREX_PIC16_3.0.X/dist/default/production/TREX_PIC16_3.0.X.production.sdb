@@ -1,0 +1,1312 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15386 ]
+[d frameptr 6 ]
+"69 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/j1939/j1939tp_rx2.c
+[e E150 . `uc
+TP_INIT 0
+TP_WAIT_RTS 1
+TP_DATA_COLLECT_START 2
+TP_DATA_COLLECT 3
+TP_ABORT 4
+TP_SEND_ABORT 5
+TP_SEND_COMPLETE 6
+]
+"140 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[e E66 . `uc
+CANCTRL_REQOP_NORMAL 0
+CANCTRL_REQOP_SLEEP 32
+CANCTRL_REQOP_LOOPBACK 64
+CANCTRL_REQOP_LISTENONLY 96
+CANCTRL_REQOP_CONFIG 128
+CANCTRL_REQOP_POWERUP 224
+]
+"272 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[e E10165 . `uc
+NO_DIRECTION 0
+DIRECTION 1
+]
+"81 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+[e E9889 . `uc
+EUSART_ADDRESS_BYTE 0
+EUSART_ERROR_BYTE_1 1
+EUSART_ERROR_BYTE_2 2
+EUSART_ERROR_BYTE_3 3
+EUSART_MACHINE_STATUS_BYTE 4
+EUSART_WARNING_BYTE 5
+EUSART_BATTERY_BYTE_1 6
+EUSART_BATTERY_BYTE_2 7
+EUSART_HOUR_METER_BYTE_1 8
+EUSART_HOUR_METER_BYTE_2 9
+EUSART_HOUR_METER_BYTE_3 10
+EUSART_SETTINGS_CONTROL_BYTE 11
+EUSART_BRUSH_CURRENT_BYTE_1 12
+EUSART_BRUSH_CURRENT_BYTE_2 13
+EUSART_SIDE_BROOM_CURRENT_BYTE_1 14
+EUSART_SIDE_BROOM_CURRENT_BYTE_2 15
+EUSART_DRIVE_CURRENT_BYTE_1 16
+EUSART_DRIVE_CURRENT_BYTE_2 17
+EUSART_VACUUM_CURRENT_BYTE_1 18
+EUSART_VACUUM_CURRENT_BYTE_2 19
+EUSART_BRUSH_TEMPERATURE_BYTE_1 20
+EUSART_BRUSH_TEMPERATURE_BYTE_2 21
+EUSART_SIDE_BROOM_TEMPERATURE_BYTE_1 22
+EUSART_SIDE_BROOM_TEMPERATURE_BYTE_2 23
+EUSART_DRIVE_TEMPERATURE_BYTE_1 24
+EUSART_DRIVE_TEMPERATURE_BYTE_2 25
+]
+"106
+[e E9917 . `uc
+EUSART_mode_status_off 0
+EUSART_mode_status_on 1
+EUSART_mode_status_settings 2
+EUSART_mode_status_transport 3
+EUSART_mode_status_deep 4
+EUSART_mode_status_eco 5
+EUSART_mode_status_accessory 6
+]
+"74 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[e E9874 . `uc
+EUSART_ADDRESS_BYTE 0
+EUSART_ERROR_BYTE_1 1
+EUSART_ERROR_BYTE_2 2
+EUSART_ERROR_BYTE_3 3
+EUSART_MACHINE_STATUS_BYTE 4
+EUSART_WARNING_BYTE 5
+EUSART_BATTERY_BYTE_1 6
+EUSART_BATTERY_BYTE_2 7
+EUSART_HOUR_METER_BYTE_1 8
+EUSART_HOUR_METER_BYTE_2 9
+EUSART_HOUR_METER_BYTE_3 10
+EUSART_SETTINGS_CONTROL_BYTE 11
+EUSART_BRUSH_CURRENT_BYTE_1 12
+EUSART_BRUSH_CURRENT_BYTE_2 13
+EUSART_SIDE_BROOM_CURRENT_BYTE_1 14
+EUSART_SIDE_BROOM_CURRENT_BYTE_2 15
+EUSART_DRIVE_CURRENT_BYTE_1 16
+EUSART_DRIVE_CURRENT_BYTE_2 17
+EUSART_VACUUM_CURRENT_BYTE_1 18
+EUSART_VACUUM_CURRENT_BYTE_2 19
+EUSART_BRUSH_TEMPERATURE_BYTE_1 20
+EUSART_BRUSH_TEMPERATURE_BYTE_2 21
+EUSART_SIDE_BROOM_TEMPERATURE_BYTE_1 22
+EUSART_SIDE_BROOM_TEMPERATURE_BYTE_2 23
+EUSART_DRIVE_TEMPERATURE_BYTE_1 24
+EUSART_DRIVE_TEMPERATURE_BYTE_2 25
+]
+"223
+[e E9902 . `uc
+EUSART_mode_status_off 0
+EUSART_mode_status_on 1
+EUSART_mode_status_settings 2
+EUSART_mode_status_transport 3
+EUSART_mode_status_deep 4
+EUSART_mode_status_eco 5
+EUSART_mode_status_accessory 6
+]
+"31 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+[v _Buttons_Initialize Buttons_Initialize `(v  1 e 1 0 ]
+"68
+[v _Buttons_Update Buttons_Update `(v  1 e 1 0 ]
+"234
+[v _Button_Debounce Button_Debounce `(v  1 e 1 0 ]
+"157 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v __RxBufferToMessage _RxBufferToMessage `(v  1 s 1 _RxBufferToMessage ]
+"194
+[v __MessageToTxBuffer _MessageToTxBuffer `(v  1 s 1 _MessageToTxBuffer ]
+"232
+[v __Read _Read `(v  1 s 1 _Read ]
+[v i1__Read _Read `(v  1 s 1 i1__Read ]
+"250
+[v __Write _Write `(v  1 s 1 _Write ]
+[v i1__Write _Write `(v  1 s 1 i1__Write ]
+"261
+[v __Modify _Modify `(v  1 s 1 _Modify ]
+[v i1__Modify _Modify `(v  1 s 1 i1__Modify ]
+"273
+[v __TxCommand _TxCommand `(v  1 s 1 _TxCommand ]
+"290
+[v __RxCommand _RxCommand `(v  1 s 1 _RxCommand ]
+"311
+[v __SendBuffer _SendBuffer `(v  1 s 1 _SendBuffer ]
+[v i1__SendBuffer _SendBuffer `(v  1 s 1 i1__SendBuffer ]
+"324
+[v __EnqueueTxMessage _EnqueueTxMessage `(v  1 s 1 _EnqueueTxMessage ]
+"340
+[v __SetMode _SetMode `(uc  1 s 1 _SetMode ]
+"375
+[v _CAN_Initialize CAN_Initialize `(uc  1 e 1 0 ]
+"466
+[v _CAN_Sleep CAN_Sleep `(v  1 e 1 0 ]
+"478
+[v _CAN_Wakeup CAN_Wakeup `(v  1 e 1 0 ]
+"503
+[v _CAN_Tx CAN_Tx `(uc  1 e 1 0 ]
+"539
+[v _CAN_TxMailbox CAN_TxMailbox `(uc  1 e 1 0 ]
+"598
+[v _CAN_Rx CAN_Rx `(uc  1 e 1 0 ]
+"615
+[v _Receive_CAN_Message Receive_CAN_Message `(uc  1 e 1 0 ]
+"635
+[v _MCP2515_ISR MCP2515_ISR `(v  1 e 1 0 ]
+"29 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"85
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"109
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"142
+[v _EUSART_Receive EUSART_Receive `(v  1 e 1 0 ]
+"244
+[v _EUSART_Master_Request EUSART_Master_Request `(v  1 e 1 0 ]
+"275
+[v _EUSART_Parity_Count EUSART_Parity_Count `(uc  1 e 1 0 ]
+"302
+[v _Get_Settings_Lock_Status Get_Settings_Lock_Status `(uc  1 e 1 0 ]
+"312
+[v _CAN_To_EUSART CAN_To_EUSART `(v  1 e 1 0 ]
+"469
+[v _EUSART_TO_CAN EUSART_TO_CAN `(v  1 e 1 0 ]
+"36 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+[v _tc_int tc_int `II(v  1 e 1 0 ]
+"172 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/j1939/j1939.c
+[v _j1939_process j1939_process `(v  1 e 1 0 ]
+"294
+[v _J1939_Tx J1939_Tx `(uc  1 e 1 0 ]
+"350
+[v _J1939_AppTx J1939_AppTx `(uc  1 e 1 0 ]
+"427
+[v _j1939_post j1939_post `(v  1 e 1 0 ]
+"528
+[v _J1939_CheckRx J1939_CheckRx `(v  1 e 1 0 ]
+"110 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/j1939/j1939tp_rx2.c
+[v _j1939tp_init j1939tp_init `(v  1 e 1 0 ]
+"123
+[v _j1939tp_tx j1939tp_tx `(uc  1 e 1 0 ]
+"136
+[v _j1939tp_tx_abort j1939tp_tx_abort `(uc  1 e 1 0 ]
+"164
+[v _j1939tp_tx_cts j1939tp_tx_cts `(uc  1 e 1 0 ]
+"193
+[v _j1939tp_tx_ack j1939tp_tx_ack `(uc  1 e 1 0 ]
+"316
+[v _j1939tp_post_cm j1939tp_post_cm `(v  1 e 1 0 ]
+"382
+[v _j1939tp_post_dt j1939tp_post_dt `(v  1 e 1 0 ]
+"405
+[v _j1939tp_update j1939tp_update `(v  1 e 1 0 ]
+"29 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+[v _LED_Initialize LED_Initialize `(v  1 e 1 0 ]
+"75
+[v _Update_LEDs Update_LEDs `(v  1 e 1 0 ]
+"127 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v __Wakeup _Wakeup `(v  1 s 1 _Wakeup ]
+"181
+[v _main main `(v  1 e 1 0 ]
+"222
+[v _button_task button_task `(v  1 e 1 0 ]
+"238
+[v _led_task led_task `(v  1 e 1 0 ]
+"254
+[v _handle_can_messages_from_VCU handle_can_messages_from_VCU `(v  1 e 1 0 ]
+"270
+[v _direction_message_task direction_message_task `(v  1 e 1 0 ]
+"292
+[v _power_down_task power_down_task `(v  1 e 1 0 ]
+"310
+[v _update_graphics update_graphics `(v  1 e 1 0 ]
+"325
+[v _transmit_can_message_task transmit_can_message_task `(v  1 e 1 0 ]
+"34 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"47
+[v _SPI1_Put SPI1_Put `(v  1 e 1 0 ]
+[v i1_SPI1_Put SPI1_Put `(v  1 e 1 0 ]
+"70
+[v _SPI1_PutBuffer SPI1_PutBuffer `(v  1 e 1 0 ]
+[v i1_SPI1_PutBuffer SPI1_PutBuffer `(v  1 e 1 0 ]
+"97
+[v _SPI1_GetBuffer SPI1_GetBuffer `(v  1 e 1 0 ]
+[v i1_SPI1_GetBuffer SPI1_GetBuffer `(v  1 e 1 0 ]
+"88 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"177
+[v _SYSTEM_Sleep SYSTEM_Sleep `(v  1 e 1 0 ]
+"203
+[v _SYSTEM_Wakeup SYSTEM_Wakeup `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.5v  1 e 1 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"61 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.h
+[v _button_column_1 button_column_1 `uc  1 e 1 0 ]
+"62
+[v _button_column_2 button_column_2 `uc  1 e 1 0 ]
+"63
+[v _button_column_3 button_column_3 `uc  1 e 1 0 ]
+"64
+[v _button_column_4 button_column_4 `uc  1 e 1 0 ]
+"65
+[v _button_5 button_5 `uc  1 e 1 0 ]
+"66
+[v _button_6 button_6 `uc  1 e 1 0 ]
+"67
+[v _button_7 button_7 `uc  1 e 1 0 ]
+"68
+[v _SW_ROW_ARRAY SW_ROW_ARRAY `[5]uc  1 e 5 0 ]
+"69
+[v _person_on_machine_flag person_on_machine_flag `uc  1 e 1 0 ]
+"71
+[v _button_flag button_flag `c  1 e 1 0 ]
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+"134 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[s S266 . 210 `uc 1 m_getIdx 1 0 `uc 1 m_putIdx 1 1 `[16]S259 1 m_entry 208 2 ]
+[v _CAN_txMessageQ CAN_txMessageQ `S266  1 s 210 CAN_txMessageQ ]
+"137
+[v _CAN_rxMessageQ CAN_rxMessageQ `S266  1 s 210 CAN_rxMessageQ ]
+"140
+[v __canMode _canMode `E66  1 s 1 _canMode ]
+[s S281 . 12 `ui 1 rxQueueOverflows 2 0 `ui 1 txQueueOverflows 2 2 `ui 1 rxBufferOverflow 2 4 `ui 1 rxb0count 2 6 `ui 1 rxb1count 2 8 `ui 1 txb0count 2 10 ]
+"146
+[v _MCP2515_diag MCP2515_diag `S281  1 e 12 0 ]
+"135 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.h
+[v _EUSART_Tx_head EUSART_Tx_head `uc  1 e 1 0 ]
+"136
+[v _EUSART_Tx_tail EUSART_Tx_tail `uc  1 e 1 0 ]
+"137
+[v _EUSART_Tx_buffer EUSART_Tx_buffer `[27]uc  1 e 27 0 ]
+"138
+[v _EUSART_Tx_buffer_remaining EUSART_Tx_buffer_remaining `uc  1 e 1 0 ]
+"141
+[v _EUSART_Rx_head EUSART_Rx_head `uc  1 e 1 0 ]
+"142
+[v _EUSART_Rx_tail EUSART_Rx_tail `uc  1 e 1 0 ]
+"143
+[v _EUSART_Rx_buffer EUSART_Rx_buffer `[27]uc  1 e 27 0 ]
+"144
+[v _EUSART_Rx_count EUSART_Rx_count `uc  1 e 1 0 ]
+"146
+[v _current_address_ID current_address_ID `uc  1 e 1 0 ]
+"149
+[v _EUSART_parity_count EUSART_parity_count `uc  1 e 1 0 ]
+"153
+[v _EUSART_Rx_parity_error EUSART_Rx_parity_error `uc  1 e 1 0 ]
+"155
+[v _EUSART_packet_data EUSART_packet_data `[27]uc  1 e 27 0 ]
+"159
+[v _EUSART_Tx_checksum EUSART_Tx_checksum `uc  1 e 1 0 ]
+"161
+[v _EUSART_Rx_checksum EUSART_Rx_checksum `uc  1 e 1 0 ]
+"163
+[v _EUSART_Rx_checksum_error EUSART_Rx_checksum_error `uc  1 e 1 0 ]
+"167
+[v _EUSART_slave_bad_response EUSART_slave_bad_response `ui  1 e 2 0 ]
+"169
+[v _EUSART_send_data_flag EUSART_send_data_flag `uc  1 e 1 0 ]
+"171
+[v _EUSART_receive_flag EUSART_receive_flag `uc  1 e 1 0 ]
+"173
+[v _CAN_ID_switch CAN_ID_switch `uc  1 e 1 0 ]
+"28 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/hal.h
+[v _SW_row SW_row `uc  1 e 1 0 ]
+"29
+[v _machine_direction machine_direction `uc  1 e 1 0 ]
+"30 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+[v _SYSTEM_tick SYSTEM_tick `ul  1 e 4 0 ]
+"96 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/j1939/j1939.c
+[v _j1939_address_claim_was_successful j1939_address_claim_was_successful `uc  1 e 1 0 ]
+"104
+[v _j1939_sa j1939_sa `uc  1 e 1 0 ]
+"69 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/j1939/j1939tp_rx2.c
+[v _transportState transportState `E150  1 e 1 0 ]
+[s S142 . 1 `uc 1 na 1 0 :5:0 
+`uc 1 rtsArrived 1 0 :1:5 
+`uc 1 abortArrived 1 0 :1:6 
+`uc 1 sendAbort 1 0 :1:7 
+]
+"105
+[u S147 . 1 `S142 1 b 1 0 `uc 1 byte 1 0 ]
+[s S150 . 18 `S147 1 cBits 1 0 `uc 1 state 1 1 `ul 1 pgn 4 2 `ui 1 msg_size 2 6 `ui 1 timer 2 8 `uc 1 packetCount 1 10 `uc 1 num_packets 1 11 `uc 1 next_seq 1 12 `uc 1 cts_max 1 13 `uc 1 cts_cnt 1 14 `uc 1 rsn 1 15 `uc 1 dst 1 16 `uc 1 src 1 17 ]
+[v _j1939tp_rxbuf j1939tp_rxbuf `VES150  1 e 18 0 ]
+"106 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.h
+[v _LED_row_array LED_row_array `[5]uc  1 e 5 0 ]
+"107
+[v _LED_column_array LED_column_array `[5]uc  1 e 5 0 ]
+"71 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _LED_COL LED_COL `[5]uc  1 s 5 LED_COL ]
+[s S599 . 3 `uc 1 debounced 1 0 `uc 1 sample0 1 1 `uc 1 sample1 1 2 ]
+"79
+[v __switchStates _switchStates `[5]S599  1 s 15 _switchStates ]
+"80
+[v __extraSwitchState _extraSwitchState `S599  1 s 3 _extraSwitchState ]
+"81
+[v __faultInputState _faultInputState `S599  1 s 3 _faultInputState ]
+"82
+[v __enableInputState _enableInputState `S599  1 s 3 _enableInputState ]
+[s S339 . 32 `[2]ul 1 masks 8 0 `[6]ul 1 filters 24 8 ]
+"87
+[v __canConfig _canConfig `DCS339  1 s 32 _canConfig ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"143
+[v _can_send_message can_send_message `S45  1 s 14 can_send_message ]
+[s S654 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"424 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f15386.h
+[u S659 . 1 `S654 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES659  1 e 1 @11 ]
+[s S390 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"585
+[u S399 . 1 `S390 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES399  1 e 1 @14 ]
+"792
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"854
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+[s S628 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"871
+[u S637 . 1 `S628 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES637  1 e 1 @19 ]
+"916
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+[s S1442 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"933
+[u S1451 . 1 `S1442 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES1451  1 e 1 @20 ]
+"978
+[v _TRISD TRISD `VEuc  1 e 1 @21 ]
+"1040
+[v _TRISE TRISE `VEuc  1 e 1 @22 ]
+"1078
+[v _TRISF TRISF `VEuc  1 e 1 @23 ]
+"1140
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+[s S1190 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"1157
+[u S1199 . 1 `S1190 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1199  1 e 1 @24 ]
+"1202
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+[s S300 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"1219
+[u S309 . 1 `S300 1 . 1 0 ]
+[v _LATBbits LATBbits `VES309  1 e 1 @25 ]
+"1264
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"1326
+[v _LATD LATD `VEuc  1 e 1 @27 ]
+"1388
+[v _LATE LATE `VEuc  1 e 1 @28 ]
+"1420
+[v _LATF LATF `VEuc  1 e 1 @29 ]
+"1833
+[v _RCREG1 RCREG1 `VEuc  1 e 1 @281 ]
+"1883
+[v _TXREG1 TXREG1 `VEuc  1 e 1 @282 ]
+"1932
+[v _SP1BRG SP1BRG `VEus  1 e 2 @283 ]
+"2009
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"2063
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S1573 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"2144
+[u S1582 . 1 `S1573 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES1582  1 e 1 @285 ]
+"2243
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S1546 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2324
+[u S1555 . 1 `S1546 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES1555  1 e 1 @286 ]
+"2423
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+"2669
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
+"2879
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
+[s S923 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2988
+[s S932 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S937 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S942 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S947 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S952 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S958 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S967 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S973 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 I2C_START1 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S979 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ1 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS1 1 0 :1:5 
+]
+[s S985 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A1 1 0 :1:5 
+]
+[s S990 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA1 1 0 :1:5 
+]
+[s S995 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT1 1 0 :1:5 
+]
+[s S1000 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S1005 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS1 1 0 :1:5 
+]
+[u S1010 . 1 `S923 1 . 1 0 `S932 1 . 1 0 `S937 1 . 1 0 `S942 1 . 1 0 `S947 1 . 1 0 `S952 1 . 1 0 `S958 1 . 1 0 `S967 1 . 1 0 `S973 1 . 1 0 `S979 1 . 1 0 `S985 1 . 1 0 `S990 1 . 1 0 `S995 1 . 1 0 `S1000 1 . 1 0 `S1005 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES1010  1 e 1 @399 ]
+"3243
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
+"4555
+[v _TMR1 TMR1 `VEus  1 e 2 @524 ]
+"4852
+[v _T1CON T1CON `VEuc  1 e 1 @526 ]
+[s S684 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"4883
+[s S690 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S697 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S701 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S704 . 1 `S684 1 . 1 0 `S690 1 . 1 0 `S697 1 . 1 0 `S701 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES704  1 e 1 @526 ]
+"5310
+[v _T1CLK T1CLK `VEuc  1 e 1 @529 ]
+"5511
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+[s S1267 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"5596
+[s S1271 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S1279 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S1283 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S1292 . 1 `S1267 1 . 1 0 `S1271 1 . 1 0 `S1279 1 . 1 0 `S1283 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1292  1 e 1 @654 ]
+"8142
+[v _TMR0L TMR0L `VEuc  1 e 1 @1436 ]
+"8280
+[v _TMR0H TMR0H `VEuc  1 e 1 @1437 ]
+"8534
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @1438 ]
+"8604
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @1439 ]
+[s S353 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"9465
+[u S358 . 1 `S353 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES358  1 e 1 @1804 ]
+[s S366 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"9771
+[u S371 . 1 `S366 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES371  1 e 1 @1814 ]
+[s S1463 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 SSP2IE 1 0 :1:2 
+`uc 1 BCL2IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 TX2IE 1 0 :1:6 
+`uc 1 RC2IE 1 0 :1:7 
+]
+"9880
+[u S1472 . 1 `S1463 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES1472  1 e 1 @1817 ]
+"10157
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"10202
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"10252
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"10297
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+[s S1211 . 1 `uc 1 DOZE 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 DOE 1 0 :1:4 
+`uc 1 ROI 1 0 :1:5 
+`uc 1 DOZEN 1 0 :1:6 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"11314
+[s S1218 . 1 `uc 1 DOZE0 1 0 :1:0 
+`uc 1 DOZE1 1 0 :1:1 
+`uc 1 DOZE2 1 0 :1:2 
+]
+[u S1222 . 1 `S1211 1 . 1 0 `S1218 1 . 1 0 ]
+[v _CPUDOZEbits CPUDOZEbits `VES1222  1 e 1 @2188 ]
+"17872
+[v _ANSELF ANSELF `VEuc  1 e 1 @7760 ]
+"19014
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @7878 ]
+"19304
+[v _RX1DTPPS RX1DTPPS `VEuc  1 e 1 @7883 ]
+"19932
+[v _RB1PPS RB1PPS `VEuc  1 e 1 @7961 ]
+"20020
+[v _RB3PPS RB3PPS `VEuc  1 e 1 @7963 ]
+"20548
+[v _RC7PPS RC7PPS `VEuc  1 e 1 @7975 ]
+"21076
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"21572
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"21634
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"22068
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"22130
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"22440
+[v _IOCCN IOCCN `VEuc  1 e 1 @8020 ]
+"22502
+[v _IOCCF IOCCF `VEuc  1 e 1 @8021 ]
+[s S1720 . 1 `uc 1 IOCCF0 1 0 :1:0 
+`uc 1 IOCCF1 1 0 :1:1 
+`uc 1 IOCCF2 1 0 :1:2 
+`uc 1 IOCCF3 1 0 :1:3 
+`uc 1 IOCCF4 1 0 :1:4 
+`uc 1 IOCCF5 1 0 :1:5 
+`uc 1 IOCCF6 1 0 :1:6 
+`uc 1 IOCCF7 1 0 :1:7 
+]
+"22519
+[u S1729 . 1 `S1720 1 . 1 0 ]
+[v _IOCCFbits IOCCFbits `VES1729  1 e 1 @8021 ]
+"22564
+[v _ANSELD ANSELD `VEuc  1 e 1 @8025 ]
+"22874
+[v _ANSELE ANSELE `VEuc  1 e 1 @8036 ]
+"24521
+[v _IOCIE IOCIE `VEb  1 e 0 @14516 ]
+"24523
+[v _IOCIF IOCIF `VEb  1 e 0 @14436 ]
+"25917
+[v _RC1IE RC1IE `VEb  1 e 0 @14541 ]
+"25919
+[v _RC1IF RC1IF `VEb  1 e 0 @14461 ]
+"26827
+[v _TMR1IE TMR1IE `VEb  1 e 0 @14544 ]
+"26829
+[v _TMR1IF TMR1IF `VEb  1 e 0 @14464 ]
+"26851
+[v _TMR2IE TMR2IE `VEb  1 e 0 @14545 ]
+"26853
+[v _TMR2IF TMR2IF `VEb  1 e 0 @14465 ]
+"26995
+[v _TX1IE TX1IE `VEb  1 e 0 @14540 ]
+"26997
+[v _TX1IF TX1IF `VEb  1 e 0 @14460 ]
+"181 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"183
+[v main@LED_row LED_row `ui  1 a 2 2 ]
+"209
+} 0
+"310
+[v _update_graphics update_graphics `(v  1 e 1 0 ]
+{
+"323
+} 0
+"142 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _EUSART_Receive EUSART_Receive `(v  1 e 1 0 ]
+{
+"177
+[v EUSART_Receive@i_1681 i `i  1 a 2 21 ]
+"147
+[v EUSART_Receive@i i `ui  1 a 2 19 ]
+"239
+} 0
+"244
+[v _EUSART_Master_Request EUSART_Master_Request `(v  1 e 1 0 ]
+{
+"255
+[v EUSART_Master_Request@i i `ui  1 a 2 18 ]
+"269
+} 0
+"325 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _transmit_can_message_task transmit_can_message_task `(v  1 e 1 0 ]
+{
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+[v transmit_can_message_task@can_msg can_msg `*.5S45  1 a 1 wreg ]
+[v transmit_can_message_task@can_msg can_msg `*.5S45  1 a 1 wreg ]
+"327
+[v transmit_can_message_task@sendSwitchesTimer sendSwitchesTimer `ul  1 s 4 sendSwitchesTimer ]
+"330
+"325
+[v transmit_can_message_task@can_msg can_msg `*.5S45  1 a 1 45 ]
+"336
+} 0
+"469 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _EUSART_TO_CAN EUSART_TO_CAN `(v  1 e 1 0 ]
+{
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+[v EUSART_TO_CAN@message message `*.5S45  1 a 1 wreg ]
+[v EUSART_TO_CAN@message message `*.5S45  1 a 1 wreg ]
+"471
+"469
+[v EUSART_TO_CAN@message message `*.5S45  1 a 1 21 ]
+"537
+} 0
+"503 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _CAN_Tx CAN_Tx `(uc  1 e 1 0 ]
+{
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+[v CAN_Tx@pFrame pFrame `*.39S45  1 p 2 0 ]
+"529
+} 0
+"324
+[v __EnqueueTxMessage _EnqueueTxMessage `(v  1 s 1 _EnqueueTxMessage ]
+{
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+"326
+[v __EnqueueTxMessage@pBuf pBuf `*.39S259  1 a 2 42 ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"324
+[v __EnqueueTxMessage@pFrame pFrame `*.39S45  1 p 2 40 ]
+"331
+} 0
+"539
+[v _CAN_TxMailbox CAN_TxMailbox `(uc  1 e 1 0 ]
+{
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+"574
+[v CAN_TxMailbox@buf buf `S259  1 a 13 3 ]
+"565
+[v CAN_TxMailbox@bufStatus bufStatus `uc  1 a 1 2 ]
+"541
+[v CAN_TxMailbox@txBufCtrlAddress txBufCtrlAddress `uc  1 a 1 1 ]
+"566
+[v CAN_TxMailbox@result result `uc  1 a 1 0 ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"539
+[v CAN_TxMailbox@pFrame pFrame `*.39S45  1 p 2 40 ]
+[v CAN_TxMailbox@which which `ui  1 p 2 42 ]
+"584
+} 0
+"311
+[v __SendBuffer _SendBuffer `(v  1 s 1 _SendBuffer ]
+{
+[v __SendBuffer@addr addr `uc  1 a 1 wreg ]
+[v __SendBuffer@addr addr `uc  1 a 1 wreg ]
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+[v __SendBuffer@pBuf pBuf `*.39S259  1 p 2 25 ]
+"313
+[v __SendBuffer@addr addr `uc  1 a 1 29 ]
+"315
+} 0
+"194
+[v __MessageToTxBuffer _MessageToTxBuffer `(v  1 s 1 _MessageToTxBuffer ]
+{
+"199
+[v __MessageToTxBuffer@id id `ul  1 a 4 33 ]
+"200
+[v __MessageToTxBuffer@canid canid `ui  1 a 2 38 ]
+"196
+[v __MessageToTxBuffer@ext ext `uc  1 a 1 37 ]
+"197
+[v __MessageToTxBuffer@rtr rtr `uc  1 a 1 30 ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"194
+[v __MessageToTxBuffer@pFrame pFrame `*.39S45  1 p 2 17 ]
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+[v __MessageToTxBuffer@pBuf pBuf `*.39S259  1 p 2 19 ]
+"223
+} 0
+"292 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _power_down_task power_down_task `(v  1 e 1 0 ]
+{
+"293
+[v power_down_task@power_down_tick power_down_tick `ul  1 s 4 power_down_tick ]
+"306
+} 0
+"127
+[v __Wakeup _Wakeup `(v  1 s 1 _Wakeup ]
+{
+"139
+} 0
+"203 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+[v _SYSTEM_Wakeup SYSTEM_Wakeup `(v  1 e 1 0 ]
+{
+"222
+} 0
+"478 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _CAN_Wakeup CAN_Wakeup `(v  1 e 1 0 ]
+{
+"489
+} 0
+"29 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"79
+} 0
+"177 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+[v _SYSTEM_Sleep SYSTEM_Sleep `(v  1 e 1 0 ]
+{
+"197
+} 0
+"466 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _CAN_Sleep CAN_Sleep `(v  1 e 1 0 ]
+{
+"473
+} 0
+"238 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _led_task led_task `(v  1 e 1 0 ]
+{
+"239
+[v led_task@LED_row LED_row `uc  1 s 1 LED_row ]
+"240
+[v led_task@led_tick led_tick `ul  1 s 4 led_tick ]
+"251
+} 0
+"75 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+[v _Update_LEDs Update_LEDs `(v  1 e 1 0 ]
+{
+[v Update_LEDs@row row `ui  1 p 2 17 ]
+"88
+} 0
+"254 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _handle_can_messages_from_VCU handle_can_messages_from_VCU `(v  1 e 1 0 ]
+{
+"255
+[v handle_can_messages_from_VCU@can_tick can_tick `ul  1 s 4 can_tick ]
+"261
+} 0
+"615 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _Receive_CAN_Message Receive_CAN_Message `(uc  1 e 1 0 ]
+{
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"617
+[v Receive_CAN_Message@can can `S45  1 a 14 1 ]
+"618
+[v Receive_CAN_Message@result result `uc  1 a 1 0 ]
+"627
+} 0
+"312 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _CAN_To_EUSART CAN_To_EUSART `(v  1 e 1 0 ]
+{
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+[v CAN_To_EUSART@message message `*.6S45  1 a 1 wreg ]
+"314
+[v CAN_To_EUSART@machine_directionA machine_directionA `uc  1 a 1 22 ]
+"312
+[v CAN_To_EUSART@message message `*.6S45  1 a 1 wreg ]
+[v CAN_To_EUSART@message message `*.6S45  1 a 1 23 ]
+"463
+} 0
+"598 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _CAN_Rx CAN_Rx `(uc  1 e 1 0 ]
+{
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+"602
+[v CAN_Rx@pBuf pBuf `*.39S259  1 a 2 43 ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"598
+[v CAN_Rx@ptr ptr `*.39S45  1 p 2 35 ]
+"611
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 21 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 17 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 19 ]
+"53
+} 0
+"157 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v __RxBufferToMessage _RxBufferToMessage `(v  1 s 1 _RxBufferToMessage ]
+{
+"159
+[v __RxBufferToMessage@id id `ul  1 a 4 31 ]
+"170
+[v __RxBufferToMessage@dlc dlc `uc  1 a 1 30 ]
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+"157
+[v __RxBufferToMessage@p p `*.39S259  1 p 2 17 ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+[v __RxBufferToMessage@pMsg pMsg `*.39S45  1 p 2 19 ]
+"186
+} 0
+"270 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+[v _direction_message_task direction_message_task `(v  1 e 1 0 ]
+{
+"271
+[v direction_message_task@direction_tick direction_tick `ul  1 s 4 direction_tick ]
+"272
+[v direction_message_task@direction_state direction_state `uc  1 s 1 direction_state ]
+"290
+} 0
+"222
+[v _button_task button_task `(v  1 e 1 0 ]
+{
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+[v button_task@can_msg can_msg `*.5S45  1 a 1 wreg ]
+[v button_task@can_msg can_msg `*.5S45  1 a 1 wreg ]
+"223
+[v button_task@button_tick button_tick `ul  1 s 4 button_tick ]
+"225
+"222
+[v button_task@can_msg can_msg `*.5S45  1 a 1 31 ]
+"236
+} 0
+"68 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+[v _Buttons_Update Buttons_Update `(v  1 e 1 0 ]
+{
+"69
+[v Buttons_Update@SW_row SW_row `uc  1 a 1 wreg ]
+[v Buttons_Update@SW_row SW_row `uc  1 a 1 wreg ]
+[s S45 . 14 `ul 1 id 4 0 `uc 1 pad1 1 4 `uc 1 buf_len 1 5 `[8]uc 1 buf 8 6 ]
+"68
+[v Buttons_Update@switch_state switch_state `*.5S45  1 p 1 20 ]
+"70
+[v Buttons_Update@SW_row SW_row `uc  1 a 1 22 ]
+"228
+} 0
+"302 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _Get_Settings_Lock_Status Get_Settings_Lock_Status `(uc  1 e 1 0 ]
+{
+"306
+} 0
+"234 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+[v _Button_Debounce Button_Debounce `(v  1 e 1 0 ]
+{
+"236
+[v Button_Debounce@i i `i  1 a 2 18 ]
+"247
+} 0
+"88 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"170
+} 0
+"29 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+[v _LED_Initialize LED_Initialize `(v  1 e 1 0 ]
+{
+"67
+} 0
+"375 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _CAN_Initialize CAN_Initialize `(uc  1 e 1 0 ]
+{
+"414
+[v CAN_Initialize@buf buf `[5]uc  1 a 5 0 ]
+[s S339 . 32 `[2]ul 1 masks 8 0 `[6]ul 1 filters 24 8 ]
+"379
+[v CAN_Initialize@p p `*.25S339  1 a 2 8 ]
+"398
+[v CAN_Initialize@wait wait `i  1 a 2 5 ]
+"378
+[v CAN_Initialize@temp8 temp8 `uc  1 a 1 10 ]
+"377
+[v CAN_Initialize@bResult bResult `uc  1 a 1 7 ]
+"375
+[v CAN_Initialize@pConfig pConfig `*.25DCv  1 p 2 39 ]
+"461
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+[v _memset memset `(*.5v  1 e 1 0 ]
+{
+[v memset@p1 p1 `*.5v  1 a 1 wreg ]
+"15
+[v memset@p p `*.5uc  1 a 1 22 ]
+"8
+[v memset@p1 p1 `*.5v  1 a 1 wreg ]
+[v memset@c c `i  1 p 2 17 ]
+[v memset@n n `ui  1 p 2 19 ]
+"18
+[v memset@p1 p1 `*.5v  1 a 1 23 ]
+"22
+} 0
+"250 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v __Write _Write `(v  1 s 1 _Write ]
+{
+[v __Write@reg reg `uc  1 a 1 wreg ]
+[v __Write@reg reg `uc  1 a 1 wreg ]
+[v __Write@pBuf pBuf `*.26uc  1 p 2 20 ]
+[v __Write@count count `uc  1 p 1 22 ]
+"252
+[v __Write@reg reg `uc  1 a 1 24 ]
+"259
+} 0
+"273
+[v __TxCommand _TxCommand `(v  1 s 1 _TxCommand ]
+{
+[v __TxCommand@cmd cmd `uc  1 a 1 wreg ]
+[v __TxCommand@cmd cmd `uc  1 a 1 wreg ]
+[v __TxCommand@pBuf pBuf `*.1uc  1 p 1 20 ]
+[v __TxCommand@count count `uc  1 p 1 21 ]
+"275
+[v __TxCommand@cmd cmd `uc  1 a 1 23 ]
+"281
+} 0
+"70 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+[v _SPI1_PutBuffer SPI1_PutBuffer `(v  1 e 1 0 ]
+{
+[v SPI1_PutBuffer@pBuf pBuf `*.26uc  1 p 2 17 ]
+[v SPI1_PutBuffer@count count `uc  1 p 1 19 ]
+"80
+} 0
+"340 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v __SetMode _SetMode `(uc  1 s 1 _SetMode ]
+{
+[v __SetMode@mode mode `E66  1 a 1 wreg ]
+"343
+[v __SetMode@timer timer `ul  1 a 4 33 ]
+"342
+[v __SetMode@modeMatch modeMatch `uc  1 a 1 38 ]
+"340
+[v __SetMode@mode mode `E66  1 a 1 wreg ]
+"342
+[v __SetMode@mode mode `E66  1 a 1 37 ]
+"363
+} 0
+"232
+[v __Read _Read `(v  1 s 1 _Read ]
+{
+[v __Read@reg reg `uc  1 a 1 wreg ]
+[v __Read@reg reg `uc  1 a 1 wreg ]
+[v __Read@pBuf pBuf `*.39uc  1 p 2 20 ]
+[v __Read@count count `uc  1 p 1 22 ]
+"234
+[v __Read@reg reg `uc  1 a 1 24 ]
+"241
+} 0
+"97 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+[v _SPI1_GetBuffer SPI1_GetBuffer `(v  1 e 1 0 ]
+{
+[v SPI1_GetBuffer@pBuf pBuf `*.39uc  1 p 2 17 ]
+[v SPI1_GetBuffer@count count `uc  1 p 1 19 ]
+"107
+} 0
+"261 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v __Modify _Modify `(v  1 s 1 _Modify ]
+{
+[v __Modify@reg reg `uc  1 a 1 wreg ]
+[v __Modify@reg reg `uc  1 a 1 wreg ]
+[v __Modify@mask mask `uc  1 p 1 18 ]
+[v __Modify@value value `uc  1 p 1 19 ]
+"263
+[v __Modify@reg reg `uc  1 a 1 20 ]
+"271
+} 0
+"47 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+[v _SPI1_Put SPI1_Put `(v  1 e 1 0 ]
+{
+[v SPI1_Put@c c `uc  1 a 1 wreg ]
+[v SPI1_Put@c c `uc  1 a 1 wreg ]
+"49
+[v SPI1_Put@c c `uc  1 a 1 17 ]
+"52
+} 0
+"34
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"39
+} 0
+"31 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+[v _Buttons_Initialize Buttons_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"36 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+[v _tc_int tc_int `II(v  1 e 1 0 ]
+{
+"63
+[v tc_int@changed changed `uc  1 a 1 13 ]
+"96
+} 0
+"635 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v _MCP2515_ISR MCP2515_ISR `(v  1 e 1 0 ]
+{
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+"700
+[v MCP2515_ISR@pBuf_581 pBuf `*.39S259  1 a 2 10 ]
+"684
+[v MCP2515_ISR@pBuf_580 pBuf `*.39S259  1 a 2 8 ]
+"671
+[v MCP2515_ISR@pBuf pBuf `*.39S259  1 a 2 6 ]
+"650
+[v MCP2515_ISR@_errFlags _errFlags `uc  1 a 1 13 ]
+"641
+[v MCP2515_ISR@_intFlags _intFlags `uc  1 a 1 14 ]
+[v MCP2515_ISR@_intFlags2 _intFlags2 `uc  1 a 1 12 ]
+"742
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"311 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v i1__SendBuffer _SendBuffer `(v  1 s 1 i1__SendBuffer ]
+{
+[v i1__SendBuffer@addr addr `uc  1 a 1 wreg ]
+[v i1__SendBuffer@addr addr `uc  1 a 1 wreg ]
+[s S259 . 13 `uc 1 sidh 1 0 `uc 1 sidl 1 1 `uc 1 eid8 1 2 `uc 1 eid0 1 3 `uc 1 dlc 1 4 `[8]uc 1 data 8 5 ]
+[v i1__SendBuffer@pBuf pBuf `*.39S259  1 p 2 8 ]
+"313
+[v i1__SendBuffer@addr addr `uc  1 a 1 12 ]
+"315
+} 0
+"250
+[v i1__Write _Write `(v  1 s 1 i1__Write ]
+{
+[v i1__Write@reg reg `uc  1 a 1 wreg ]
+[v i1__Write@reg reg `uc  1 a 1 wreg ]
+[v i1__Write@pBuf pBuf `*.26uc  1 p 2 3 ]
+[v i1__Write@count count `uc  1 p 1 5 ]
+"252
+[v i1__Write@reg reg `uc  1 a 1 7 ]
+"259
+} 0
+"70 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+[v i1_SPI1_PutBuffer SPI1_PutBuffer `(v  1 e 1 0 ]
+{
+[v i1SPI1_PutBuffer@pBuf pBuf `*.26uc  1 p 2 0 ]
+[v i1SPI1_PutBuffer@count count `uc  1 p 1 2 ]
+"80
+} 0
+"261 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+[v i1__Modify _Modify `(v  1 s 1 i1__Modify ]
+{
+[v i1__Modify@reg reg `uc  1 a 1 wreg ]
+[v i1__Modify@reg reg `uc  1 a 1 wreg ]
+[v i1__Modify@mask mask `uc  1 p 1 1 ]
+[v i1__Modify@value value `uc  1 p 1 2 ]
+"263
+[v i1__Modify@reg reg `uc  1 a 1 3 ]
+"271
+} 0
+"232
+[v i1__Read _Read `(v  1 s 1 i1__Read ]
+{
+[v i1__Read@reg reg `uc  1 a 1 wreg ]
+[v i1__Read@reg reg `uc  1 a 1 wreg ]
+[v i1__Read@pBuf pBuf `*.39uc  1 p 2 3 ]
+[v i1__Read@count count `uc  1 p 1 5 ]
+"234
+[v i1__Read@reg reg `uc  1 a 1 7 ]
+"241
+} 0
+"290
+[v __RxCommand _RxCommand `(v  1 s 1 _RxCommand ]
+{
+[v __RxCommand@cmd cmd `uc  1 a 1 wreg ]
+"292
+[v __RxCommand@pBuf pBuf `*.4uc  1 a 1 7 ]
+"290
+[v __RxCommand@cmd cmd `uc  1 a 1 wreg ]
+[v __RxCommand@p p `*.4v  1 p 1 3 ]
+[v __RxCommand@count count `uc  1 p 1 4 ]
+"292
+[v __RxCommand@cmd cmd `uc  1 a 1 6 ]
+"300
+} 0
+"47 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+[v i1_SPI1_Put SPI1_Put `(v  1 e 1 0 ]
+{
+[v i1SPI1_Put@c c `uc  1 a 1 wreg ]
+[v i1SPI1_Put@c c `uc  1 a 1 wreg ]
+"49
+[v i1SPI1_Put@c c `uc  1 a 1 0 ]
+"52
+} 0
+"97
+[v i1_SPI1_GetBuffer SPI1_GetBuffer `(v  1 e 1 0 ]
+{
+[v i1SPI1_GetBuffer@pBuf pBuf `*.39uc  1 p 2 0 ]
+[v i1SPI1_GetBuffer@count count `uc  1 p 1 2 ]
+"107
+} 0
+"85 C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"103
+} 0
+"109
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"137
+} 0
+"275
+[v _EUSART_Parity_Count EUSART_Parity_Count `(uc  1 e 1 0 ]
+{
+"276
+[v EUSART_Parity_Count@EUSART_byte_parity EUSART_byte_parity `uc  1 a 1 wreg ]
+"281
+[v EUSART_Parity_Count@i i `i  1 a 2 2 ]
+"276
+[v EUSART_Parity_Count@EUSART_byte_parity EUSART_byte_parity `uc  1 a 1 wreg ]
+"278
+[v EUSART_Parity_Count@EUSART_byte_parity EUSART_byte_parity `uc  1 a 1 1 ]
+"296
+} 0

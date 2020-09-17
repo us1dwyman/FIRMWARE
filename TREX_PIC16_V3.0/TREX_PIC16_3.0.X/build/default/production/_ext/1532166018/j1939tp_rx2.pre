@@ -1,0 +1,577 @@
+
+# 1 "../src/j1939/j1939tp_rx2.c"
+
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
+typedef unsigned char bool;
+
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
+typedef signed char int8_t;
+
+# 20
+typedef signed int int16_t;
+
+# 28
+typedef signed short long int int24_t;
+
+# 36
+typedef signed long int int32_t;
+
+# 43
+typedef unsigned char uint8_t;
+
+# 49
+typedef unsigned int uint16_t;
+
+# 56
+typedef unsigned short long int uint24_t;
+
+# 63
+typedef unsigned long int uint32_t;
+
+# 71
+typedef signed char int_least8_t;
+
+# 78
+typedef signed int int_least16_t;
+
+# 90
+typedef signed short long int int_least24_t;
+
+# 98
+typedef signed long int int_least32_t;
+
+# 105
+typedef unsigned char uint_least8_t;
+
+# 111
+typedef unsigned int uint_least16_t;
+
+# 121
+typedef unsigned short long int uint_least24_t;
+
+# 128
+typedef unsigned long int uint_least32_t;
+
+# 137
+typedef signed char int_fast8_t;
+
+# 144
+typedef signed int int_fast16_t;
+
+# 156
+typedef signed short long int int_fast24_t;
+
+# 164
+typedef signed long int int_fast32_t;
+
+# 171
+typedef unsigned char uint_fast8_t;
+
+# 177
+typedef unsigned int uint_fast16_t;
+
+# 187
+typedef unsigned short long int uint_fast24_t;
+
+# 194
+typedef unsigned long int uint_fast32_t;
+
+# 200
+typedef int32_t intmax_t;
+
+
+
+
+typedef uint32_t uintmax_t;
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+
+# 51 "../src\can.h"
+typedef uint32_t canid_t;
+
+# 92
+typedef struct
+{
+
+canid_t id;
+
+
+
+uint8_t pad1;
+
+
+uint8_t buf_len;
+
+uint8_t buf[ 8 ];
+} can_t;
+
+# 129
+bool CAN_Initialize( const void *pConfig );
+
+# 140
+uint8_t CAN_SetRxMask( int m, canid_t id, unsigned int mide );
+
+# 155
+uint8_t CAN_SetRxFilter( int n, canid_t id, unsigned int bufPnt, unsigned int maskSel );
+
+# 162
+void CAN_Tasks( void );
+
+# 167
+void CAN_Sleep( void );
+
+# 172
+void CAN_Wakeup( void );
+
+# 185
+uint8_t CAN_Rx( can_t *pFrame );
+
+# 189
+bool Receive_CAN_Message(void);
+uint8_t CAN_RxMailbox( can_t *pFrame, unsigned which );
+
+# 204
+uint8_t CAN_Tx( can_t *pFrame );
+uint8_t CAN_TxMailbox( can_t *pFrame, unsigned which );
+
+# 25 "../src/j1939/j1939.h"
+typedef struct
+{
+
+uint32_t pgn;
+uint8_t *buf;
+uint16_t buf_len;
+uint8_t dst;
+uint8_t src;
+uint8_t pri;
+
+} j1939_t;
+
+extern uint8_t j1939_sa;
+
+extern uint8_t j1939_name[];
+
+extern void J1939_Initialize( void );
+
+extern uint8_t J1939_bip_tx_rate_max_get( void );
+
+extern void J1939_bip_tx_rate_allowed_set( uint8_t rate );
+
+# 57
+uint8_t J1939_Tx( j1939_t *msg );
+
+uint8_t J1939_AppTx( j1939_t *msg, uint8_t *status );
+
+extern void J1939_Update( void );
+
+# 66
+extern void J1939_CheckRx( void );
+
+# 78
+void J1939_AppProcess( j1939_t *pMsg );
+
+# 85
+void J1939_AppProcessStd( can_t *pMsg );
+
+# 99
+uint8_t J1939_AppSaGet( void );
+
+# 105
+void J1939_App_Delay( void );
+
+# 111
+void J1939_App_Address_Claimed( uint8_t address );
+
+# 15 "../src/j1939/j1939tp.h"
+extern void j1939tp_init( void );
+
+extern uint8_t j1939tp_tx( j1939_t *msg, uint8_t *status );
+
+extern void j1939tp_post_cm( j1939_t *msg );
+
+extern void j1939tp_post_dt( j1939_t *msg );
+
+extern void j1939tp_update( void );
+
+# 42 "../src\mcp2515_can.h"
+typedef enum
+{
+CANCTRL_REQOP_NORMAL = 0x00,
+CANCTRL_REQOP_SLEEP = 0x20,
+CANCTRL_REQOP_LOOPBACK = 0x40,
+CANCTRL_REQOP_LISTENONLY = 0x60,
+CANCTRL_REQOP_CONFIG = 0x80,
+CANCTRL_REQOP_POWERUP = 0xE0
+} CANCTRL_REQOP_MODE;
+
+typedef enum
+{
+
+OPMODE_NORMAL,
+OPMODE_SLEEP,
+OPMODE_LOOP,
+OPMODE_LISTEN,
+OPMODE_CONFIG
+
+} MCP2515_Opmode_t;
+
+# 194
+typedef struct
+{
+uint8_t sidh;
+uint8_t sidl;
+uint8_t eid8;
+uint8_t eid0;
+uint8_t dlc;
+uint8_t data[ 8 ];
+} MessageBuffer_t;
+
+# 219
+typedef struct
+{
+uint32_t masks[ 2 ];
+
+uint32_t filters[ 6 ];
+
+} MCP2515_Config_t;
+
+typedef struct
+{
+
+
+
+unsigned rxQueueOverflows;
+
+# 238
+unsigned txQueueOverflows;
+
+
+
+
+unsigned rxBufferOverflow;
+
+unsigned rxb0count;
+unsigned rxb1count;
+unsigned txb0count;
+
+} MCP2515_Diagnostics_t;
+
+
+extern MCP2515_Diagnostics_t MCP2515_diag;
+
+# 257
+void MCP2515_ISR( void );
+
+# 4 "../src\tpControl.h"
+typedef enum {
+TP_INIT,
+TP_WAIT_RTS,
+TP_DATA_COLLECT_START,
+TP_DATA_COLLECT,
+TP_ABORT,
+TP_SEND_ABORT,
+TP_SEND_COMPLETE
+} TransportState_e;
+
+extern TransportState_e transportState;
+
+void transport_init(void);
+void transport_Machine(void);
+uint8_t transport_isActive(void);
+
+# 69 "../src/j1939/j1939tp_rx2.c"
+TransportState_e transportState;
+
+# 75
+typedef union{
+struct {
+uint8_t na : 5;
+uint8_t rtsArrived : 1;
+uint8_t abortArrived : 1;
+uint8_t sendAbort:1;
+} b;
+uint8_t byte;
+}CBits_t;
+
+typedef struct
+{
+CBits_t cBits;
+uint8_t state;
+uint32_t pgn;
+uint16_t msg_size;
+uint16_t timer;
+uint8_t packetCount;
+uint8_t num_packets;
+uint8_t next_seq;
+uint8_t cts_max;
+uint8_t cts_cnt;
+uint8_t rsn;
+uint8_t dst;
+uint8_t src;
+
+
+} j1939tp_rx_t;
+
+
+j1939tp_rx_t volatile j1939tp_rxbuf;
+
+# 110
+void j1939tp_init( void )
+{
+j1939tp_rxbuf.state = 0;
+}
+
+# 123
+uint8_t j1939tp_tx( j1939_t *msg, uint8_t *status )
+{
+return 1;
+}
+
+# 136
+uint8_t j1939tp_tx_abort( uint8_t dst, uint8_t rsn, uint32_t pgn )
+{
+
+j1939_t msg_tx;
+uint8_t buf[ 8 ];
+
+msg_tx.buf = buf;
+msg_tx.pgn = 60416;
+msg_tx.pri = 7;
+msg_tx.buf[ 0 ] = 255;
+msg_tx.buf[ 1 ] = rsn;
+msg_tx.buf[ 2 ] = 0xff;
+msg_tx.buf[ 3 ] = 0xff;
+msg_tx.buf[ 4 ] = 0xff;
+msg_tx.buf[ 5 ] = (uint8_t)pgn;
+msg_tx.buf[ 6 ] = ( uint8_t )( pgn >> 8 );
+msg_tx.buf[ 7 ] = ( uint8_t )( pgn >> 16 );
+msg_tx.buf_len = 8;
+msg_tx.dst = dst;
+
+return J1939_AppTx( &msg_tx, 0 );
+}
+
+# 164
+uint8_t j1939tp_tx_cts( void )
+{
+
+j1939_t msg_tx;
+uint8_t buf[ 8 ];
+
+msg_tx.buf = buf;
+msg_tx.pgn = 60416;
+msg_tx.pri = 7;
+msg_tx.buf[ 0 ] = 17;
+msg_tx.buf[ 1 ] = j1939tp_rxbuf.cts_max;
+msg_tx.buf[ 2 ] = j1939tp_rxbuf.next_seq;
+msg_tx.buf[ 3 ] = 0xff;
+msg_tx.buf[ 4 ] = 0xff;
+msg_tx.buf[ 5 ] = ( uint8_t )( j1939tp_rxbuf.pgn );
+msg_tx.buf[ 6 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 8 );
+msg_tx.buf[ 7 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 16 );
+msg_tx.buf_len = 8;
+msg_tx.dst = j1939tp_rxbuf.src;
+
+return J1939_AppTx( &msg_tx, 0 );
+}
+
+# 193
+uint8_t j1939tp_tx_ack( void )
+{
+
+j1939_t msg_tx;
+uint8_t buf[ 8 ];
+
+msg_tx.buf = buf;
+msg_tx.pgn = 60416;
+msg_tx.pri = 7;
+
+msg_tx.buf[ 0 ] = 19;
+msg_tx.buf[ 1 ] = (uint8_t)j1939tp_rxbuf.msg_size;
+msg_tx.buf[ 2 ] = j1939tp_rxbuf.msg_size >> 8;
+msg_tx.buf[ 3 ] = j1939tp_rxbuf.num_packets;
+msg_tx.buf[ 4 ] = 0xff;
+msg_tx.buf[ 5 ] = (uint8_t)j1939tp_rxbuf.pgn;
+msg_tx.buf[ 6 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 8 );
+msg_tx.buf[ 7 ] = ( uint8_t )( j1939tp_rxbuf.pgn >> 16 );
+msg_tx.buf_len = 8;
+msg_tx.dst = j1939tp_rxbuf.src;
+
+return J1939_AppTx( &msg_tx, 0 );
+}
+
+
+void transport_init(void){
+transportState = TP_INIT;
+}
+
+uint8_t transport_isActive(void){
+uint8_t active=1;
+if(TP_WAIT_RTS == transportState){
+active =0;
+}
+return active;
+}
+
+void transport_Machine(void) {
+
+if (j1939tp_rxbuf.cBits.b.sendAbort) {
+j1939tp_rxbuf.cBits.b.sendAbort =0;
+transportState = TP_SEND_ABORT;
+}
+
+
+switch (transportState) {
+case TP_INIT:{
+j1939tp_rxbuf.cBits.b.rtsArrived = 0;
+j1939tp_rxbuf.packetCount = 0;
+
+j1939tp_rxbuf.next_seq =1;
+
+j1939tp_rxbuf.num_packets =0;
+j1939tp_rxbuf.cBits.b.abortArrived = 0;
+j1939tp_rxbuf.cBits.b.sendAbort =0;
+transportState = TP_WAIT_RTS;
+break;
+}
+case TP_WAIT_RTS:{
+if (j1939tp_rxbuf.cBits.b.rtsArrived) {
+transportState = TP_DATA_COLLECT_START;
+j1939tp_tx_cts();
+j1939tp_rxbuf.cBits.b.rtsArrived = 0;
+}
+
+break;
+}
+case TP_DATA_COLLECT_START:{
+
+transportState = TP_DATA_COLLECT;
+break;
+}
+case TP_DATA_COLLECT:{
+if (j1939tp_rxbuf.packetCount >= j1939tp_rxbuf.num_packets){
+transportState = TP_SEND_COMPLETE;
+
+}
+if(j1939tp_rxbuf.cBits.b.abortArrived){
+j1939tp_rxbuf.cBits.b.abortArrived = 0;
+transportState = TP_ABORT;
+}
+break;
+}
+case TP_ABORT:{
+transportState = TP_INIT;
+break;
+}
+case TP_SEND_ABORT:{
+j1939tp_tx_abort( j1939tp_rxbuf.src, j1939tp_rxbuf.rsn, j1939tp_rxbuf.pgn );
+transportState = TP_INIT;
+break;
+}
+case TP_SEND_COMPLETE:{
+j1939tp_tx_ack();
+transportState = TP_INIT;
+break;
+}
+
+
+}
+}
+
+# 316
+void j1939tp_post_cm( j1939_t *msg )
+{
+uint32_t pgn;
+uint16_t msg_size;
+
+
+
+pgn = msg->buf[ 5 ] | ( (uint32_t)msg->buf[ 6 ] << 8 ) | ( (uint32_t)msg->buf[ 7 ] << 16 );
+
+
+msg_size = msg->buf[ 1 ] | ( (uint16_t)msg->buf[ 2 ] << 8 );
+
+switch( msg->buf[ 0 ] )
+{
+
+case 16:
+{
+
+# 335
+if( msg->dst != 255 )
+{
+
+if( ( msg_size <= (uint16_t)msg->buf[ 3 ] * 7 ) )
+{
+j1939tp_rxbuf.cBits.b.rtsArrived = 1;
+
+
+j1939tp_rxbuf.state = 3;
+j1939tp_rxbuf.pgn = pgn;
+j1939tp_rxbuf.msg_size = msg_size;
+j1939tp_rxbuf.num_packets = msg->buf[ 3 ];
+j1939tp_rxbuf.next_seq = 1;
+j1939tp_rxbuf.timer = ( 200u / 5 );
+j1939tp_rxbuf.cts_max = msg->buf[ 4 ];
+j1939tp_rxbuf.dst = msg->dst;
+j1939tp_rxbuf.src = msg->src;
+}
+else
+{
+
+j1939tp_rxbuf.cBits.b.sendAbort = 1;
+j1939tp_rxbuf.rsn = 5;
+
+}
+
+}
+break;
+}
+
+case 255:
+{
+j1939tp_rxbuf.cBits.b.abortArrived = 1;
+
+break;
+}
+}
+
+return;
+}
+
+# 382
+void j1939tp_post_dt( j1939_t *msg )
+{
+
+if ((j1939tp_rxbuf.dst == msg->dst) && (j1939tp_rxbuf.src == msg->src)) {
+if (msg->buf[0] != j1939tp_rxbuf.next_seq){
+j1939tp_rxbuf.cBits.b.sendAbort = 1;
+j1939tp_rxbuf.rsn = 4;
+
+
+} else {
+
+++j1939tp_rxbuf.packetCount ;
+
+++j1939tp_rxbuf.next_seq;
+
+}
+}
+}
+
+# 405
+void j1939tp_update( void )
+{
+
+# 413
+return;
+}
+

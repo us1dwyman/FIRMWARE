@@ -1,0 +1,2274 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 66 66 2 2
+config CONFIG 0 8007 8007 5 2
+$dist/default/production\TREX_PIC16_3.0.X.production.obj
+cinit CODE 0 68 68 6E 2
+text1 CODE 0 108C 108C 11 2
+text2 CODE 0 BBE BBE 164 2
+text3 CODE 0 146F 146F 43 2
+text4 CODE 0 1744 1744 5A 2
+text5 CODE 0 5FE 5FE 187 2
+text6 CODE 0 785 785 6D 2
+text7 CODE 0 142C 142C 43 2
+text8 CODE 0 1590 1590 54 2
+text9 CODE 0 1221 1221 1C 2
+text10 CODE 0 A8D A8D 131 2
+text11 CODE 0 163A 163A 56 2
+text12 CODE 0 13A7 13A7 42 2
+text13 CODE 0 107C 107C 10 2
+text14 CODE 0 1293 1293 1E 2
+text15 CODE 0 13E9 13E9 43 2
+text16 CODE 0 105E 105E F 2
+text17 CODE 0 1036 1036 6 2
+text18 CODE 0 16EA 16EA 5A 2
+text19 CODE 0 1276 1276 1D 2
+text20 CODE 0 1541 1541 4F 2
+text21 CODE 0 1259 1259 1D 2
+text22 CODE 0 D6 D6 328 2
+text23 CODE 0 15E4 15E4 56 2
+text24 CODE 0 1205 1205 1C 2
+text25 CODE 0 890 890 FB 2
+text26 CODE 0 1690 1690 5A 2
+text27 CODE 0 82D 82D 63 2
+text28 CODE 0 E8F E8F 171 2
+text29 CODE 0 1032 1032 4 2
+text30 CODE 0 14B2 14B2 44 2
+text31 CODE 0 14F6 14F6 4B 2
+text32 CODE 0 801 801 2C 2
+text33 CODE 0 98B 98B 102 2
+text34 CODE 0 11E9 11E9 1C 2
+text35 CODE 0 11B4 11B4 1A 2
+text36 CODE 0 10DA 10DA 15 2
+text37 CODE 0 10EF 10EF 17 2
+text38 CODE 0 179E 179E 62 2
+text39 CODE 0 119A 119A 1A 2
+text40 CODE 0 1180 1180 1A 2
+text41 CODE 0 114E 114E 18 2
+text42 CODE 0 104A 104A 8 2
+text43 CODE 0 1043 1043 7 2
+text44 CODE 0 12B1 12B1 21 2
+text46 CODE 0 D22 D22 16D 2
+text47 CODE 0 11CE 11CE 1B 2
+text48 CODE 0 1166 1166 1A 2
+text49 CODE 0 1136 1136 18 2
+text50 CODE 0 109D 109D 13 2
+text51 CODE 0 10C5 10C5 15 2
+text52 CODE 0 111E 111E 18 2
+text53 CODE 0 1106 1106 18 2
+text54 CODE 0 103C 103C 7 2
+text55 CODE 0 10B0 10B0 15 2
+text56 CODE 0 12D2 12D2 30 2
+text57 CODE 0 1302 1302 33 2
+text58 CODE 0 1335 1335 34 2
+maintext CODE 0 1369 1369 3E 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 2E 1
+cstackBANK1 BANK1 1 E9 E9 4 1
+cstackBANK3 BANK3 1 1E6 1E6 A 1
+cstackBANK4 BANK4 1 23B 23B 18 1
+inittext CODE 0 7F2 7F2 C 2
+stringtext1 STRCODE 0 3FE 3FE 200 2
+stringtext2 STRCODE 0 1800 1800 20 2
+intentry CODE 0 4 4 62 2
+bssBANK0 BANK0 1 4E 4E 11 1
+bssBANK1 BANK1 1 A0 A0 49 1
+bssBANK2 BANK2 1 120 120 3F 1
+bssBANK3 BANK3 1 1A0 1A0 2A 1
+bssBANK4 BANK4 1 220 220 1B 1
+idataBANK1 CODE 0 102F 102F 3 2
+idataBANK2 CODE 0 106D 106D F 2
+idataBANK3 CODE 0 123D 123D 1C 2
+dataBANK1 BANK1 1 ED ED 3 1
+dataBANK2 BANK2 1 15F 15F F 1
+dataBANK3 BANK3 1 1CA 1CA 1C 1
+clrtext CODE 0 1052 1052 C 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5F-6F 1
+RAM 16E-16F 1
+RAM 253-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A2B 1
+BANK0 5F-6F 1
+BANK2 16E-16F 1
+BANK4 253-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 2-3 2
+CONST 7FE-800 2
+CONST 1000-102E 2
+CONST 1820-3FFF 2
+ENTRY 2-3 2
+ENTRY 7FE-800 2
+ENTRY 1000-102E 2
+ENTRY 1820-3FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+SFR32 1000-106F 1
+SFR33 1080-10EF 1
+SFR34 1100-116F 1
+SFR35 1180-11EF 1
+SFR36 1200-126F 1
+SFR37 1280-12EF 1
+SFR38 1300-136F 1
+SFR39 1380-13EF 1
+SFR40 1400-146F 1
+SFR41 1480-14EF 1
+SFR42 1500-156F 1
+SFR43 1580-15EF 1
+SFR44 1600-166F 1
+SFR45 1680-16EF 1
+SFR46 1700-176F 1
+SFR47 1780-17EF 1
+SFR48 1800-186F 1
+SFR49 1880-18EF 1
+SFR50 1900-196F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+STACK 2173-264B 1
+CODE 2-3 2
+CODE 7FE-800 2
+CODE 1000-102E 2
+CODE 1820-3FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A2B 1
+BIGRAM 2000-27EF 1
+STRCODE 2-3 2
+STRCODE 7FE-800 2
+STRCODE 1000-102E 2
+STRCODE 1820-3FFF 2
+STRING 2-3 2
+STRING 7FE-800 2
+STRING 1000-102E 2
+STRING 1820-3FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TREX_PIC16_3.0.X.production.obj
+68 cinit CODE >8158:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+68 cinit CODE >8161:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+68 cinit CODE >8422:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+69 cinit CODE >8423:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+6C cinit CODE >8424:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+6D cinit CODE >8425:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+70 cinit CODE >8426:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+71 cinit CODE >8427:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+74 cinit CODE >8428:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+75 cinit CODE >8432:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+76 cinit CODE >8433:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+77 cinit CODE >8434:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+78 cinit CODE >8435:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+79 cinit CODE >8436:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7A cinit CODE >8437:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7B cinit CODE >8438:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7C cinit CODE >8439:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7D cinit CODE >8440:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7E cinit CODE >8441:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F cinit CODE >8442:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+80 cinit CODE >8443:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+83 cinit CODE >8447:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+84 cinit CODE >8448:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+85 cinit CODE >8449:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+86 cinit CODE >8450:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+87 cinit CODE >8451:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+88 cinit CODE >8452:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+89 cinit CODE >8453:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+8A cinit CODE >8454:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+8B cinit CODE >8455:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+8C cinit CODE >8456:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+8D cinit CODE >8457:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+8E cinit CODE >8458:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+91 cinit CODE >8481:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+92 cinit CODE >8482:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+93 cinit CODE >8483:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+94 cinit CODE >8484:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+95 cinit CODE >8485:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+96 cinit CODE >8486:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+97 cinit CODE >8487:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+98 cinit CODE >8488:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+99 cinit CODE >8489:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+9C cinit CODE >8493:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+9D cinit CODE >8494:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+9E cinit CODE >8495:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+9F cinit CODE >8496:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A0 cinit CODE >8497:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A1 cinit CODE >8498:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A2 cinit CODE >8499:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A3 cinit CODE >8500:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A4 cinit CODE >8501:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A7 cinit CODE >8505:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A8 cinit CODE >8506:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+A9 cinit CODE >8507:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+AA cinit CODE >8508:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+AB cinit CODE >8509:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+AC cinit CODE >8510:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+AD cinit CODE >8511:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+AE cinit CODE >8512:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+AF cinit CODE >8513:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B2 cinit CODE >8517:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B3 cinit CODE >8518:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B4 cinit CODE >8519:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B5 cinit CODE >8520:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B6 cinit CODE >8521:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B7 cinit CODE >8522:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B8 cinit CODE >8523:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+B9 cinit CODE >8524:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+BA cinit CODE >8525:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+BD cinit CODE >8529:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+BE cinit CODE >8530:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+BF cinit CODE >8531:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C0 cinit CODE >8532:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C1 cinit CODE >8533:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C2 cinit CODE >8534:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C3 cinit CODE >8535:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C4 cinit CODE >8536:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C5 cinit CODE >8537:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C8 cinit CODE >8541:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+C9 cinit CODE >8542:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+CA cinit CODE >8543:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+CB cinit CODE >8544:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+CC cinit CODE >8545:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+CD cinit CODE >8546:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+CE cinit CODE >8547:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+CF cinit CODE >8548:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+D0 cinit CODE >8549:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+D2 cinit CODE >8555:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+D2 cinit CODE >8557:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+D3 cinit CODE >8558:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+D4 cinit CODE >8559:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+4 intentry CODE >62:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+4 intentry CODE >36:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+9 intentry CODE >40:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+D intentry CODE >42:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+10 intentry CODE >43:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+12 intentry CODE >44:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+12 intentry CODE >46:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+15 intentry CODE >48:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+18 intentry CODE >52:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+1C intentry CODE >54:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+1F intentry CODE >59:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+23 intentry CODE >63:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+29 intentry CODE >64:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+2B intentry CODE >66:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+2E intentry CODE >68:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+31 intentry CODE >70:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+34 intentry CODE >72:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+37 intentry CODE >73:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+37 intentry CODE >74:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+3A intentry CODE >76:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+3D intentry CODE >77:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+3D intentry CODE >78:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+40 intentry CODE >80:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+43 intentry CODE >81:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+43 intentry CODE >82:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+46 intentry CODE >84:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+49 intentry CODE >87:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+4F intentry CODE >88:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+52 intentry CODE >91:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+56 intentry CODE >93:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+5F intentry CODE >94:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+61 intentry CODE >96:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/interrupts.c
+1335 text58 CODE >275:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1335 text58 CODE >276:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1336 text58 CODE >278:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1338 text58 CODE >281:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1344 text58 CODE >283:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+134F text58 CODE >285:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1354 text58 CODE >281:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1362 text58 CODE >288:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1365 text58 CODE >290:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1366 text58 CODE >291:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1367 text58 CODE >294:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1302 text57 CODE >109:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1302 text57 CODE >112:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1305 text57 CODE >116:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1306 text57 CODE >117:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1307 text57 CODE >119:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1311 text57 CODE >121:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1314 text57 CODE >125:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1323 text57 CODE >127:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1327 text57 CODE >129:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+132A text57 CODE >131:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+132E text57 CODE >133:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+132F text57 CODE >135:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12D2 text56 CODE >85:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12D2 text56 CODE >88:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12D7 text56 CODE >90:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12E7 text56 CODE >91:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12F5 text56 CODE >92:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12F8 text56 CODE >94:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12F9 text56 CODE >96:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12FE text56 CODE >97:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12FF text56 CODE >98:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+12FF text56 CODE >100:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+10B0 text55 CODE >97:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10B0 text55 CODE >99:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10B3 text55 CODE >101:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10B5 text55 CODE >102:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10B8 text55 CODE >103:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10B8 text55 CODE >104:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10BA text55 CODE >105:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10C4 text55 CODE >99:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+103C text54 CODE >47:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+103D text54 CODE >49:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1040 text54 CODE >50:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1040 text54 CODE >51:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1106 text53 CODE >290:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1107 text53 CODE >292:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+110B text53 CODE >294:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+110D text53 CODE >296:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1111 text53 CODE >297:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+111B text53 CODE >299:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+111D text53 CODE >300:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+111E text52 CODE >232:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+111F text52 CODE >234:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1121 text52 CODE >236:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1125 text52 CODE >237:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1129 text52 CODE >238:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1133 text52 CODE >240:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1135 text52 CODE >241:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10C5 text51 CODE >261:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10C6 text51 CODE >263:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10C8 text51 CODE >265:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10CC text51 CODE >266:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10D0 text51 CODE >267:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10D4 text51 CODE >268:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10D7 text51 CODE >270:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10D9 text51 CODE >271:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+109D text50 CODE >70:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+109D text50 CODE >72:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10A0 text50 CODE >74:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10A2 text50 CODE >75:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10AD text50 CODE >76:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10AD text50 CODE >77:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1136 text49 CODE >250:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1137 text49 CODE >252:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1139 text49 CODE >254:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+113D text49 CODE >255:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1141 text49 CODE >256:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+114B text49 CODE >258:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+114D text49 CODE >259:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1166 text48 CODE >311:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1167 text48 CODE >313:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1174 text48 CODE >314:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+117F text48 CODE >315:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11CE text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11CE text47 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11D0 text47 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11D2 text47 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11D6 text47 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11DB text47 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11E0 text47 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+11E4 text47 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+D22 text46 CODE >635:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D22 text46 CODE >637:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D26 text46 CODE >639:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D28 text46 CODE >643:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D33 text46 CODE >646:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D3D text46 CODE >648:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D40 text46 CODE >651:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D4A text46 CODE >653:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D4D text46 CODE >655:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D52 text46 CODE >658:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D55 text46 CODE >660:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D5A text46 CODE >664:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D64 text46 CODE >667:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D67 text46 CODE >669:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D84 text46 CODE >671:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DA7 text46 CODE >672:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DB3 text46 CODE >673:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DBD text46 CODE >674:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DC2 text46 CODE >675:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DC3 text46 CODE >677:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DC8 text46 CODE >680:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DCB text46 CODE >682:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+DE8 text46 CODE >684:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E0B text46 CODE >685:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E17 text46 CODE >686:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E21 text46 CODE >687:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E26 text46 CODE >688:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E27 text46 CODE >690:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E2C text46 CODE >696:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E2F text46 CODE >698:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E4B text46 CODE >700:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E6D text46 CODE >701:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E75 text46 CODE >702:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E7E text46 CODE >703:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E83 text46 CODE >738:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+E8C text46 CODE >740:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+12B1 text44 CODE >31:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12B1 text44 CODE >33:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12B3 text44 CODE >39:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12B5 text44 CODE >40:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12B7 text44 CODE >41:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12B9 text44 CODE >42:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12BC text44 CODE >45:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12BD text44 CODE >46:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12BF text44 CODE >47:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12C1 text44 CODE >50:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12C4 text44 CODE >53:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12C7 text44 CODE >54:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12C8 text44 CODE >55:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12CC text44 CODE >56:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12CE text44 CODE >58:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+12D0 text44 CODE >59:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+1043 text43 CODE >34:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1043 text43 CODE >36:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1045 text43 CODE >37:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1047 text43 CODE >38:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1049 text43 CODE >39:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+104A text42 CODE >47:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+104C text42 CODE >49:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+104F text42 CODE >50:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+104F text42 CODE >51:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+114E text41 CODE >261:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1150 text41 CODE >263:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1151 text41 CODE >265:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1155 text41 CODE >266:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+115A text41 CODE >267:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+115F text41 CODE >268:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1163 text41 CODE >270:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1165 text41 CODE >271:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1180 text40 CODE >97:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1180 text40 CODE >99:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1184 text40 CODE >101:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1187 text40 CODE >102:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+118A text40 CODE >103:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+118A text40 CODE >104:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+118C text40 CODE >105:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1199 text40 CODE >99:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+119A text39 CODE >232:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+119C text39 CODE >234:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+119D text39 CODE >236:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11A1 text39 CODE >237:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11A6 text39 CODE >238:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11B1 text39 CODE >240:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11B3 text39 CODE >241:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+179E text38 CODE >340:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17A0 text38 CODE >342:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17A1 text38 CODE >345:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17AD text38 CODE >346:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17B6 text38 CODE >349:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17E2 text38 CODE >351:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17EC text38 CODE >352:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17F1 text38 CODE >354:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17FB text38 CODE >356:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+17FE text38 CODE >362:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10EF text37 CODE >70:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10EF text37 CODE >72:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10F3 text37 CODE >74:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10F6 text37 CODE >75:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1102 text37 CODE >76:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+1102 text37 CODE >77:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/spi_pic16.c
+10DA text36 CODE >273:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10DC text36 CODE >275:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10DD text36 CODE >277:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10E1 text36 CODE >278:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10EC text36 CODE >280:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+10EE text36 CODE >281:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11B4 text35 CODE >250:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11B6 text35 CODE >252:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11B7 text35 CODE >254:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11BB text35 CODE >255:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11C0 text35 CODE >256:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11CB text35 CODE >258:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11CD text35 CODE >259:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+11E9 text34 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+11EB text34 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+11EF text34 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+11F8 text34 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+1204 text34 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\memset.c
+98B text33 CODE >375:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+98B text33 CODE >377:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+98E text33 CODE >379:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+996 text33 CODE >381:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9A2 text33 CODE >382:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9AE text33 CODE >385:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9BA text33 CODE >387:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9BD text33 CODE >390:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9BF text33 CODE >391:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9C0 text33 CODE >394:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9C6 text33 CODE >398:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9CB text33 CODE >399:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9CB text33 CODE >406:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9D9 text33 CODE >401:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9DC text33 CODE >403:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9E1 text33 CODE >404:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9E3 text33 CODE >399:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9E4 text33 CODE >409:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9EE text33 CODE >412:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9F9 text33 CODE >415:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+9FF text33 CODE >416:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A05 text33 CODE >417:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A07 text33 CODE >419:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A14 text33 CODE >422:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A16 text33 CODE >423:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A21 text33 CODE >426:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A23 text33 CODE >427:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A2E text33 CODE >430:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A3E text33 CODE >433:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A50 text33 CODE >434:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A62 text33 CODE >437:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A64 text33 CODE >438:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A6E text33 CODE >441:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A74 text33 CODE >445:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A75 text33 CODE >452:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A80 text33 CODE >455:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A8A text33 CODE >458:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+801 text32 CODE >29:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+801 text32 CODE >32:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+803 text32 CODE >33:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+806 text32 CODE >34:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+807 text32 CODE >37:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+809 text32 CODE >38:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+80B text32 CODE >39:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+80C text32 CODE >55:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+80D text32 CODE >56:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+80E text32 CODE >57:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+80F text32 CODE >58:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+810 text32 CODE >59:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+811 text32 CODE >61:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+814 text32 CODE >62:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+81A text32 CODE >63:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+820 text32 CODE >64:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+826 text32 CODE >65:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+14F6 text31 CODE >88:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14F6 text31 CODE >92:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14F7 text31 CODE >93:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14F8 text31 CODE >101:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14FB text31 CODE >102:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14FD text31 CODE >103:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14FF text31 CODE >108:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1501 text31 CODE >109:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1504 text31 CODE >110:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1506 text31 CODE >111:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1509 text31 CODE >118:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+150A text31 CODE >119:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+150C text31 CODE >120:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+150E text31 CODE >121:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1511 text31 CODE >124:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1512 text31 CODE >125:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1514 text31 CODE >126:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1516 text31 CODE >129:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1518 text31 CODE >130:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+151B text31 CODE >131:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+151C text31 CODE >134:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+151E text31 CODE >135:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1520 text31 CODE >136:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1521 text31 CODE >143:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1524 text31 CODE >144:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1527 text31 CODE >149:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+152A text31 CODE >150:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+152D text31 CODE >151:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+152F text31 CODE >153:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1532 text31 CODE >154:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1534 text31 CODE >155:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1536 text31 CODE >156:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1538 text31 CODE >164:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+153B text31 CODE >165:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+153D text31 CODE >166:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+153F text31 CODE >167:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1540 text31 CODE >170:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+14B2 text30 CODE >234:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14B2 text30 CODE >236:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14C0 text30 CODE >238:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14C5 text30 CODE >239:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14CD text30 CODE >240:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14D1 text30 CODE >241:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14D9 text30 CODE >242:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14DD text30 CODE >243:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14E5 text30 CODE >244:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14E9 text30 CODE >245:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+14F1 text30 CODE >236:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+1032 text29 CODE >302:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1032 text29 CODE >304:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+E8F text28 CODE >68:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+E8F text28 CODE >69:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+E91 text28 CODE >70:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+E94 text28 CODE >74:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+E95 text28 CODE >79:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+E99 text28 CODE >81:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+E9F text28 CODE >82:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EA0 text28 CODE >83:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EA4 text28 CODE >85:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EAA text28 CODE >86:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EAB text28 CODE >87:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EAF text28 CODE >89:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EB5 text28 CODE >90:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EB6 text28 CODE >91:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EBA text28 CODE >93:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EC0 text28 CODE >94:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EC1 text28 CODE >97:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EC7 text28 CODE >99:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EC8 text28 CODE >101:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+ED2 text28 CODE >103:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+ED6 text28 CODE >106:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EE4 text28 CODE >108:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EE5 text28 CODE >109:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EE6 text28 CODE >112:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EEC text28 CODE >114:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EEE text28 CODE >115:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EF3 text28 CODE >116:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EF7 text28 CODE >117:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EFB text28 CODE >118:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+EFF text28 CODE >119:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F00 text28 CODE >120:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F01 text28 CODE >121:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F0A text28 CODE >123:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F12 text28 CODE >124:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F14 text28 CODE >125:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F19 text28 CODE >130:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F23 text28 CODE >132:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F26 text28 CODE >133:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F28 text28 CODE >134:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F2C text28 CODE >135:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F2E text28 CODE >139:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F38 text28 CODE >141:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F40 text28 CODE >142:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F42 text28 CODE >143:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F46 text28 CODE >144:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F4A text28 CODE >145:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F4E text28 CODE >146:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F52 text28 CODE >148:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F53 text28 CODE >149:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F53 text28 CODE >151:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F55 text28 CODE >152:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F56 text28 CODE >153:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F57 text28 CODE >154:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F58 text28 CODE >155:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F59 text28 CODE >156:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F5D text28 CODE >157:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F62 text28 CODE >162:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F6C text28 CODE >165:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F76 text28 CODE >167:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F7E text28 CODE >168:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F83 text28 CODE >169:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F87 text28 CODE >170:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F8B text28 CODE >171:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F8C text28 CODE >172:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F90 text28 CODE >174:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F91 text28 CODE >175:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F91 text28 CODE >177:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F93 text28 CODE >178:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F94 text28 CODE >179:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F95 text28 CODE >180:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F96 text28 CODE >181:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F97 text28 CODE >183:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+F9B text28 CODE >185:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FA1 text28 CODE >186:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FA2 text28 CODE >189:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FAB text28 CODE >192:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FC0 text28 CODE >195:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FC9 text28 CODE >198:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FCE text28 CODE >199:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FCF text28 CODE >200:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FD1 text28 CODE >202:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FDB text28 CODE >205:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FE0 text28 CODE >206:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FE1 text28 CODE >207:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FE6 text28 CODE >209:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FE7 text28 CODE >214:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FE9 text28 CODE >219:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FEA text28 CODE >74:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FF6 text28 CODE >220:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FF8 text28 CODE >221:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FF9 text28 CODE >222:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FFA text28 CODE >223:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FFB text28 CODE >225:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FFD text28 CODE >226:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FFE text28 CODE >227:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+FFF text28 CODE >228:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/buttons.c
+82D text27 CODE >222:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+82F text27 CODE >225:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+863 text27 CODE >226:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+872 text27 CODE >227:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+876 text27 CODE >228:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+877 text27 CODE >230:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+87E text27 CODE >231:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+882 text27 CODE >233:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+88B text27 CODE >234:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1690 text26 CODE >270:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1690 text26 CODE >274:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16C4 text26 CODE >275:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16D3 text26 CODE >276:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16D4 text26 CODE >278:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16D8 text26 CODE >279:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16DA text26 CODE >280:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16DB text26 CODE >282:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16DC text26 CODE >283:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16DD text26 CODE >284:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16DE text26 CODE >286:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16DF text26 CODE >288:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16E0 text26 CODE >276:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16E9 text26 CODE >288:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+890 text25 CODE >157:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+890 text25 CODE >159:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+8C1 text25 CODE >161:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+8C8 text25 CODE >163:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+8F2 text25 CODE >164:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+91B text25 CODE >165:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+944 text25 CODE >167:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+945 text25 CODE >170:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+94F text25 CODE >171:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+953 text25 CODE >174:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+957 text25 CODE >178:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+95D text25 CODE >180:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+95E text25 CODE >183:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+96A text25 CODE >184:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+976 text25 CODE >185:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1205 text24 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+1205 text24 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+1208 text24 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+120A text24 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+120E text24 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+1213 text24 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+1218 text24 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+121C text24 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+15E4 text23 CODE >598:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15E4 text23 CODE >600:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1601 text23 CODE >602:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1623 text23 CODE >604:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+162D text23 CODE >606:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1636 text23 CODE >607:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1638 text23 CODE >610:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+D6 text22 CODE >312:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D8 text22 CODE >317:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D9 text22 CODE >321:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+DE text22 CODE >323:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+E7 text22 CODE >324:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+F0 text22 CODE >325:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+F9 text22 CODE >329:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+110 text22 CODE >333:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+136 text22 CODE >335:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+149 text22 CODE >337:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+155 text22 CODE >338:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+15E text22 CODE >339:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+167 text22 CODE >340:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+170 text22 CODE >342:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+176 text22 CODE >343:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+177 text22 CODE >345:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+182 text22 CODE >346:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+186 text22 CODE >347:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+18A text22 CODE >348:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+18B text22 CODE >349:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+190 text22 CODE >350:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+194 text22 CODE >351:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+195 text22 CODE >352:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+196 text22 CODE >353:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+19A text22 CODE >354:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+19E text22 CODE >355:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1A2 text22 CODE >357:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1A4 text22 CODE >358:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1A9 text22 CODE >359:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1AD text22 CODE >360:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1B1 text22 CODE >361:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1B5 text22 CODE >362:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1B9 text22 CODE >365:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1BA text22 CODE >367:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1C2 text22 CODE >368:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1CB text22 CODE >369:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1D4 text22 CODE >370:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1DD text22 CODE >371:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1DE text22 CODE >373:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1E7 text22 CODE >374:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1F0 text22 CODE >375:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1F9 text22 CODE >376:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+202 text22 CODE >377:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+203 text22 CODE >379:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+20C text22 CODE >380:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+215 text22 CODE >381:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+216 text22 CODE >383:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+21F text22 CODE >384:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+228 text22 CODE >385:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+231 text22 CODE >386:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+23A text22 CODE >387:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+23B text22 CODE >389:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+244 text22 CODE >390:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+245 text22 CODE >392:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+24B text22 CODE >393:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+26C text22 CODE >394:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+275 text22 CODE >395:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+27E text22 CODE >396:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+287 text22 CODE >397:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+290 text22 CODE >398:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+299 text22 CODE >399:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2A2 text22 CODE >400:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2AB text22 CODE >401:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2B7 text22 CODE >402:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2B8 text22 CODE >403:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2B8 text22 CODE >404:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2BA text22 CODE >405:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2BB text22 CODE >407:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2C0 text22 CODE >409:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2C9 text22 CODE >411:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2D1 text22 CODE >412:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2DA text22 CODE >413:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2E3 text22 CODE >414:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2EC text22 CODE >415:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2F5 text22 CODE >416:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+2FE text22 CODE >417:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+305 text22 CODE >418:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+306 text22 CODE >421:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+30D text22 CODE >423:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+30D text22 CODE >424:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+313 text22 CODE >425:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+319 text22 CODE >426:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+31F text22 CODE >427:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+320 text22 CODE >429:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+326 text22 CODE >430:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+32E text22 CODE >432:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+336 text22 CODE >433:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+33F text22 CODE >434:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+348 text22 CODE >435:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+351 text22 CODE >437:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+352 text22 CODE >439:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+357 text22 CODE >441:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+35F text22 CODE >443:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+367 text22 CODE >444:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+370 text22 CODE >445:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+379 text22 CODE >446:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+380 text22 CODE >447:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+381 text22 CODE >448:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+389 text22 CODE >450:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+38F text22 CODE >451:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+390 text22 CODE >454:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+396 text22 CODE >455:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+39C text22 CODE >457:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+39C text22 CODE >458:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+3A2 text22 CODE >459:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+3A8 text22 CODE >460:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+3AE text22 CODE >462:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+3AF text22 CODE >317:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+3FD text22 CODE >463:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1259 text21 CODE >615:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1259 text21 CODE >618:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+125B text21 CODE >620:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1266 text21 CODE >622:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1269 text21 CODE >623:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1271 text21 CODE >624:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1275 text21 CODE >620:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1541 text20 CODE >254:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1541 text20 CODE >257:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+157D text20 CODE >258:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+158D text20 CODE >259:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1276 text19 CODE >75:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+1276 text19 CODE >78:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+127B text19 CODE >81:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+127F text19 CODE >84:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+1288 text19 CODE >87:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+1292 text19 CODE >88:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/LED.c
+16EA text18 CODE >238:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+16EA text18 CODE >242:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+171F text18 CODE >243:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+172E text18 CODE >244:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1732 text18 CODE >246:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1733 text18 CODE >248:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+173D text18 CODE >249:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1036 text17 CODE >466:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1036 text17 CODE >469:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1038 text17 CODE >472:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+103B text17 CODE >473:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+105E text16 CODE >177:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+105E text16 CODE >180:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+105F text16 CODE >183:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1062 text16 CODE >184:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1064 text16 CODE >185:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1065 text16 CODE >188:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1067 text16 CODE >191:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1069 text16 CODE >195:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+106B text16 CODE >196:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+106C text16 CODE >197:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+13E9 text15 CODE >29:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13E9 text15 CODE >32:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13EB text15 CODE >33:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13EC text15 CODE >36:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13EE text15 CODE >39:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13F0 text15 CODE >40:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13F1 text15 CODE >43:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13F4 text15 CODE >46:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13F8 text15 CODE >47:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13F9 text15 CODE >50:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13FB text15 CODE >53:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13FD text15 CODE >56:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+13FF text15 CODE >57:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1401 text15 CODE >58:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1406 text15 CODE >60:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1408 text15 CODE >61:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+140A text15 CODE >62:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+140B text15 CODE >65:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+140D text15 CODE >66:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1410 text15 CODE >69:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1412 text15 CODE >70:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1415 text15 CODE >71:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1417 text15 CODE >72:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1419 text15 CODE >73:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+141B text15 CODE >74:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1421 text15 CODE >75:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1427 text15 CODE >76:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1429 text15 CODE >77:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1293 text14 CODE >478:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1293 text14 CODE >480:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+129F text14 CODE >481:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+12AB text14 CODE >485:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+12AD text14 CODE >488:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+12B0 text14 CODE >489:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+107C text13 CODE >203:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+107C text13 CODE >206:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+107E text13 CODE >207:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1080 text13 CODE >210:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1082 text13 CODE >211:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1083 text13 CODE >214:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1086 text13 CODE >216:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1088 text13 CODE >217:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+1089 text13 CODE >220:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+108A text13 CODE >221:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+108B text13 CODE >222:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/system.c
+13A7 text12 CODE >127:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13A7 text12 CODE >129:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13B3 text12 CODE >130:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13BF text12 CODE >131:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13CB text12 CODE >132:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13D7 text12 CODE >133:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13E3 text12 CODE >136:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13E6 text12 CODE >138:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13E8 text12 CODE >139:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+163A text11 CODE >292:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+163A text11 CODE >295:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1676 text11 CODE >296:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1686 text11 CODE >297:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1689 text11 CODE >299:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+168C text11 CODE >302:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+168F text11 CODE >297:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+A8D text10 CODE >194:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+A8D text10 CODE >196:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+AA2 text10 CODE >197:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+AB6 text10 CODE >199:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+ADF text10 CODE >200:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+AE3 text10 CODE >202:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+AE6 text10 CODE >204:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+AF2 text10 CODE >205:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B00 text10 CODE >206:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B13 text10 CODE >207:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B22 text10 CODE >208:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B33 text10 CODE >209:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B39 text10 CODE >210:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B4A text10 CODE >211:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B4B text10 CODE >214:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B5D text10 CODE >215:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B73 text10 CODE >216:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B79 text10 CODE >217:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+B7F text10 CODE >221:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+BA4 text10 CODE >222:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1221 text9 CODE >311:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1223 text9 CODE >313:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1230 text9 CODE >314:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+123C text9 CODE >315:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1590 text8 CODE >539:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1590 text8 CODE >543:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1591 text8 CODE >546:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1593 text8 CODE >550:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1595 text8 CODE >554:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+159B text8 CODE >555:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+159C text8 CODE >560:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+159E text8 CODE >543:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15AF text8 CODE >561:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15AF text8 CODE >563:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15B1 text8 CODE >566:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15B4 text8 CODE >569:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15C0 text8 CODE >571:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15C3 text8 CODE >575:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15CF text8 CODE >576:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15D8 text8 CODE >577:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15DD text8 CODE >578:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15DF text8 CODE >581:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+15E1 text8 CODE >583:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+142C text7 CODE >324:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+142C text7 CODE >326:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+145A text7 CODE >328:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+1464 text7 CODE >330:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+146E text7 CODE >331:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+785 text6 CODE >503:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+785 text6 CODE >507:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7A2 text6 CODE >509:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7B3 text6 CODE >512:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7BE text6 CODE >514:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7BF text6 CODE >515:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7DD text6 CODE >518:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7E8 text6 CODE >519:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7E9 text6 CODE >523:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7EE text6 CODE >524:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+7F0 text6 CODE >528:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/CAN_SPI_PIC16.c
+5FE text5 CODE >469:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+600 text5 CODE >471:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+61F text5 CODE >472:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+620 text5 CODE >476:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+630 text5 CODE >478:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+645 text5 CODE >479:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+650 text5 CODE >480:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+65D text5 CODE >481:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+669 text5 CODE >482:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+670 text5 CODE >483:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+671 text5 CODE >485:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+675 text5 CODE >487:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+685 text5 CODE >488:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+690 text5 CODE >489:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+69B text5 CODE >490:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6A6 text5 CODE >491:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6B1 text5 CODE >492:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6BC text5 CODE >493:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6C7 text5 CODE >494:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6CA text5 CODE >496:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6CD text5 CODE >500:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6D7 text5 CODE >502:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6E0 text5 CODE >504:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6E1 text5 CODE >506:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6E2 text5 CODE >509:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6F2 text5 CODE >510:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+6FD text5 CODE >511:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+708 text5 CODE >512:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+713 text5 CODE >513:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+716 text5 CODE >515:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+719 text5 CODE >519:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+723 text5 CODE >521:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+72C text5 CODE >523:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+72E text5 CODE >526:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+72F text5 CODE >528:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+73F text5 CODE >530:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+74B text5 CODE >531:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+756 text5 CODE >532:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+761 text5 CODE >533:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+76C text5 CODE >534:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+777 text5 CODE >536:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+778 text5 CODE >472:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+784 text5 CODE >537:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1744 text4 CODE >325:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1746 text4 CODE >330:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1781 text4 CODE >332:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1791 text4 CODE >333:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1796 text4 CODE >334:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+146F text3 CODE >244:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+146F text3 CODE >247:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1471 text3 CODE >248:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1472 text3 CODE >249:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1474 text3 CODE >250:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1476 text3 CODE >255:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1480 text3 CODE >257:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+148D text3 CODE >258:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+1496 text3 CODE >255:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+14A2 text3 CODE >262:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+14A9 text3 CODE >263:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+14AF text3 CODE >266:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BBE text2 CODE >142:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BBE text2 CODE >145:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BC0 text2 CODE >147:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BCA text2 CODE >149:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BD4 text2 CODE >147:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BE0 text2 CODE >152:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BE6 text2 CODE >154:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BE8 text2 CODE >160:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+BFB text2 CODE >162:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C00 text2 CODE >163:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C02 text2 CODE >164:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C04 text2 CODE >165:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C05 text2 CODE >166:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C06 text2 CODE >167:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C07 text2 CODE >169:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C08 text2 CODE >175:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C0E text2 CODE >177:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C31 text2 CODE >179:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C38 text2 CODE >180:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C39 text2 CODE >183:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C3F text2 CODE >184:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C4C text2 CODE >185:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C59 text2 CODE >186:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C5B text2 CODE >188:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C62 text2 CODE >189:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C69 text2 CODE >190:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C70 text2 CODE >191:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C77 text2 CODE >192:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C7E text2 CODE >193:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C85 text2 CODE >195:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C87 text2 CODE >197:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C8E text2 CODE >198:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C95 text2 CODE >199:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C9C text2 CODE >201:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+C9D text2 CODE >204:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CA3 text2 CODE >205:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CB0 text2 CODE >206:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CB2 text2 CODE >208:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CB9 text2 CODE >209:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CC0 text2 CODE >210:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CC7 text2 CODE >211:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CCE text2 CODE >213:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CCF text2 CODE >217:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CD5 text2 CODE >220:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CE2 text2 CODE >221:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CE9 text2 CODE >223:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CEC text2 CODE >224:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CF1 text2 CODE >228:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+CFF text2 CODE >231:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D0C text2 CODE >232:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D0E text2 CODE >234:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D14 text2 CODE >236:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D15 text2 CODE >180:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+D21 text2 CODE >236:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/EUSART.c
+108C text1 CODE >310:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+108C text1 CODE >312:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1090 text1 CODE >314:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1093 text1 CODE >315:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1095 text1 CODE >318:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1098 text1 CODE >320:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+109A text1 CODE >321:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1369 maintext CODE >181:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1369 maintext CODE >183:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+136C maintext CODE >186:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+136F maintext CODE >187:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1372 maintext CODE >188:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1374 maintext CODE >189:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+137B maintext CODE >190:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+137E maintext CODE >191:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1381 maintext CODE >192:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1384 maintext CODE >193:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+138E maintext CODE >198:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1392 maintext CODE >200:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1395 maintext CODE >201:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1398 maintext CODE >202:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+139B maintext CODE >203:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+139F maintext CODE >204:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13A2 maintext CODE >205:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13A5 maintext CODE >206:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+13A6 maintext CODE >195:C:\Users\us1dwyman\MPLABXProjects\TREX_PIC16_3.0_KNA\TREX_PIC16_V3.0/src/main.c
+1052 clrtext CODE >8464:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1052 clrtext CODE >8465:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1053 clrtext CODE >8466:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1053 clrtext CODE >8467:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1054 clrtext CODE >8468:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1055 clrtext CODE >8469:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1056 clrtext CODE >8470:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1057 clrtext CODE >8471:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1058 clrtext CODE >8472:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+1059 clrtext CODE >8473:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+105A clrtext CODE >8474:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+105B clrtext CODE >8475:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+105C clrtext CODE >8477:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+105D clrtext CODE >8476:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F2 inittext CODE >8405:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F2 inittext CODE >8406:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F3 inittext CODE >8407:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F3 inittext CODE >8408:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F4 inittext CODE >8409:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F5 inittext CODE >8410:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F6 inittext CODE >8411:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F7 inittext CODE >8412:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F8 inittext CODE >8413:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7F9 inittext CODE >8414:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7FA inittext CODE >8415:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7FB inittext CODE >8416:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7FC inittext CODE >8418:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+7FD inittext CODE >8417:C:\Users\us1dwyman\AppData\Local\Temp\s4h8.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__extraSwitchState 15C 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+___latbits 3 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__CRCTable BFC 0 STRCODE 0 stringtext1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__LdataBANK2 0 0 ABS 0 dataBANK2 -
+__LdataBANK3 0 0 ABS 0 dataBANK3 -
+__end_of_Buttons_Initialize 25A4 0 CODE 0 text44 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hspace_0 800C 0 ABS 0 - -
+__Hspace_1 253 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+i1__Read 223C 0 CODE 0 text52 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Tx@pFrame E9 0 BANK1 1 cstackBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__HidataBANK2 0 0 ABS 0 idataBANK2 -
+__HidataBANK3 0 0 ABS 0 idataBANK3 -
+_handle_can_messages_from_VCU 2A82 0 CODE 0 text20 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SSP1STATbits 18F 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_MCP2515_ISR 1D1E 0 CODE 0 text46 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__EnqueueTxMessage 2858 0 CODE 0 text7 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_led_task 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_count E3 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_T1CONbits 20E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Receive 177C 0 CODE 0 text2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LED_column_array 4E 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__end_of_button_task 1120 0 CODE 0 text27 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Tx_buffer_remaining E5 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxBufferToMessage@id 3F 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATA 18 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATB 19 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATC 1A 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATD 1B 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATE 1C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATF 1D 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PMD2 798 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PMD3 799 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PMD4 79A 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PMD5 79B 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+EUSART_Receive@i_1681 35 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR1 20C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_WPUB 1F44 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_WPUC 1F4F 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+_main 26D2 0 CODE 0 maintext dist/default/production\TREX_PIC16_3.0.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_update_graphics 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+start CC 0 CODE 0 init C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+__TxCommand 21B4 0 CODE 0 text36 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SPI1_Initialize 2094 0 CODE 0 text43 dist/default/production\TREX_PIC16_3.0.X.production.obj
+Update_LEDs@row 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_Update_LEDs 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__SendBuffer@addr 7C 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__SendBuffer@pBuf 78 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1__Modify 21B4 0 CODE 0 text51 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SPI1_PutBuffer 21DE 0 CODE 0 text37 dist/default/production\TREX_PIC16_3.0.X.production.obj
+?___wmul 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1_SPI1_Put 2086 0 CODE 0 text54 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1__Modify 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_Buttons_Initialize 2562 0 CODE 0 text44 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxBufferToMessage@p 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__Modify 22CC 0 CODE 0 text41 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_To_EUSART@message 37 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__LidataBANK2 0 0 ABS 0 idataBANK2 -
+__LidataBANK3 0 0 ABS 0 idataBANK3 -
+__end_of_EUSART_Initialize 2858 0 CODE 0 text15 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Modify@mask 32 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer@pFrame 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_TxMailbox@which 4A 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__enableInputState 156 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_power_down_task 2D20 0 CODE 0 text11 dist/default/production\TREX_PIC16_3.0.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+_EUSART_TO_CAN BFC 0 CODE 0 text5 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Modify 218A 0 CODE 0 text51 dist/default/production\TREX_PIC16_3.0.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+_led_task 2DD4 0 CODE 0 text18 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxCommand 220C 0 CODE 0 text53 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_EUSART_Receive 1A44 0 CODE 0 text2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__SendBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1SPI1_GetBuffer@count 72 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_EUSART_Transmit_ISR 2604 0 CODE 0 text56 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Write@pBuf 73 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_Get_Settings_Lock_Status 206C 0 CODE 0 text29 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_CAN_rxMessageQ 264C 0 ABS 1 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Rx@ptr 43 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__Wakeup 27D2 0 CODE 0 text12 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_led_task 2E88 0 CODE 0 text18 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__faultInputState 159 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+___wmul@multiplicand 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_LED_Initialize 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SPI1_Initialize 2086 0 CODE 0 text43 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__canConfig 3000 0 STRCODE 0 stringtext2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_ANSELA 1F38 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_ANSELB 1F43 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_ANSELC 1F4E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_ANSELD 1F59 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_ANSELE 1F64 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_ANSELF 1E50 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SYSTEM_Wakeup 20F8 0 CODE 0 text13 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__TxCommand 21DE 0 CODE 0 text36 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SPI1_PutBuffer 220C 0 CODE 0 text37 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_txMessageQ 271E 0 ABS 1 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_direction_message_task 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_Rx 2BC8 0 CODE 0 text23 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_Tx F0A 0 CODE 0 text6 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_Buttons_Update 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__TxCommand@cmd 37 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_head 5C 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_tail E4 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+led_task@led_tick 139 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__Write 239C 0 CODE 0 text35 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of___wmul 2442 0 CODE 0 text24 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SPI1_GetBuffer 2300 0 CODE 0 text40 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_TxMailbox@txBufCtrlAddress 23C 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Tx_buffer 220 0 BANK4 1 bssBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_Initialize 1316 0 CODE 0 text33 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SendBuffer@addr 3D 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SendBuffer@pBuf 39 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+_TXSTA1bits 11E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_power_down_task 2C74 0 CODE 0 text11 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_To_EUSART 1AC 0 CODE 0 text22 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+Buttons_Update@SW_row 36 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_j1939_sa E8 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+EUSART_Parity_Count@i 72 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1__Write 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1___wmul 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Initialize 27D2 0 CODE 0 text15 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__RxCommand 223C 0 CODE 0 text53 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxBufferToMessage@pMsg 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__Read 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SetMode@mode 45 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_send_data_flag DA 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_MCP2515_ISR 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer@id 41 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_receive_flag D9 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_PPS1WAY$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_handle_can_messages_from_VCU 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_CAN_Rx 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_CAN_Tx 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_Button_Debounce 29EC 0 CODE 0 text30 dist/default/production\TREX_PIC16_3.0.X.production.obj
+start_initialization D0 0 CODE 0 cinit dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_buffer 1A0 0 BANK3 1 bssBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_button_task 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__canConfig 3040 0 STRCODE 0 stringtext2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_TxMailbox@buf 23E 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_handle_can_messages_from_VCU 2B20 0 CODE 0 text20 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_TO_CAN 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISBbits 13 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISCbits 14 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_j1939tp_rxbuf BB 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SPI1_GetBuffer 2334 0 CODE 0 text40 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__switchStates 1BB 0 BANK3 1 bssBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+direction_message_task@direction_state CF 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+test_clock_rollover@counter D1 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_CAN_Initialize 151A 0 CODE 0 text33 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__RxBufferToMessage 1316 0 CODE 0 text25 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RB1PPS 1F19 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RB3PPS 1F1B 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RC1STA 11D 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RC7PPS 1F27 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RCREG1 119 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_memset 240A 0 CODE 0 text34 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SYSTEM_Initialize 2A82 0 CODE 0 text31 dist/default/production\TREX_PIC16_3.0.X.production.obj
+clear_ram0 20A4 0 CODE 0 clrtext dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SP1BRG 11B 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pcstackBANK1 E9 0 BANK1 1 cstackBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pcstackBANK3 1E6 0 BANK3 1 cstackBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pcstackBANK4 23B 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_T0CON0 59E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_T0CON1 59F 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SW_row 57 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Write@reg 38 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR1IE 38D0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR1IF 3880 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR2IE 38D1 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR2IF 3881 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SYSTEM_Sleep 20BC 0 CODE 0 text16 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1SPI1_GetBuffer@pBuf 70 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TX1STA 11E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TXREG1 11A 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxCommand@p 73 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_SPI1_Put 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+power_down_task@power_down_tick 12D 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_SYSTEM_Wakeup 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1_SPI1_Put 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_Master_Request 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+SPI1_PutBuffer@count 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+i1__Write 226C 0 CODE 0 text49 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxCommand@count 74 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1___wmul 239C 0 CODE 0 text47 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_TxMailbox 2B20 0 CODE 0 text8 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1AC 0 CODE 0 cinit -
+i1___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_WDTCCS$LFINTOSC 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+blink_forward_led@toggle ED 0 BANK1 1 dataBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_Update_LEDs 24EC 0 CODE 0 text19 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_EUSART_TO_CAN F0A 0 CODE 0 text5 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr32 0 0 ABS 0 sfr32 -
+__Hsfr33 0 0 ABS 0 sfr33 -
+__Hsfr34 0 0 ABS 0 sfr34 -
+__Hsfr35 0 0 ABS 0 sfr35 -
+__Hsfr36 0 0 ABS 0 sfr36 -
+__Hsfr37 0 0 ABS 0 sfr37 -
+__Hsfr38 0 0 ABS 0 sfr38 -
+__Hsfr39 0 0 ABS 0 sfr39 -
+__Hsfr40 0 0 ABS 0 sfr40 -
+__Hsfr41 0 0 ABS 0 sfr41 -
+__Hsfr42 0 0 ABS 0 sfr42 -
+__Hsfr43 0 0 ABS 0 sfr43 -
+__Hsfr44 0 0 ABS 0 sfr44 -
+__Hsfr45 0 0 ABS 0 sfr45 -
+__Hsfr46 0 0 ABS 0 sfr46 -
+__Hsfr47 0 0 ABS 0 sfr47 -
+__Hsfr48 0 0 ABS 0 sfr48 -
+__Hsfr49 0 0 ABS 0 sfr49 -
+__Hsfr50 0 0 ABS 0 sfr50 -
+__Hsfr51 0 0 ABS 0 sfr51 -
+__Hsfr52 0 0 ABS 0 sfr52 -
+__Hsfr53 0 0 ABS 0 sfr53 -
+__Hsfr54 0 0 ABS 0 sfr54 -
+__Hsfr55 0 0 ABS 0 sfr55 -
+__Hsfr56 0 0 ABS 0 sfr56 -
+__Hsfr57 0 0 ABS 0 sfr57 -
+__Hsfr58 0 0 ABS 0 sfr58 -
+__Hsfr59 0 0 ABS 0 sfr59 -
+__Hsfr60 0 0 ABS 0 sfr60 -
+__Hsfr61 0 0 ABS 0 sfr61 -
+__Hsfr62 0 0 ABS 0 sfr62 -
+__Hsfr63 0 0 ABS 0 sfr63 -
+__Hstack 0 0 STACK 2 stack -
+__end_of_tc_int CC 0 CODE 0 intentry dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1SPI1_PutBuffer@pBuf 70 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_Wakeup 2526 0 CODE 0 text14 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Hbank14 0 0 ABS 0 bank14 -
+__Hbank15 0 0 ABS 0 bank15 -
+__Hbank16 0 0 ABS 0 bank16 -
+__Hbank17 0 0 ABS 0 bank17 -
+__Hbank18 0 0 ABS 0 bank18 -
+__Hbank19 0 0 ABS 0 bank19 -
+__Hbank20 0 0 ABS 0 bank20 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Hbank22 0 0 ABS 0 bank22 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Hbank24 0 0 ABS 0 bank24 -
+__Hbank25 0 0 ABS 0 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank32 0 0 BANK32 1 bank32 -
+__Hbank33 0 0 BANK33 1 bank33 -
+__Hbank34 0 0 BANK34 1 bank34 -
+__Hbank35 0 0 BANK35 1 bank35 -
+__Hbank36 0 0 BANK36 1 bank36 -
+__Hbank37 0 0 BANK37 1 bank37 -
+__Hbank38 0 0 BANK38 1 bank38 -
+__Hbank39 0 0 BANK39 1 bank39 -
+__Hbank40 0 0 BANK40 1 bank40 -
+__Hbank41 0 0 BANK41 1 bank41 -
+__Hbank42 0 0 BANK42 1 bank42 -
+__Hbank43 0 0 BANK43 1 bank43 -
+__Hbank44 0 0 BANK44 1 bank44 -
+__Hbank45 0 0 BANK45 1 bank45 -
+__Hbank46 0 0 BANK46 1 bank46 -
+__Hbank47 0 0 BANK47 1 bank47 -
+__Hbank48 0 0 BANK48 1 bank48 -
+__Hbank49 0 0 BANK49 1 bank49 -
+__Hbank50 0 0 BANK50 1 bank50 -
+__Hbank51 0 0 BANK51 1 bank51 -
+__Hbank52 0 0 BANK52 1 bank52 -
+__Hbank53 0 0 BANK53 1 bank53 -
+__Hbank54 0 0 BANK54 1 bank54 -
+__Hbank55 0 0 BANK55 1 bank55 -
+__Hbank56 0 0 BANK56 1 bank56 -
+__Hbank57 0 0 BANK57 1 bank57 -
+__Hbank58 0 0 BANK58 1 bank58 -
+__Hbank59 0 0 BANK59 1 bank59 -
+__Hbank60 0 0 BANK60 1 bank60 -
+__Hbank61 0 0 BANK61 1 bank61 -
+__Hbank62 0 0 BANK62 1 bank62 -
+__Hbank63 0 0 BANK63 1 bank63 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 11F 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_machine_direction D2 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1__Write 229C 0 CODE 0 text49 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxBufferToMessage 1120 0 CODE 0 text25 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 0 config -
+_Button_Debounce 2964 0 CODE 0 text30 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1___wmul 23D2 0 CODE 0 text47 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_power_down_task 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit D0 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr32 0 0 ABS 0 sfr32 -
+__Lsfr33 0 0 ABS 0 sfr33 -
+__Lsfr34 0 0 ABS 0 sfr34 -
+__Lsfr35 0 0 ABS 0 sfr35 -
+__Lsfr36 0 0 ABS 0 sfr36 -
+__Lsfr37 0 0 ABS 0 sfr37 -
+__Lsfr38 0 0 ABS 0 sfr38 -
+__Lsfr39 0 0 ABS 0 sfr39 -
+__Lsfr40 0 0 ABS 0 sfr40 -
+__Lsfr41 0 0 ABS 0 sfr41 -
+__Lsfr42 0 0 ABS 0 sfr42 -
+__Lsfr43 0 0 ABS 0 sfr43 -
+__Lsfr44 0 0 ABS 0 sfr44 -
+__Lsfr45 0 0 ABS 0 sfr45 -
+__Lsfr46 0 0 ABS 0 sfr46 -
+__Lsfr47 0 0 ABS 0 sfr47 -
+__Lsfr48 0 0 ABS 0 sfr48 -
+__Lsfr49 0 0 ABS 0 sfr49 -
+__Lsfr50 0 0 ABS 0 sfr50 -
+__Lsfr51 0 0 ABS 0 sfr51 -
+__Lsfr52 0 0 ABS 0 sfr52 -
+__Lsfr53 0 0 ABS 0 sfr53 -
+__Lsfr54 0 0 ABS 0 sfr54 -
+__Lsfr55 0 0 ABS 0 sfr55 -
+__Lsfr56 0 0 ABS 0 sfr56 -
+__Lsfr57 0 0 ABS 0 sfr57 -
+__Lsfr58 0 0 ABS 0 sfr58 -
+__Lsfr59 0 0 ABS 0 sfr59 -
+__Lsfr60 0 0 ABS 0 sfr60 -
+__Lsfr61 0 0 ABS 0 sfr61 -
+__Lsfr62 0 0 ABS 0 sfr62 -
+__Lsfr63 0 0 ABS 0 sfr63 -
+__Lstack 0 0 STACK 2 stack -
+__size_of_CAN_To_EUSART 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+init_ram FE4 0 CODE 0 inittext dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_Receive_CAN_Message 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_Buttons_Initialize 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Read@count 36 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Modify 229C 0 CODE 0 text41 dist/default/production\TREX_PIC16_3.0.X.production.obj
+EUSART_Parity_Count@EUSART_byte_parity 71 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Linittext 0 0 ABS 0 inittext -
+__CFG_WDTE$NSLEEP 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PORTCbits E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1__Read 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+button_task@can_msg 3F 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Write@count 75 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_SYSTEM_Sleep 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit CC 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit CC 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 7FC 0 STRCODE 0 stringtext1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pstringtext2 3000 0 STRCODE 0 stringtext2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_checksum_error DB 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_CAN_Sleep 2078 0 CODE 0 text17 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Write 2368 0 CODE 0 text35 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SSP1CON1 190 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+memset@c 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+memset@n 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+memset@p 36 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SYSTEM_Wakeup 2118 0 CODE 0 text13 dist/default/production\TREX_PIC16_3.0.X.production.obj
+___wmul 240A 0 CODE 0 text24 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK3 0 0 ABS 0 cstackBANK3 -
+__LcstackBANK4 0 0 ABS 0 cstackBANK4 -
+__end_of_transmit_can_message_task 2F3C 0 CODE 0 text4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+int$flags 7E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_CAN_Sleep 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+i1__Modify@value 72 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PR2 28D 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__S0 800C 0 ABS 0 - -
+__S1 253 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+MCP2515_ISR@_errFlags 2D 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SendBuffer 2442 0 CODE 0 text9 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_packet_data A0 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SPI1_Put 2094 0 CODE 0 text42 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__MessageToTxBuffer 177C 0 CODE 0 text10 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__TxCommand 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1_SPI1_PutBuffer 213A 0 CODE 0 text50 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_BBEN$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_EUSART_Receive_ISR 266A 0 CODE 0 text57 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_Sleep 206C 0 CODE 0 text17 dist/default/production\TREX_PIC16_3.0.X.production.obj
+EUSART_Master_Request@i 32 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxCommand@pBuf 77 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_CAN_To_EUSART 7FC 0 CODE 0 text22 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SYSTEM_Sleep 20DA 0 CODE 0 text16 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Modify@value 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Read@pBuf 34 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+button_task@button_tick 13D 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__canMode 5E 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_SPI1_Put 20A4 0 CODE 0 text42 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SYSTEM_Initialize 29EC 0 CODE 0 text31 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Wakeup 274E 0 CODE 0 text12 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_CAN_Wakeup 2562 0 CODE 0 text14 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Modify@reg 34 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_column_1 5B 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_column_2 5A 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_column_3 59 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_column_4 58 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+transmit_can_message_task@can_msg 4D 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+_Receive_CAN_Message 24B2 0 CODE 0 text21 dist/default/production\TREX_PIC16_3.0.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+__pdataBANK1 ED 0 BANK1 1 dataBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pdataBANK2 15F 0 BANK2 1 dataBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pdataBANK3 1CA 0 BANK3 1 dataBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__Write 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__LbssBANK4 0 0 ABS 0 bssBANK4 -
+_direction_message_task 2D20 0 CODE 0 text26 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+i1__Modify@mask 71 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxCommand@cmd 76 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer 151A 0 CODE 0 text10 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_Receive 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Initialize@temp8 245 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PIE0bits 716 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_PIE3bits 719 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__RxCommand 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_memset 23D2 0 CODE 0 text34 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_CAN_TxMailbox 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+memset@p1 37 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1SPI1_PutBuffer@count 72 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext10 151A 0 CODE 0 text10 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext11 2C74 0 CODE 0 text11 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext12 274E 0 CODE 0 text12 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext13 20F8 0 CODE 0 text13 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext14 2526 0 CODE 0 text14 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext15 27D2 0 CODE 0 text15 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext16 20BC 0 CODE 0 text16 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext17 206C 0 CODE 0 text17 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext18 2DD4 0 CODE 0 text18 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext19 24EC 0 CODE 0 text19 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext20 2A82 0 CODE 0 text20 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext21 24B2 0 CODE 0 text21 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext22 1AC 0 CODE 0 text22 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext23 2BC8 0 CODE 0 text23 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext24 240A 0 CODE 0 text24 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext25 1120 0 CODE 0 text25 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext26 2D20 0 CODE 0 text26 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext27 105A 0 CODE 0 text27 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext28 1D1E 0 CODE 0 text28 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext29 2064 0 CODE 0 text29 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext30 2964 0 CODE 0 text30 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext31 29EC 0 CODE 0 text31 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext32 1002 0 CODE 0 text32 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext33 1316 0 CODE 0 text33 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext34 23D2 0 CODE 0 text34 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext35 2368 0 CODE 0 text35 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext36 21B4 0 CODE 0 text36 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext37 21DE 0 CODE 0 text37 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext38 2F3C 0 CODE 0 text38 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext39 2334 0 CODE 0 text39 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext40 2300 0 CODE 0 text40 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext41 229C 0 CODE 0 text41 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext42 2094 0 CODE 0 text42 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext43 2086 0 CODE 0 text43 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext44 2562 0 CODE 0 text44 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext46 1A44 0 CODE 0 text46 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext47 239C 0 CODE 0 text47 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext48 22CC 0 CODE 0 text48 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext49 226C 0 CODE 0 text49 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext50 213A 0 CODE 0 text50 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext51 218A 0 CODE 0 text51 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext52 223C 0 CODE 0 text52 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext53 220C 0 CODE 0 text53 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext54 2078 0 CODE 0 text54 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext55 2160 0 CODE 0 text55 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext56 25A4 0 CODE 0 text56 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext57 2604 0 CODE 0 text57 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext58 266A 0 CODE 0 text58 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_IOCCFbits 1F55 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Receive_ISR 2604 0 CODE 0 text57 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__EnqueueTxMessage 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_Button_Debounce 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Lbank15 0 0 ABS 0 bank15 -
+__Lbank16 0 0 ABS 0 bank16 -
+__Lbank17 0 0 ABS 0 bank17 -
+__Lbank18 0 0 ABS 0 bank18 -
+__Lbank19 0 0 ABS 0 bank19 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Lbank21 0 0 ABS 0 bank21 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Lbank23 0 0 ABS 0 bank23 -
+__Lbank24 0 0 ABS 0 bank24 -
+__Lbank25 0 0 ABS 0 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank32 0 0 BANK32 1 bank32 -
+__Lbank33 0 0 BANK33 1 bank33 -
+__Lbank34 0 0 BANK34 1 bank34 -
+__Lbank35 0 0 BANK35 1 bank35 -
+__Lbank36 0 0 BANK36 1 bank36 -
+__Lbank37 0 0 BANK37 1 bank37 -
+__Lbank38 0 0 BANK38 1 bank38 -
+__Lbank39 0 0 BANK39 1 bank39 -
+__Lbank40 0 0 BANK40 1 bank40 -
+__Lbank41 0 0 BANK41 1 bank41 -
+__Lbank42 0 0 BANK42 1 bank42 -
+__Lbank43 0 0 BANK43 1 bank43 -
+__Lbank44 0 0 BANK44 1 bank44 -
+__Lbank45 0 0 BANK45 1 bank45 -
+__Lbank46 0 0 BANK46 1 bank46 -
+__Lbank47 0 0 BANK47 1 bank47 -
+__Lbank48 0 0 BANK48 1 bank48 -
+__Lbank49 0 0 BANK49 1 bank49 -
+__Lbank50 0 0 BANK50 1 bank50 -
+__Lbank51 0 0 BANK51 1 bank51 -
+__Lbank52 0 0 BANK52 1 bank52 -
+__Lbank53 0 0 BANK53 1 bank53 -
+__Lbank54 0 0 BANK54 1 bank54 -
+__Lbank55 0 0 BANK55 1 bank55 -
+__Lbank56 0 0 BANK56 1 bank56 -
+__Lbank57 0 0 BANK57 1 bank57 -
+__Lbank58 0 0 BANK58 1 bank58 -
+__Lbank59 0 0 BANK59 1 bank59 -
+__Lbank60 0 0 BANK60 1 bank60 -
+__Lbank61 0 0 BANK61 1 bank61 -
+__Lbank62 0 0 BANK62 1 bank62 -
+__Lbank63 0 0 BANK63 1 bank63 -
+__pmaintext 26D2 0 CODE 0 maintext dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+Button_Debounce@i 32 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_MCP2515_ISR 1A44 0 CODE 0 text46 dist/default/production\TREX_PIC16_3.0.X.production.obj
+Receive_CAN_Message@can 23C 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SetMode@modeMatch 46 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_BBSIZE$BB512 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer@pBuf 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__size_of_SPI1_PutBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__SetMode 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Read@reg 77 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Initialize@bResult 242 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_transmit_can_message_task 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LED_Initialize 1002 0 CODE 0 text32 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+___wmul@multiplier 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATAbits 18 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LATBbits 19 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_WRTAPP$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1__Read 226C 0 CODE 0 text52 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Read@count 75 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SetMode@timer 41 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_flag D3 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RCSTA1bits 11D 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_task 105A 0 CODE 0 text27 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1SPI1_Put@c 70 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1_SPI1_GetBuffer 2160 0 CODE 0 text55 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LED_COL 151 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_Parity_Count 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_Buttons_Update 1D1E 0 CODE 0 text28 dist/default/production\TREX_PIC16_3.0.X.production.obj
+?i1___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+_tc_int 8 0 CODE 0 intentry dist/default/production\TREX_PIC16_3.0.X.production.obj
+_MCP2515_diag 145 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__TxCommand@count 35 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+stackhi 264B 0 ABS 0 - C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+stacklo 2173 0 ABS 0 - C:\Users\us1dwyman\AppData\Local\Temp\s4h8.obj
+__end_of_CAN_TxMailbox 2BC8 0 CODE 0 text8 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__SendBuffer 22CC 0 CODE 0 text48 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Initialize@p 243 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SSP1DATPPS 1EC6 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+led_task@LED_row D0 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1_SPI1_PutBuffer 2160 0 CODE 0 text50 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pbssBIGRAM 264C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+transmit_can_message_task@sendSwitchesTimer 129 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+_CPUDOZEbits 88C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_LED_row_array 120 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_memset 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_can_send_message 1D8 0 BANK3 1 dataBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Initialize@pConfig 47 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackBANK3 0 0 ABS 0 cstackBANK3 -
+__HcstackBANK4 0 0 ABS 0 cstackBANK4 -
+_PIR0bits 70C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lend_init CC 0 CODE 0 end_init -
+__size_ofi1_SPI1_PutBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_TxMailbox@bufStatus 23D 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__EnqueueTxMessage@pFrame 48 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+end_of_initialization 1A4 0 CODE 0 cinit dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hintentry CC 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_RSTOSC$HFINT32 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+EUSART_TO_CAN@message 35 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Modify@reg 73 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+Receive_CAN_Message@result 23B 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_person_on_machine_flag D4 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_Get_Settings_Lock_Status 2064 0 CODE 0 text29 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__end_of_LED_Initialize 105A 0 CODE 0 text32 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_Receive_CAN_Message 24EC 0 CODE 0 text21 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_update_graphics 213A 0 CODE 0 text1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__SetMode 2F3C 0 CODE 0 text38 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__HbssBANK4 0 0 ABS 0 bssBANK4 -
+_EUSART_Parity_Count 266A 0 CODE 0 text58 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_parity_error DF 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_tc_int 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_SPI1_GetBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext1 2118 0 CODE 0 text1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext2 177C 0 CODE 0 text2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext3 28DE 0 CODE 0 text3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext4 2E88 0 CODE 0 text4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext5 BFC 0 CODE 0 text5 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext6 F0A 0 CODE 0 text6 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext7 2858 0 CODE 0 text7 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext8 2B20 0 CODE 0 text8 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__ptext9 2442 0 CODE 0 text9 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RX1DTPPS 1ECB 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_Buttons_Update 2000 0 CODE 0 text28 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_CAN_Initialize 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+tc_int@changed 7D 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Rx@pBuf 4B 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__SetMode 3000 0 CODE 0 text38 dist/default/production\TREX_PIC16_3.0.X.production.obj
+blink_forward_led@tick 125 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+EUSART_Receive@i 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Rx_checksum DC 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__RxBufferToMessage 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Write@reg 77 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__MessageToTxBuffer$473 3A 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer$481 3F 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer@ext 45 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer@rtr 3E 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_Update_LEDs 2526 0 CODE 0 text19 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_transportState E7 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Tx_head E6 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Tx_tail 5D 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+_j1939_address_claim_was_successful EF 0 BANK1 1 dataBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_WDTCPS$WDTCPS_5 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Tx_checksum DD 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1_SPI1_GetBuffer 218A 0 CODE 0 text55 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SW_ROW_ARRAY 169 0 BANK2 1 dataBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__initialization 1A4 0 CODE 0 cinit dist/default/production\TREX_PIC16_3.0.X.production.obj
+MCP2515_ISR@pBuf_580 28 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+MCP2515_ISR@pBuf_581 2A 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__EnqueueTxMessage 28DE 0 CODE 0 text7 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_transmit_can_message_task 2E88 0 CODE 0 text4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pidataBANK1 205E 0 CODE 0 idataBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pidataBANK2 20DA 0 CODE 0 idataBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pidataBANK3 247A 0 CODE 0 idataBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_slave_bad_response CD 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1_SPI1_GetBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__RxBufferToMessage@dlc 3E 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_CAN_Wakeup 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_Transmit_ISR 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+MCP2515_ISR@_intFlags2 2C 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Initialize@wait 240 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_current_address_ID E2 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_update_graphics 2118 0 CODE 0 text1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+SPI1_GetBuffer@pBuf 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__MessageToTxBuffer@canid 46 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_TxMailbox@pFrame 48 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_ofi1__SendBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_5 D7 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_6 D6 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_button_7 D5 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_direction_message_task 2DD4 0 CODE 0 text26 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__SendBuffer 247A 0 CODE 0 text9 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_parity_count E1 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Read@reg 38 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hend_init D0 0 CODE 0 end_init -
+CAN_To_EUSART@machine_directionA 36 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__Modify 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_main 274E 0 CODE 0 maintext dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_TxMailbox@result 23B 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+SPI1_Put@c 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of__Read 2368 0 CODE 0 text39 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_WRTSAF$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_IOCCF 1F55 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_IOCCN 1F54 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_IOCIE 38B4 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_IOCIF 3864 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+direction_message_task@direction_tick 131 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RC1IE 38CD 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_RC1IF 387D 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_T1CLK 211 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_T1CON 20E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR0H 59D 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TMR0L 59C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISA 12 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISB 13 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISC 14 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISD 15 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISE 16 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TRISF 17 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TX1IE 38CC 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_TX1IF 387C 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_SYSTEM_tick 53 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+SPI1_PutBuffer@pBuf 31 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__Read 2334 0 CODE 0 text39 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_EUSART_Master_Request 2964 0 CODE 0 text3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\TREX_PIC16_3.0.X.production.obj
+Buttons_Update@switch_state 34 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__HdataBANK2 0 0 ABS 0 dataBANK2 -
+__HdataBANK3 0 0 ABS 0 dataBANK3 -
+handle_can_messages_from_VCU@can_tick 135 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__MessageToTxBuffer 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1_SPI1_Put 2078 0 CODE 0 text54 dist/default/production\TREX_PIC16_3.0.X.production.obj
+SPI1_GetBuffer@count 33 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__initialization D0 0 CODE 0 cinit dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_CAN_Rx 2C74 0 CODE 0 text23 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_CAN_Tx FE4 0 CODE 0 text6 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+i1__Read@pBuf 73 0 COMMON 1 cstackCOMMON dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pbssBANK0 4E 0 BANK0 1 bssBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__pbssBANK4 220 0 BANK4 1 bssBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_ofi1__SendBuffer 2300 0 CODE 0 text48 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__end_of_EUSART_Parity_Count 26D2 0 CODE 0 text58 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_T2CONbits 28E 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Transmit_ISR 25A4 0 CODE 0 text56 dist/default/production\TREX_PIC16_3.0.X.production.obj
+CAN_Initialize@buf 23B 0 BANK4 1 cstackBANK4 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Write@pBuf 34 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+___wmul@product 35 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_EUSART_Receive_ISR 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+test_clock_rollover@rollover_tick 141 0 BANK2 1 bssBANK2 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__Write@count 36 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__EnqueueTxMessage@pBuf 4A 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+MCP2515_ISR@pBuf 26 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_EUSART_Master_Request 28DE 0 CODE 0 text3 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of_Get_Settings_Lock_Status 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+__TxCommand@pBuf 34 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+_CAN_ID_switch D8 0 BANK1 1 bssBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+__size_of__Wakeup 0 0 ABS 0 - dist/default/production\TREX_PIC16_3.0.X.production.obj
+main@LED_row EB 0 BANK1 1 cstackBANK1 dist/default/production\TREX_PIC16_3.0.X.production.obj
+MCP2515_ISR@_intFlags 2E 0 BANK0 1 cstackBANK0 dist/default/production\TREX_PIC16_3.0.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_CAN_rxMessageQ 1 264C 0
+_CAN_txMessageQ 1 271E 0
+- 1 CA0 20
+- 1 C20 50
+- 1 BA0 50
+- 1 B5E 12
+- 1 B20 3E
+- 1 AA0 50
+- 1 A2C 44
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 108C 2118 11 2
+text2 0 BBE 177C 164 2
+text3 0 146F 28DE 43 2
+text4 0 1744 2E88 5A 2
+text5 0 5FE BFC 200 2
+text7 0 142C 2858 43 2
+text8 0 1590 2B20 54 2
+text9 0 1221 2442 1C 2
+text10 0 A8D 151A 131 2
+text11 0 163A 2C74 56 2
+text12 0 13A7 274E 42 2
+text13 0 107C 20F8 10 2
+text14 0 1293 2526 1E 2
+text15 0 13E9 27D2 43 2
+text16 0 105E 20BC F 2
+text17 0 1036 206C 6 2
+text18 0 16EA 2DD4 5A 2
+text19 0 1276 24EC 1D 2
+text20 0 1541 2A82 4F 2
+text21 0 1259 24B2 1D 2
+text23 0 15E4 2BC8 56 2
+text24 0 1205 240A 1C 2
+text25 0 890 1120 FB 2
+text26 0 1690 2D20 5A 2
+text27 0 82D 105A 63 2
+text28 0 E8F 1D1E 171 2
+text29 0 1032 2064 4 2
+text30 0 14B2 2964 44 2
+text31 0 14F6 29EC 4B 2
+text32 0 801 1002 2C 2
+text33 0 98B 1316 102 2
+text34 0 11E9 23D2 1C 2
+text35 0 11B4 2368 1A 2
+text36 0 10DA 21B4 15 2
+text37 0 10EF 21DE 17 2
+text38 0 179E 2F3C 62 2
+text39 0 119A 2334 1A 2
+text40 0 1180 2300 1A 2
+text41 0 114E 229C 18 2
+text42 0 104A 2094 8 2
+text43 0 1043 2086 7 2
+text44 0 12B1 2562 21 2
+text46 0 D22 1A44 16D 2
+text47 0 11CE 239C 1B 2
+text48 0 1166 22CC 1A 2
+text49 0 1136 226C 18 2
+text50 0 109D 213A 13 2
+text51 0 10C5 218A 15 2
+text52 0 111E 223C 18 2
+text53 0 1106 220C 18 2
+text54 0 103C 2078 7 2
+text55 0 10B0 2160 15 2
+text56 0 12D2 25A4 30 2
+text57 0 1302 2604 33 2
+text58 0 1335 266A 34 2
+maintext 0 1369 26D2 3E 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 3F 1
+stringtext1 0 3FE 7FC 200 2
+stringtext2 0 1800 3000 20 2
+intentry 0 4 8 3FA 2
+reset_vec 0 0 0 2 2
+bssBANK1 1 A0 A0 50 1
+bssBANK2 1 120 120 4E 1
+bssBANK3 1 1A0 1A0 50 1
+bssBANK4 1 220 220 33 1
+idataBANK1 0 102F 205E 3 2
+idataBANK2 0 106D 20DA F 2
+idataBANK3 0 123D 247A 1C 2
+clrtext 0 1052 20A4 C 2
+config 0 8007 1000E 5 2
